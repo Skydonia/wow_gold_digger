@@ -1,0 +1,3834 @@
+{
+  "schema_version": 1,
+  "game": "wow-forever",
+  "captured_on": "2026-11-21",
+  "source": "https://wow-forever.gg/vendors/",
+  "observed_builds": "1.60.1.69913–1.60.1.70959",
+  "price_basis": "Prix observé pour le personnage ayant ouvert le marchand ; réputation et faction non documentées. Stocks illimités uniquement.",
+  "offers": [
+    {
+      "item_id": 3030,
+      "vendor": "Aemara",
+      "lot_price_copper": 300,
+      "lot_quantity": 200,
+      "source_line": 93,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Applebough",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 106,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Adlin Pridedrift",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 140,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Brighid Stormflayer",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 177,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Brighid Stormflayer",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 179,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 281,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 282,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 283,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 284,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 288,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 290,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 291,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 292,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 124,
+      "lot_quantity": 1,
+      "source_line": 294,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Golorn Frostbeard",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 296,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Gretta Ganter",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 331,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 359,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 360,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 361,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 362,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 363,
+      "unlimited": true
+    },
+    {
+      "item_id": 2686,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 364,
+      "unlimited": true
+    },
+    {
+      "item_id": 2894,
+      "vendor": "Innkeeper Belm",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 365,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Kazan Mogosh",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 383,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Kazan Mogosh",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 384,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Kazan Mogosh",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 385,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Kazan Mogosh",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 386,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Kazan Mogosh",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 388,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 411,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 412,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 413,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 414,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 415,
+      "unlimited": true
+    },
+    {
+      "item_id": 2594,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 1500,
+      "lot_quantity": 1,
+      "source_line": 417,
+      "unlimited": true
+    },
+    {
+      "item_id": 2596,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 120,
+      "lot_quantity": 1,
+      "source_line": 419,
+      "unlimited": true
+    },
+    {
+      "item_id": 2723,
+      "vendor": "Keeg Gibn",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 420,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Kreg Bilmn",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 432,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Kreg Bilmn",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 439,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 454,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 455,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 456,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 458,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 463,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Loslor Rudge",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 464,
+      "unlimited": true
+    },
+    {
+      "item_id": 18567,
+      "vendor": "Thrawn Boltar",
+      "lot_price_copper": 150000,
+      "lot_quantity": 1,
+      "source_line": 494,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Thrawn Boltar",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 495,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Thrawn Boltar",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 497,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Thrawn Boltar",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 498,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Avette Fellwood",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 530,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 4050,
+      "lot_quantity": 1,
+      "source_line": 542,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 543,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 544,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 545,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 548,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Mabel Solaj",
+      "lot_price_copper": 35,
+      "lot_quantity": 1,
+      "source_line": 554,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Barkeep Dobbins",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 607,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Barkeep Dobbins",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 608,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Brog Hamfist",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 619,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Brog Hamfist",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 626,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Brother Danil",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 641,
+      "unlimited": true
+    },
+    {
+      "item_id": 17034,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 190,
+      "lot_quantity": 1,
+      "source_line": 691,
+      "unlimited": true
+    },
+    {
+      "item_id": 17035,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 380,
+      "lot_quantity": 1,
+      "source_line": 692,
+      "unlimited": true
+    },
+    {
+      "item_id": 18256,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 28500,
+      "lot_quantity": 5,
+      "source_line": 696,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 19,
+      "lot_quantity": 5,
+      "source_line": 701,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 190,
+      "lot_quantity": 5,
+      "source_line": 702,
+      "unlimited": true
+    },
+    {
+      "item_id": 8925,
+      "vendor": "Dawn Brightstar",
+      "lot_price_copper": 2375,
+      "lot_quantity": 5,
+      "source_line": 705,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 776,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 777,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 778,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 779,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 780,
+      "unlimited": true
+    },
+    {
+      "item_id": 2594,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 1500,
+      "lot_quantity": 1,
+      "source_line": 782,
+      "unlimited": true
+    },
+    {
+      "item_id": 2596,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 120,
+      "lot_quantity": 1,
+      "source_line": 784,
+      "unlimited": true
+    },
+    {
+      "item_id": 2723,
+      "vendor": "Joshua Maclure",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 785,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Riley Peltskinner",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 888,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Riley Peltskinner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 890,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 902,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 903,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 904,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 905,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 909,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 911,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 912,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 913,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 124,
+      "lot_quantity": 1,
+      "source_line": 915,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Tharynn Bouden",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 917,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Barkeep Kelly",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 949,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Barkeep Kelly",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 950,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Barkeep Kelly",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 951,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Barkeep Kelly",
+      "lot_price_copper": 1800,
+      "lot_quantity": 5,
+      "source_line": 952,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Barkeep Kelly",
+      "lot_price_copper": 900,
+      "lot_quantity": 5,
+      "source_line": 953,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Anderson",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 965,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Anderson",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 966,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Anderson",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 967,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Anderson",
+      "lot_price_copper": 1800,
+      "lot_quantity": 5,
+      "source_line": 968,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Anderson",
+      "lot_price_copper": 900,
+      "lot_quantity": 5,
+      "source_line": 970,
+      "unlimited": true
+    },
+    {
+      "item_id": 10284,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 180,
+      "lot_quantity": 1,
+      "source_line": 1009,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 4050,
+      "lot_quantity": 1,
+      "source_line": 1011,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 1012,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 9,
+      "lot_quantity": 1,
+      "source_line": 1015,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1016,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 23,
+      "lot_quantity": 1,
+      "source_line": 1017,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 9,
+      "lot_quantity": 5,
+      "source_line": 1018,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 36,
+      "lot_quantity": 1,
+      "source_line": 1019,
+      "unlimited": true
+    },
+    {
+      "item_id": 272941,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 180000,
+      "lot_quantity": 1,
+      "source_line": 1020,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1021,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 18,
+      "lot_quantity": 5,
+      "source_line": 1023,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 180,
+      "lot_quantity": 5,
+      "source_line": 1024,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 1025,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 144,
+      "lot_quantity": 1,
+      "source_line": 1026,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 1027,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1028,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 1029,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 180,
+      "lot_quantity": 1,
+      "source_line": 1030,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 1031,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 35,
+      "lot_quantity": 1,
+      "source_line": 1032,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 1034,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 112,
+      "lot_quantity": 1,
+      "source_line": 1037,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Micha Yance",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1038,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Neema",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 1050,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Neema",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 1051,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Neema",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 1052,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Neema",
+      "lot_price_copper": 1800,
+      "lot_quantity": 5,
+      "source_line": 1053,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Neema",
+      "lot_price_copper": 900,
+      "lot_quantity": 5,
+      "source_line": 1055,
+      "unlimited": true
+    },
+    {
+      "item_id": 17034,
+      "vendor": "Barim Jurgenstaad",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1088,
+      "unlimited": true
+    },
+    {
+      "item_id": 17035,
+      "vendor": "Barim Jurgenstaad",
+      "lot_price_copper": 400,
+      "lot_quantity": 1,
+      "source_line": 1089,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Bimble Longberry",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1105,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 2250,
+      "lot_quantity": 1,
+      "source_line": 1121,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 4500,
+      "lot_quantity": 1,
+      "source_line": 1122,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 9,
+      "lot_quantity": 1,
+      "source_line": 1124,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1125,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 900,
+      "lot_quantity": 1,
+      "source_line": 1126,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1129,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1130,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1131,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 1132,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 315,
+      "lot_quantity": 1,
+      "source_line": 1133,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 1134,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 2250,
+      "lot_quantity": 1,
+      "source_line": 1135,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1136,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 900,
+      "lot_quantity": 1,
+      "source_line": 1137,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Bombus Finespindle",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 1139,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1198,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1199,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1203,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1205,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1208,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Gearcutter Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1209,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Gwina Stonebranch",
+      "lot_price_copper": 18,
+      "lot_quantity": 5,
+      "source_line": 1244,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Gwina Stonebranch",
+      "lot_price_copper": 180,
+      "lot_quantity": 5,
+      "source_line": 1245,
+      "unlimited": true
+    },
+    {
+      "item_id": 8925,
+      "vendor": "Gwina Stonebranch",
+      "lot_price_copper": 2250,
+      "lot_quantity": 5,
+      "source_line": 1246,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1298,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 1299,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1300,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1301,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1302,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1303,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1306,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1307,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1308,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 1309,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1310,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1311,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1312,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1313,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Poranna Snowbraid",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1314,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Tansy Puddlefizz",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1339,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Thalgus Thunderfist",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 1368,
+      "unlimited": true
+    },
+    {
+      "item_id": 18567,
+      "vendor": "Thurgrum Deepforge",
+      "lot_price_copper": 135000,
+      "lot_quantity": 1,
+      "source_line": 1381,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Thurgrum Deepforge",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1382,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Thurgrum Deepforge",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 1384,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Thurgrum Deepforge",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 1385,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 9,
+      "lot_quantity": 1,
+      "source_line": 1417,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1418,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 23,
+      "lot_quantity": 1,
+      "source_line": 1419,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1420,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1421,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 9,
+      "lot_quantity": 5,
+      "source_line": 1422,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 36,
+      "lot_quantity": 1,
+      "source_line": 1423,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1424,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 18,
+      "lot_quantity": 5,
+      "source_line": 1426,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1427,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 112,
+      "lot_quantity": 1,
+      "source_line": 1429,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 1431,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Drac Roughcut",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1433,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Hearthstove",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 1494,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Hearthstove",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 1495,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Hearthstove",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1496,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Hearthstove",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 1497,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Hearthstove",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 1498,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Khara Deepwater",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 1526,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1570,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 1571,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1572,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1573,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1574,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1575,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1578,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1579,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1580,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 1581,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1582,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1583,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1585,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1586,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Rann Flamespinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1588,
+      "unlimited": true
+    },
+    {
+      "item_id": 10284,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1599,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1600,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1601,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1602,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 4500,
+      "lot_quantity": 1,
+      "source_line": 1603,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 1604,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1605,
+      "unlimited": true
+    },
+    {
+      "item_id": 17034,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1616,
+      "unlimited": true
+    },
+    {
+      "item_id": 17035,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 400,
+      "lot_quantity": 1,
+      "source_line": 1617,
+      "unlimited": true
+    },
+    {
+      "item_id": 18567,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 150000,
+      "lot_quantity": 1,
+      "source_line": 1621,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1625,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1626,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1627,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1628,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1631,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1632,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 1633,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 40,
+      "lot_quantity": 1,
+      "source_line": 1634,
+      "unlimited": true
+    },
+    {
+      "item_id": 272941,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 200000,
+      "lot_quantity": 1,
+      "source_line": 1635,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1637,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1639,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 160,
+      "lot_quantity": 1,
+      "source_line": 1640,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1641,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1642,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1643,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 1644,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1645,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1646,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1649,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1650,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 1651,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1653,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1657,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1658,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1660,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Reagent Bot",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1663,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Yanni Stoutheart",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 1674,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Yanni Stoutheart",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1675,
+      "unlimited": true
+    },
+    {
+      "item_id": 2686,
+      "vendor": "Yanni Stoutheart",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1680,
+      "unlimited": true
+    },
+    {
+      "item_id": 2894,
+      "vendor": "Yanni Stoutheart",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1681,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Yanni Stoutheart",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 1686,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1714,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1715,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1716,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 1717,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 40,
+      "lot_quantity": 1,
+      "source_line": 1718,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1719,
+      "unlimited": true
+    },
+    {
+      "item_id": 2928,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 20,
+      "lot_quantity": 1,
+      "source_line": 1721,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 1722,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 200,
+      "lot_quantity": 5,
+      "source_line": 1723,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1724,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 124,
+      "lot_quantity": 1,
+      "source_line": 1727,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Amy Davenport",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1730,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Bartender Wental",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 1743,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Bartender Wental",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 1744,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Bartender Wental",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1745,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Bartender Wental",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 1746,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Bartender Wental",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 1748,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1776,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 1777,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1778,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1779,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1780,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1781,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1784,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1785,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1786,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 1787,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1788,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1789,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1792,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1793,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Captured Servant of Azora",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1794,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1913,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 1914,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 1915,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1916,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 1917,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1918,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1921,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 1922,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1923,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 1924,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 1925,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 1926,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 1928,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 1929,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Franklin Hamar",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 1930,
+      "unlimited": true
+    },
+    {
+      "item_id": 10284,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 1978,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 4500,
+      "lot_quantity": 1,
+      "source_line": 1979,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1980,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 1983,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 40,
+      "lot_quantity": 1,
+      "source_line": 1984,
+      "unlimited": true
+    },
+    {
+      "item_id": 272941,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 200000,
+      "lot_quantity": 1,
+      "source_line": 1985,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 160,
+      "lot_quantity": 1,
+      "source_line": 1986,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 1987,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Gloria Femmel",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 1989,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Brianna",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 2013,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Brianna",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 2014,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Brianna",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2015,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Brianna",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 2016,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Brianna",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 2017,
+      "unlimited": true
+    },
+    {
+      "item_id": 18567,
+      "vendor": "Karen Taylor",
+      "lot_price_copper": 135000,
+      "lot_quantity": 1,
+      "source_line": 2048,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Karen Taylor",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 2049,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Karen Taylor",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 2051,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Karen Taylor",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 2052,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Kimberly Hiett",
+      "lot_price_copper": 300,
+      "lot_quantity": 200,
+      "source_line": 2067,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Lamar Veisilli",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2079,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Lindsay Ashlock",
+      "lot_price_copper": 4500,
+      "lot_quantity": 1,
+      "source_line": 2095,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Lindsay Ashlock",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 2096,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Lindsay Ashlock",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 2097,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Lindsay Ashlock",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2098,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Lindsay Ashlock",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 2107,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Ben Trias",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 2387,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Ben Trias",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 2388,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Ben Trias",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2389,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Ben Trias",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 2390,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Ben Trias",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 2392,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2409,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2410,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2411,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2413,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 2416,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Billibub Cogspinner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2417,
+      "unlimited": true
+    },
+    {
+      "item_id": 17034,
+      "vendor": "Brother Cassius",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 2439,
+      "unlimited": true
+    },
+    {
+      "item_id": 17035,
+      "vendor": "Brother Cassius",
+      "lot_price_copper": 400,
+      "lot_quantity": 1,
+      "source_line": 2440,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Catherine Leland",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2462,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2474,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 2475,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2476,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 2477,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 40,
+      "lot_quantity": 1,
+      "source_line": 2478,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 200,
+      "lot_quantity": 5,
+      "source_line": 2480,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 160,
+      "lot_quantity": 1,
+      "source_line": 2481,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2482,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2483,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2484,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 2485,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 2486,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2487,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2488,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2491,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2494,
+      "unlimited": true
+    },
+    {
+      "item_id": 8925,
+      "vendor": "Edna Mullby",
+      "lot_price_copper": 2500,
+      "lot_quantity": 5,
+      "source_line": 2495,
+      "unlimited": true
+    },
+    {
+      "item_id": 10284,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 180,
+      "lot_quantity": 1,
+      "source_line": 2506,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 4050,
+      "lot_quantity": 1,
+      "source_line": 2507,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 2508,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 9,
+      "lot_quantity": 5,
+      "source_line": 2511,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 36,
+      "lot_quantity": 1,
+      "source_line": 2512,
+      "unlimited": true
+    },
+    {
+      "item_id": 272941,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 180000,
+      "lot_quantity": 1,
+      "source_line": 2513,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 144,
+      "lot_quantity": 1,
+      "source_line": 2514,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 35,
+      "lot_quantity": 1,
+      "source_line": 2515,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Erika Tate",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 2517,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Jessara Cordell",
+      "lot_price_copper": 4500,
+      "lot_quantity": 1,
+      "source_line": 2566,
+      "unlimited": true
+    },
+    {
+      "item_id": 247786,
+      "vendor": "Jessara Cordell",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 2571,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Jessara Cordell",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 2572,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Jessara Cordell",
+      "lot_price_copper": 124,
+      "lot_quantity": 1,
+      "source_line": 2573,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 2585,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 2586,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 2587,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2588,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 2589,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2592,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2593,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2594,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2595,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 2596,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2597,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 2598,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2599,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 2600,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Jillian Tanner",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2602,
+      "unlimited": true
+    },
+    {
+      "item_id": 18567,
+      "vendor": "Kaita Deepforge",
+      "lot_price_copper": 150000,
+      "lot_quantity": 1,
+      "source_line": 2614,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Kaita Deepforge",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2615,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Kaita Deepforge",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2617,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Kaita Deepforge",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2618,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Marda Weller",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 2657,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 4050,
+      "lot_quantity": 1,
+      "source_line": 2771,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 2772,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 2773,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 2778,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 1800,
+      "lot_quantity": 5,
+      "source_line": 2779,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 900,
+      "lot_quantity": 5,
+      "source_line": 2780,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 2783,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 35,
+      "lot_quantity": 1,
+      "source_line": 2789,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Corporal Bluth",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 2793,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 2841,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2842,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 2843,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 2844,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2845,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2846,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 2847,
+      "unlimited": true
+    },
+    {
+      "item_id": 2692,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 40,
+      "lot_quantity": 1,
+      "source_line": 2848,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2852,
+      "unlimited": true
+    },
+    {
+      "item_id": 2928,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 20,
+      "lot_quantity": 1,
+      "source_line": 2854,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 2855,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 200,
+      "lot_quantity": 5,
+      "source_line": 2856,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2857,
+      "unlimited": true
+    },
+    {
+      "item_id": 3713,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 160,
+      "lot_quantity": 1,
+      "source_line": 2858,
+      "unlimited": true
+    },
+    {
+      "item_id": 3857,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2859,
+      "unlimited": true
+    },
+    {
+      "item_id": 4289,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2860,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2861,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 2862,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 2863,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 2864,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 2865,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2866,
+      "unlimited": true
+    },
+    {
+      "item_id": 4536,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2867,
+      "unlimited": true
+    },
+    {
+      "item_id": 6217,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 124,
+      "lot_quantity": 1,
+      "source_line": 2869,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2871,
+      "unlimited": true
+    },
+    {
+      "item_id": 6530,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 2873,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Christopher Hewen",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 2876,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Gina MacGregor",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 2923,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Gina MacGregor",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 2924,
+      "unlimited": true
+    },
+    {
+      "item_id": 2678,
+      "vendor": "Gina MacGregor",
+      "lot_price_copper": 10,
+      "lot_quantity": 5,
+      "source_line": 2925,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Gina MacGregor",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 2926,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Heather",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 2940,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Heather",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 2941,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Heather",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2942,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Heather",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 2943,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Heather",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 2944,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Quartermaster Lewis",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 2977,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Quartermaster Lewis",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 2978,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Quartermaster Lewis",
+      "lot_price_copper": 38,
+      "lot_quantity": 1,
+      "source_line": 2987,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Edwina Monzor",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 3022,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 3034,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 3035,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 3037,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 3039,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 200,
+      "lot_quantity": 1,
+      "source_line": 3043,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Fradd Swiftgear",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 3044,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 125,
+      "lot_quantity": 5,
+      "source_line": 3058,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 500,
+      "lot_quantity": 5,
+      "source_line": 3059,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 25,
+      "lot_quantity": 5,
+      "source_line": 3060,
+      "unlimited": true
+    },
+    {
+      "item_id": 1645,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 2000,
+      "lot_quantity": 5,
+      "source_line": 3061,
+      "unlimited": true
+    },
+    {
+      "item_id": 1708,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 1000,
+      "lot_quantity": 5,
+      "source_line": 3062,
+      "unlimited": true
+    },
+    {
+      "item_id": 2594,
+      "vendor": "Innkeeper Helbrek",
+      "lot_price_copper": 1500,
+      "lot_quantity": 1,
+      "source_line": 3064,
+      "unlimited": true
+    },
+    {
+      "item_id": 10290,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 3080,
+      "unlimited": true
+    },
+    {
+      "item_id": 14341,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 5000,
+      "lot_quantity": 1,
+      "source_line": 3081,
+      "unlimited": true
+    },
+    {
+      "item_id": 2320,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 10,
+      "lot_quantity": 1,
+      "source_line": 3082,
+      "unlimited": true
+    },
+    {
+      "item_id": 2321,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 3083,
+      "unlimited": true
+    },
+    {
+      "item_id": 2324,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 25,
+      "lot_quantity": 1,
+      "source_line": 3084,
+      "unlimited": true
+    },
+    {
+      "item_id": 2325,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 3085,
+      "unlimited": true
+    },
+    {
+      "item_id": 2604,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 3088,
+      "unlimited": true
+    },
+    {
+      "item_id": 2605,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 100,
+      "lot_quantity": 1,
+      "source_line": 3089,
+      "unlimited": true
+    },
+    {
+      "item_id": 4291,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 3090,
+      "unlimited": true
+    },
+    {
+      "item_id": 4340,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 350,
+      "lot_quantity": 1,
+      "source_line": 3091,
+      "unlimited": true
+    },
+    {
+      "item_id": 4341,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 500,
+      "lot_quantity": 1,
+      "source_line": 3092,
+      "unlimited": true
+    },
+    {
+      "item_id": 4342,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 2500,
+      "lot_quantity": 1,
+      "source_line": 3093,
+      "unlimited": true
+    },
+    {
+      "item_id": 6260,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 50,
+      "lot_quantity": 1,
+      "source_line": 3099,
+      "unlimited": true
+    },
+    {
+      "item_id": 6261,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 1000,
+      "lot_quantity": 1,
+      "source_line": 3100,
+      "unlimited": true
+    },
+    {
+      "item_id": 8343,
+      "vendor": "Jennabink Powerseam",
+      "lot_price_copper": 2000,
+      "lot_quantity": 1,
+      "source_line": 3102,
+      "unlimited": true
+    },
+    {
+      "item_id": 18256,
+      "vendor": "Kixxle",
+      "lot_price_copper": 30000,
+      "lot_quantity": 5,
+      "source_line": 3113,
+      "unlimited": true
+    },
+    {
+      "item_id": 3371,
+      "vendor": "Kixxle",
+      "lot_price_copper": 20,
+      "lot_quantity": 5,
+      "source_line": 3115,
+      "unlimited": true
+    },
+    {
+      "item_id": 3372,
+      "vendor": "Kixxle",
+      "lot_price_copper": 200,
+      "lot_quantity": 5,
+      "source_line": 3116,
+      "unlimited": true
+    },
+    {
+      "item_id": 8925,
+      "vendor": "Kixxle",
+      "lot_price_copper": 2500,
+      "lot_quantity": 5,
+      "source_line": 3117,
+      "unlimited": true
+    },
+    {
+      "item_id": 2594,
+      "vendor": "Mikhail",
+      "lot_price_copper": 1350,
+      "lot_quantity": 1,
+      "source_line": 3129,
+      "unlimited": true
+    },
+    {
+      "item_id": 2596,
+      "vendor": "Mikhail",
+      "lot_price_copper": 108,
+      "lot_quantity": 1,
+      "source_line": 3131,
+      "unlimited": true
+    },
+    {
+      "item_id": 2723,
+      "vendor": "Mikhail",
+      "lot_price_copper": 45,
+      "lot_quantity": 1,
+      "source_line": 3132,
+      "unlimited": true
+    },
+    {
+      "item_id": 10647,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 3159,
+      "unlimited": true
+    },
+    {
+      "item_id": 10648,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 450,
+      "lot_quantity": 1,
+      "source_line": 3160,
+      "unlimited": true
+    },
+    {
+      "item_id": 11291,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 4050,
+      "lot_quantity": 1,
+      "source_line": 3161,
+      "unlimited": true
+    },
+    {
+      "item_id": 1179,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 113,
+      "lot_quantity": 5,
+      "source_line": 3162,
+      "unlimited": true
+    },
+    {
+      "item_id": 1205,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 450,
+      "lot_quantity": 5,
+      "source_line": 3163,
+      "unlimited": true
+    },
+    {
+      "item_id": 159,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 23,
+      "lot_quantity": 5,
+      "source_line": 3164,
+      "unlimited": true
+    },
+    {
+      "item_id": 2880,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 90,
+      "lot_quantity": 1,
+      "source_line": 3167,
+      "unlimited": true
+    },
+    {
+      "item_id": 3030,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 270,
+      "lot_quantity": 200,
+      "source_line": 3169,
+      "unlimited": true
+    },
+    {
+      "item_id": 3466,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 3175,
+      "unlimited": true
+    },
+    {
+      "item_id": 4399,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 180,
+      "lot_quantity": 1,
+      "source_line": 3178,
+      "unlimited": true
+    },
+    {
+      "item_id": 4400,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 1800,
+      "lot_quantity": 1,
+      "source_line": 3179,
+      "unlimited": true
+    },
+    {
+      "item_id": 4470,
+      "vendor": "Neal Allen",
+      "lot_price_copper": 35,
+      "lot_quantity": 1,
+      "source_line": 3180,
+      "unlimited": true
+    }
+  ]
+}

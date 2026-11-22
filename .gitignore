@@ -1,0 +1,19 @@
+.venv/
+.idea/
+__pycache__/
+.pytest_cache/
+data/cache/
+*.log
+
+# Fichiers locaux et identifiants
+.DS_Store
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Sauvegardes locales : conserver les rapports, pas les copies de base
+data/audits/**/*.before
+data/audits/**/*.sqlite
+*.building.sqlite
+*.sqlite-wal
+*.sqlite-shm

@@ -1,0 +1,212 @@
+﻿recipe_id;name;field;before;after;source
+alchemy:11479;Barre d'or;name;Transmutation : Fer en Or;Barre d'or;https://endgametools.com/fr/wow-forever/professions/alchemy#r11479
+alchemy:11479;Barre d'or;outputs;();"({'item_id': 3577, 'quantity': 1, 'name': ""Barre d'or""},)";https://endgametools.com/fr/wow-forever/professions/alchemy#r11479
+alchemy:11479;Barre d'or;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r11479
+alchemy:11479;Barre d'or;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r11479
+alchemy:11479;Barre d'or;cooldown_seconds;;3600;https://endgametools.com/fr/wow-forever/professions/alchemy#r11479
+alchemy:11480;Barre de vrai-argent;name;Transmutation de mithril en vrai-argent;Barre de vrai-argent;https://endgametools.com/fr/wow-forever/professions/alchemy#r11480
+alchemy:11480;Barre de vrai-argent;outputs;();({'item_id': 6037, 'quantity': 1, 'name': 'Barre de vrai-argent'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r11480
+alchemy:11480;Barre de vrai-argent;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r11480
+alchemy:11480;Barre de vrai-argent;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r11480
+alchemy:11480;Barre de vrai-argent;cooldown_seconds;;3600;https://endgametools.com/fr/wow-forever/professions/alchemy#r11480
+alchemy:1249630;Teinture céruléenne;skill_required;;40;https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes
+alchemy:1249631;Teinture magenta;skill_required;;120;https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes
+alchemy:1249632;Teinture viridienne;skill_required;;220;https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes
+alchemy:1249633;Acide sulfurique;skill_required;;40;https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes
+alchemy:1250775;Breuvage de révélation;skill_required;;205;https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes
+alchemy:1317279;Barre de légionite;name;Transmutation : légionite;Barre de légionite;https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279
+alchemy:1317279;Barre de légionite;outputs;();({'item_id': 251290, 'quantity': 1, 'name': 'Barre de légionite'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279
+alchemy:1317279;Barre de légionite;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279
+alchemy:1317279;Barre de légionite;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279
+alchemy:1317279;Barre de légionite;cooldown_seconds;;169200;https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279
+alchemy:17187;Barre d'arcanite;name;Transmutation d'arcanite;Barre d'arcanite;https://endgametools.com/fr/wow-forever/professions/alchemy#r17187
+alchemy:17187;Barre d'arcanite;outputs;();"({'item_id': 12360, 'quantity': 1, 'name': ""Barre d'arcanite""},)";https://endgametools.com/fr/wow-forever/professions/alchemy#r17187
+alchemy:17187;Barre d'arcanite;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17187
+alchemy:17187;Barre d'arcanite;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17187
+alchemy:17187;Barre d'arcanite;cooldown_seconds;;169200;https://endgametools.com/fr/wow-forever/professions/alchemy#r17187
+alchemy:17559;Essence de feu;name;Transmutation de l'Air en Feu;Essence de feu;https://endgametools.com/fr/wow-forever/professions/alchemy#r17559
+alchemy:17559;Essence de feu;outputs;();({'item_id': 7078, 'quantity': 1, 'name': 'Essence de feu'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r17559
+alchemy:17559;Essence de feu;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17559
+alchemy:17559;Essence de feu;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17559
+alchemy:17559;Essence de feu;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17559
+alchemy:17560;Essence de terre;name;Transmutation du Feu en Terre;Essence de terre;https://endgametools.com/fr/wow-forever/professions/alchemy#r17560
+alchemy:17560;Essence de terre;outputs;();({'item_id': 7076, 'quantity': 1, 'name': 'Essence de terre'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r17560
+alchemy:17560;Essence de terre;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17560
+alchemy:17560;Essence de terre;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17560
+alchemy:17560;Essence de terre;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17560
+alchemy:17561;Essence d'eau;name;Transmutation de la Terre en Eau;Essence d'eau;https://endgametools.com/fr/wow-forever/professions/alchemy#r17561
+alchemy:17561;Essence d'eau;outputs;();"({'item_id': 7080, 'quantity': 1, 'name': ""Essence d'eau""},)";https://endgametools.com/fr/wow-forever/professions/alchemy#r17561
+alchemy:17561;Essence d'eau;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17561
+alchemy:17561;Essence d'eau;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17561
+alchemy:17561;Essence d'eau;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17561
+alchemy:17562;Essence d'air;name;Transmutation de l'Eau en Air;Essence d'air;https://endgametools.com/fr/wow-forever/professions/alchemy#r17562
+alchemy:17562;Essence d'air;outputs;();"({'item_id': 7082, 'quantity': 1, 'name': ""Essence d'air""},)";https://endgametools.com/fr/wow-forever/professions/alchemy#r17562
+alchemy:17562;Essence d'air;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17562
+alchemy:17562;Essence d'air;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17562
+alchemy:17562;Essence d'air;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17562
+alchemy:17563;Essence d'eau;name;Transmutation du Non-mort en Eau;Essence d'eau;https://endgametools.com/fr/wow-forever/professions/alchemy#r17563
+alchemy:17563;Essence d'eau;outputs;();"({'item_id': 7080, 'quantity': 1, 'name': ""Essence d'eau""},)";https://endgametools.com/fr/wow-forever/professions/alchemy#r17563
+alchemy:17563;Essence d'eau;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17563
+alchemy:17563;Essence d'eau;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17563
+alchemy:17563;Essence d'eau;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17563
+alchemy:17564;Essence de non-mort;name;Transmutation de l'Eau en Non-mort;Essence de non-mort;https://endgametools.com/fr/wow-forever/professions/alchemy#r17564
+alchemy:17564;Essence de non-mort;outputs;();({'item_id': 12808, 'quantity': 1, 'name': 'Essence de non-mort'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r17564
+alchemy:17564;Essence de non-mort;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17564
+alchemy:17564;Essence de non-mort;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17564
+alchemy:17564;Essence de non-mort;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17564
+alchemy:17565;Essence de terre;name;Transmutation de la Vie en Terre;Essence de terre;https://endgametools.com/fr/wow-forever/professions/alchemy#r17565
+alchemy:17565;Essence de terre;outputs;();({'item_id': 7076, 'quantity': 1, 'name': 'Essence de terre'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r17565
+alchemy:17565;Essence de terre;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17565
+alchemy:17565;Essence de terre;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17565
+alchemy:17565;Essence de terre;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17565
+alchemy:17566;Essence de vie;name;Transmutation de la Terre en Vie;Essence de vie;https://endgametools.com/fr/wow-forever/professions/alchemy#r17566
+alchemy:17566;Essence de vie;outputs;();({'item_id': 12803, 'quantity': 1, 'name': 'Essence de vie'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r17566
+alchemy:17566;Essence de vie;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r17566
+alchemy:17566;Essence de vie;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r17566
+alchemy:17566;Essence de vie;cooldown_seconds;;82800;https://endgametools.com/fr/wow-forever/professions/alchemy#r17566
+alchemy:25146;Feu élémentaire;name;Transmutation : Feu élémentaire;Feu élémentaire;https://endgametools.com/fr/wow-forever/professions/alchemy#r25146
+alchemy:25146;Feu élémentaire;outputs;();({'item_id': 7068, 'quantity': 3, 'name': 'Feu élémentaire'},);https://endgametools.com/fr/wow-forever/professions/alchemy#r25146
+alchemy:25146;Feu élémentaire;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/alchemy#r25146
+alchemy:25146;Feu élémentaire;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/alchemy#r25146
+alchemy:25146;Feu élémentaire;cooldown_seconds;;600;https://endgametools.com/fr/wow-forever/professions/alchemy#r25146
+cooking:1229737;Kit de feu de camp basique;name;Feu de camp basique Palier 1;Kit de feu de camp basique;https://endgametools.com/fr/wow-forever/professions/cooking#r1229737
+cooking:1229737;Kit de feu de camp basique;outputs;();({'item_id': 279981, 'quantity': 1, 'name': 'Kit de feu de camp basique'},);https://endgametools.com/fr/wow-forever/professions/cooking#r1229737
+cooking:1229737;Kit de feu de camp basique;cast_time_ms;;10000;https://endgametools.com/fr/wow-forever/professions/cooking#r1229737
+cooking:1283400;Kit de feu de camp de compagnon;name;Feu de camp de compagnon Palier 2;Kit de feu de camp de compagnon;https://endgametools.com/fr/wow-forever/professions/cooking#r1283400
+cooking:1283400;Kit de feu de camp de compagnon;outputs;();({'item_id': 279961, 'quantity': 1, 'name': 'Kit de feu de camp de compagnon'},);https://endgametools.com/fr/wow-forever/professions/cooking#r1283400
+cooking:1283400;Kit de feu de camp de compagnon;cast_time_ms;;10000;https://endgametools.com/fr/wow-forever/professions/cooking#r1283400
+cooking:1291341;Kit de feu de camp de spécialiste;name;Feu de camp de spécialiste Palier 3;Kit de feu de camp de spécialiste;https://endgametools.com/fr/wow-forever/professions/cooking#r1291341
+cooking:1291341;Kit de feu de camp de spécialiste;outputs;();({'item_id': 279974, 'quantity': 1, 'name': 'Kit de feu de camp de spécialiste'},);https://endgametools.com/fr/wow-forever/professions/cooking#r1291341
+cooking:1291341;Kit de feu de camp de spécialiste;cast_time_ms;;10000;https://endgametools.com/fr/wow-forever/professions/cooking#r1291341
+cooking:20916;Truite tête-mithril;outputs;();({'item_id': 8364, 'quantity': 1, 'name': 'Truite tête-mithril'},);https://endgametools.com/fr/wow-forever/professions/cooking#r20916
+cooking:20916;Truite tête-mithril;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/cooking#r20916
+cooking:20916;Truite tête-mithril;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/cooking#r20916
+enchanting:1245320;Granule de magie;name;De poussière à granules;Granule de magie;https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320
+enchanting:1245320;Granule de magie;outputs;();({'item_id': 247786, 'quantity': 3, 'name': 'Granule de magie'},);https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320
+enchanting:1245320;Granule de magie;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320
+enchanting:1245320;Granule de magie;cast_time_ms;;5125;https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320
+enchanting:14293;Baguette magique inférieure;skill_required;15;10;https://www.wowhead.com/forever/spell=14293/lesser-magic-wand
+enchanting:17180;Barre de thorium enchanté;name;Thorium enchanté;Barre de thorium enchanté;https://endgametools.com/fr/wow-forever/professions/enchanting#r17180
+enchanting:17180;Barre de thorium enchanté;outputs;();({'item_id': 12655, 'quantity': 1, 'name': 'Barre de thorium enchanté'},);https://endgametools.com/fr/wow-forever/professions/enchanting#r17180
+enchanting:17180;Barre de thorium enchanté;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/enchanting#r17180
+enchanting:17180;Barre de thorium enchanté;cast_time_ms;;12500;https://endgametools.com/fr/wow-forever/professions/enchanting#r17180
+engineering:12715;Recette : Carburant de fusée des gobelins;name;Recette du carburant de fusée gobelin;Recette : Carburant de fusée des gobelins;https://endgametools.com/fr/wow-forever/professions/engineering#r12715
+engineering:12715;Recette : Carburant de fusée des gobelins;outputs;();({'item_id': 10644, 'quantity': 1, 'name': 'Recette : Carburant de fusée des gobelins'},);https://endgametools.com/fr/wow-forever/professions/engineering#r12715
+engineering:12715;Recette : Carburant de fusée des gobelins;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r12715
+engineering:12715;Recette : Carburant de fusée des gobelins;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/engineering#r12715
+engineering:12895;Plans : Cylindre damasquiné en mithril;name;Cylindre damasquiné en mithril;Plans : Cylindre damasquiné en mithril;https://endgametools.com/fr/wow-forever/professions/engineering#r12895
+engineering:12895;Plans : Cylindre damasquiné en mithril;outputs;();({'item_id': 10713, 'quantity': 1, 'name': 'Plans : Cylindre damasquiné en mithril'},);https://endgametools.com/fr/wow-forever/professions/engineering#r12895
+engineering:12895;Plans : Cylindre damasquiné en mithril;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r12895
+engineering:12895;Plans : Cylindre damasquiné en mithril;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/engineering#r12895
+engineering:12897;Lunettes gnomes;skill_required;215;210;https://www.wowhead.com/forever/item=10545/gnomish-goggles
+engineering:12905;Bottes-fusées gnomes;skill_required;210;225;https://www.wowhead.com/forever/spell=12905/gnomish-rocket-boots
+engineering:1293088;Batterie 9-60;ingredients;();({'item_id': 3575, 'quantity': 1, 'name': 'Barre de fer'}, {'item_id': 249391, 'quantity': 1, 'name': 'Pyrite'}, {'item_id': 249409, 'quantity': 1, 'name': 'Teinture céruléenne'});https://endgametools.com/fr/wow-forever/professions/engineering#r1293088
+engineering:1293088;Batterie 9-60;outputs;();({'item_id': 274048, 'quantity': 1, 'name': 'Batterie 9-60'},);https://endgametools.com/fr/wow-forever/professions/engineering#r1293088
+engineering:1293088;Batterie 9-60;exclusion;Rendement variable non modélisé;;https://endgametools.com/fr/wow-forever/professions/engineering#r1293088
+engineering:1293088;Batterie 9-60;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/engineering#r1293088
+engineering:13240;Mortier des gobelins;name;Le mortier : rechargé;Mortier des gobelins;https://endgametools.com/fr/wow-forever/professions/engineering#r13240
+engineering:13240;Mortier des gobelins;outputs;();({'item_id': 10577, 'quantity': 1, 'name': 'Mortier des gobelins'},);https://endgametools.com/fr/wow-forever/professions/engineering#r13240
+engineering:13240;Mortier des gobelins;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r13240
+engineering:13240;Mortier des gobelins;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/engineering#r13240
+engineering:23069;Dynamite Ev-Lan II;outputs;();({'item_id': 18588, 'quantity': 1, 'name': 'Dynamite Ev-Lan II'},);https://endgametools.com/fr/wow-forever/professions/engineering#r23069
+engineering:23069;Dynamite Ev-Lan II;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r23069
+engineering:23069;Dynamite Ev-Lan II;cast_time_ms;;5125;https://endgametools.com/fr/wow-forever/professions/engineering#r23069
+engineering:23096;Robot d'alarme gnome;name;Robot d'alarme;Robot d'alarme gnome;https://endgametools.com/fr/wow-forever/professions/engineering#r23096
+engineering:23096;Robot d'alarme gnome;outputs;();"({'item_id': 18645, 'quantity': 1, 'name': ""Robot d'alarme gnome""},)";https://endgametools.com/fr/wow-forever/professions/engineering#r23096
+engineering:23096;Robot d'alarme gnome;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r23096
+engineering:23096;Robot d'alarme gnome;cast_time_ms;;25000;https://endgametools.com/fr/wow-forever/professions/engineering#r23096
+engineering:23489;Transporteur ultra-sécurisé : Gadgetzan;outputs;();({'item_id': 18986, 'quantity': 1, 'name': 'Transporteur ultra-sécurisé : Gadgetzan'},);https://endgametools.com/fr/wow-forever/professions/engineering#r23489
+engineering:23489;Transporteur ultra-sécurisé : Gadgetzan;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r23489
+engineering:23489;Transporteur ultra-sécurisé : Gadgetzan;cast_time_ms;;45000;https://endgametools.com/fr/wow-forever/professions/engineering#r23489
+engineering:26443;Lanceur de chapelets;name;Lanceur de chapelets de fusées;Lanceur de chapelets;https://endgametools.com/fr/wow-forever/professions/engineering#r26443
+engineering:26443;Lanceur de chapelets;outputs;();({'item_id': 21570, 'quantity': 1, 'name': 'Lanceur de chapelets'},);https://endgametools.com/fr/wow-forever/professions/engineering#r26443
+engineering:26443;Lanceur de chapelets;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r26443
+engineering:26443;Lanceur de chapelets;cast_time_ms;;12500;https://endgametools.com/fr/wow-forever/professions/engineering#r26443
+engineering:3928;Caisse d'Ecureuil mécanique;name;Ecureuil mécanique;Caisse d'Ecureuil mécanique;https://endgametools.com/fr/wow-forever/professions/engineering#r3928
+engineering:3928;Caisse d'Ecureuil mécanique;outputs;();"({'item_id': 4401, 'quantity': 1, 'name': ""Caisse d'Ecureuil mécanique""},)";https://endgametools.com/fr/wow-forever/professions/engineering#r3928
+engineering:3928;Caisse d'Ecureuil mécanique;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r3928
+engineering:3928;Caisse d'Ecureuil mécanique;cast_time_ms;;8000;https://endgametools.com/fr/wow-forever/professions/engineering#r3928
+engineering:3929;Poudre d'explosion grossière;skill_required;65;75;https://www.wowhead.com/forever/spells/professions/engineering/max-skill-level:100
+engineering:3931;Dynamite grossière;skill_required;65;75;https://www.wowhead.com/forever/spell=3931/coarse-dynamite
+engineering:8339;Dynamite Ev-Lan;name;2 × Dynamite Ev-Lan;Dynamite Ev-Lan;https://endgametools.com/fr/wow-forever/professions/engineering#r8339
+engineering:8339;Dynamite Ev-Lan;outputs;();({'item_id': 6714, 'quantity': 2, 'name': 'Dynamite Ev-Lan'},);https://endgametools.com/fr/wow-forever/professions/engineering#r8339
+engineering:8339;Dynamite Ev-Lan;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/engineering#r8339
+engineering:8339;Dynamite Ev-Lan;cast_time_ms;;5125;https://endgametools.com/fr/wow-forever/professions/engineering#r8339
+first-aid:3278;Bandage épais en laine;skill_required;75;115;https://www.wowhead.com/forever/skill=129/first-aid
+leatherworking:1255058;Épaulières de furtivité en cuir;outputs;();({'item_id': 252535, 'quantity': 1, 'name': 'Épaulières de furtivité en cuir'},);https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058
+leatherworking:1255058;Épaulières de furtivité en cuir;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058
+leatherworking:1255058;Épaulières de furtivité en cuir;cast_time_ms;;12500;https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058
+leatherworking:1294289;Cache-sabots de centaure;added;;"{""id"": ""leatherworking:1294289"", ""name"": ""Cache-sabots de centaure"", ""profession"": ""Travail du cuir"", ""ingredients"": [{""item_id"": 4304, ""quantity"": 12, ""name"": ""Cuir épais""}, {""item_id"": 8343, ""quantity"": 2, ""name"": ""Bobine de soie lourde""}], ""outputs"": [{""item_id"": 274490, ""quantity"": 1, ""name"": ""Cache-sabots de centaure""}], ""source"": ""https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289"", ""build"": ""1.60.1.71037"", ""restrictions"": [""Armure : 76, +10 Endurance, +4 Agilité"", ""S’apprend avec Patron : cache-sabots de centaure (compétence 165)""], ""cooldown_seconds"": null, ""exclusion"": """", ""skill_required"": 165, ""skill_basis"": ""Seuil explicite dans la recette"", ""skill_source"": ""https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289"", ""tools"": [], ""cast_time_ms"": null, ""timing_source"": """", ""timing_build"": """"}";https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289
+leatherworking:19064;Gantelets en écailles de scorpide épaisses;outputs;();({'item_id': 15078, 'quantity': 1, 'name': 'Gantelets en écailles de scorpide épaisses'},);https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064
+leatherworking:19064;Gantelets en écailles de scorpide épaisses;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064
+leatherworking:19064;Gantelets en écailles de scorpide épaisses;cast_time_ms;;60000;https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064
+mining:10097;Barre de mithril;name;Fonte du mithril;Barre de mithril;https://endgametools.com/fr/wow-forever/professions/mining#r10097
+mining:10097;Barre de mithril;outputs;();({'item_id': 3860, 'quantity': 1, 'name': 'Barre de mithril'},);https://endgametools.com/fr/wow-forever/professions/mining#r10097
+mining:10097;Barre de mithril;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r10097
+mining:10097;Barre de mithril;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r10097
+mining:10098;Barre de vrai-argent;name;Fonte du vrai-argent;Barre de vrai-argent;https://endgametools.com/fr/wow-forever/professions/mining#r10098
+mining:10098;Barre de vrai-argent;outputs;();({'item_id': 6037, 'quantity': 1, 'name': 'Barre de vrai-argent'},);https://endgametools.com/fr/wow-forever/professions/mining#r10098
+mining:10098;Barre de vrai-argent;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r10098
+mining:10098;Barre de vrai-argent;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r10098
+mining:1249637;Barre d’azerothium;name;Fonte d’azerothium;Barre d’azerothium;https://endgametools.com/fr/wow-forever/professions/mining#r1249637
+mining:1249637;Barre d’azerothium;outputs;();({'item_id': 249726, 'quantity': 1, 'name': 'Barre d’azerothium'},);https://endgametools.com/fr/wow-forever/professions/mining#r1249637
+mining:1249637;Barre d’azerothium;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r1249637
+mining:1249637;Barre d’azerothium;cast_time_ms;;5000;https://endgametools.com/fr/wow-forever/professions/mining#r1249637
+mining:1306126;Barre de thorium lourd;name;Fonte de thorium lourd;Barre de thorium lourd;https://endgametools.com/fr/wow-forever/professions/mining#r1306126
+mining:1306126;Barre de thorium lourd;outputs;();({'item_id': 251291, 'quantity': 1, 'name': 'Barre de thorium lourd'},);https://endgametools.com/fr/wow-forever/professions/mining#r1306126
+mining:1306126;Barre de thorium lourd;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r1306126
+mining:1306126;Barre de thorium lourd;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r1306126
+mining:14891;Barre de sombrefer;name;Fonte du sombrefer;Barre de sombrefer;https://endgametools.com/fr/wow-forever/professions/mining#r14891
+mining:14891;Barre de sombrefer;outputs;();({'item_id': 11371, 'quantity': 1, 'name': 'Barre de sombrefer'},);https://endgametools.com/fr/wow-forever/professions/mining#r14891
+mining:14891;Barre de sombrefer;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r14891
+mining:14891;Barre de sombrefer;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r14891
+mining:16153;Barre de thorium;name;Fonte du thorium;Barre de thorium;https://endgametools.com/fr/wow-forever/professions/mining#r16153
+mining:16153;Barre de thorium;outputs;();({'item_id': 12359, 'quantity': 1, 'name': 'Barre de thorium'},);https://endgametools.com/fr/wow-forever/professions/mining#r16153
+mining:16153;Barre de thorium;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r16153
+mining:16153;Barre de thorium;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r16153
+mining:22967;Barre d'élémentium;name;Fonte de l'élémentium;Barre d'élémentium;https://endgametools.com/fr/wow-forever/professions/mining#r22967
+mining:22967;Barre d'élémentium;outputs;();"({'item_id': 17771, 'quantity': 1, 'name': ""Barre d'élémentium""},)";https://endgametools.com/fr/wow-forever/professions/mining#r22967
+mining:22967;Barre d'élémentium;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r22967
+mining:22967;Barre d'élémentium;cast_time_ms;;10000;https://endgametools.com/fr/wow-forever/professions/mining#r22967
+mining:2657;Barre de cuivre;name;Fonte du cuivre;Barre de cuivre;https://endgametools.com/fr/wow-forever/professions/mining#r2657
+mining:2657;Barre de cuivre;outputs;();({'item_id': 2840, 'quantity': 1, 'name': 'Barre de cuivre'},);https://endgametools.com/fr/wow-forever/professions/mining#r2657
+mining:2657;Barre de cuivre;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r2657
+mining:2657;Barre de cuivre;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r2657
+mining:2658;Barre d'argent;name;Fonte de l'argent;Barre d'argent;https://endgametools.com/fr/wow-forever/professions/mining#r2658
+mining:2658;Barre d'argent;outputs;();"({'item_id': 2842, 'quantity': 1, 'name': ""Barre d'argent""},)";https://endgametools.com/fr/wow-forever/professions/mining#r2658
+mining:2658;Barre d'argent;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r2658
+mining:2658;Barre d'argent;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r2658
+mining:2659;Barre de bronze;name;Fonte du bronze;Barre de bronze;https://endgametools.com/fr/wow-forever/professions/mining#r2659
+mining:2659;Barre de bronze;outputs;();({'item_id': 2841, 'quantity': 2, 'name': 'Barre de bronze'},);https://endgametools.com/fr/wow-forever/professions/mining#r2659
+mining:2659;Barre de bronze;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r2659
+mining:2659;Barre de bronze;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r2659
+mining:3304;Barre d'étain;name;Fonte de l'étain;Barre d'étain;https://endgametools.com/fr/wow-forever/professions/mining#r3304
+mining:3304;Barre d'étain;outputs;();"({'item_id': 3576, 'quantity': 1, 'name': ""Barre d'étain""},)";https://endgametools.com/fr/wow-forever/professions/mining#r3304
+mining:3304;Barre d'étain;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r3304
+mining:3304;Barre d'étain;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r3304
+mining:3307;Barre de fer;name;Fonte du fer;Barre de fer;https://endgametools.com/fr/wow-forever/professions/mining#r3307
+mining:3307;Barre de fer;outputs;();({'item_id': 3575, 'quantity': 1, 'name': 'Barre de fer'},);https://endgametools.com/fr/wow-forever/professions/mining#r3307
+mining:3307;Barre de fer;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r3307
+mining:3307;Barre de fer;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r3307
+mining:3308;Barre d'or;name;Fonte de l'or;Barre d'or;https://endgametools.com/fr/wow-forever/professions/mining#r3308
+mining:3308;Barre d'or;outputs;();"({'item_id': 3577, 'quantity': 1, 'name': ""Barre d'or""},)";https://endgametools.com/fr/wow-forever/professions/mining#r3308
+mining:3308;Barre d'or;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r3308
+mining:3308;Barre d'or;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r3308
+mining:3569;Barre d'acier;name;Fonte de l'acier;Barre d'acier;https://endgametools.com/fr/wow-forever/professions/mining#r3569
+mining:3569;Barre d'acier;outputs;();"({'item_id': 3859, 'quantity': 1, 'name': ""Barre d'acier""},)";https://endgametools.com/fr/wow-forever/professions/mining#r3569
+mining:3569;Barre d'acier;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/mining#r3569
+mining:3569;Barre d'acier;cast_time_ms;;3000;https://endgametools.com/fr/wow-forever/professions/mining#r3569
+tailoring:18401;Rouleau d'étoffe runique;skill_required;;205;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor
+tailoring:23665;Epaulières de l'Aube d'argent;skill_required;300;290;https://www.wowhead.com/forever/item=19217/pattern-argent-shoulders
+tailoring:2402;Cape en laine;skill_required;75;55;https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100
+tailoring:2964;Rouleau d'étoffe de laine;skill_required;;55;https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100
+tailoring:3839;Rouleau d'étoffe de soie;skill_required;;100;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor
+tailoring:3848;Épaulières à double couture en laine;name;Epaulières à double couture en laine;Épaulières à double couture en laine;https://endgametools.com/fr/wow-forever/professions/tailoring#r3848
+tailoring:3848;Épaulières à double couture en laine;outputs;();({'item_id': 4314, 'quantity': 1, 'name': 'Épaulières à double couture en laine'},);https://endgametools.com/fr/wow-forever/professions/tailoring#r3848
+tailoring:3848;Épaulières à double couture en laine;exclusion;Résultat objet ou rendement non documenté;;https://endgametools.com/fr/wow-forever/professions/tailoring#r3848
+tailoring:3848;Épaulières à double couture en laine;skill_required;110;85;https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100
+tailoring:3848;Épaulières à double couture en laine;cast_time_ms;;12500;https://endgametools.com/fr/wow-forever/professions/tailoring#r3848
+tailoring:3865;Rouleau de tisse-mage;skill_required;;140;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor
+tailoring:3871;Chemise blanche habillée;skill_required;;135;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor
+tailoring:8764;Gilet terrestre;skill_required;;135;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor
+tailoring:8791;Gilet cramoisi en soie;skill_required;;150;https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor

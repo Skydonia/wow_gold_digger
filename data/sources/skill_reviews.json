@@ -1,0 +1,868 @@
+{
+  "schema_version": 1,
+  "game": "wow-forever",
+  "method": "Lecture des fiches et tables Wowhead Forever ; données de sort/patron uniquement, commentaires exclus. Relevés indexés, dates de crawl variables ; aucun accès direct au serveur de jeu. Révisions limitées aux recettes de même build, composants et production.",
+  "reviews": [
+    {
+      "recipe_id": "enchanting:14293",
+      "name": "Baguette magique inférieure",
+      "skill_required": 10,
+      "previous_skill_required": 15,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=14293/lesser-magic-wand",
+      "evidence": "Quick Facts : compétence Enchanting requise pour le sort, pas le niveau de personnage.",
+      "ingredients": [
+        {
+          "item_id": 4470,
+          "quantity": 1,
+          "name": "Bois simple"
+        },
+        {
+          "item_id": 10938,
+          "quantity": 1,
+          "name": "Essence de magie inférieure"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 11287,
+          "quantity": 1,
+          "name": "Baguette magique inférieure"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:12897",
+      "name": "Lunettes gnomes",
+      "skill_required": 210,
+      "previous_skill_required": 215,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=10545/gnomish-goggles",
+      "evidence": "Table Created by : Engineering: Gnomish Engineer (210).",
+      "ingredients": [
+        {
+          "item_id": 4234,
+          "quantity": 2,
+          "name": "Cuir lourd"
+        },
+        {
+          "item_id": 8151,
+          "quantity": 2,
+          "name": "Flacon de mojo"
+        },
+        {
+          "item_id": 10500,
+          "quantity": 1,
+          "name": "Lunettes de feu"
+        },
+        {
+          "item_id": 10558,
+          "quantity": 2,
+          "name": "Batterie en or"
+        },
+        {
+          "item_id": 10559,
+          "quantity": 1,
+          "name": "Tube en mithril"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 10545,
+          "quantity": 1,
+          "name": "Lunettes gnomes"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:12905",
+      "name": "Bottes-fusées gnomes",
+      "skill_required": 225,
+      "previous_skill_required": 210,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=12905/gnomish-rocket-boots",
+      "evidence": "Quick Facts : Engineering 225 pour apprendre le sort.",
+      "ingredients": [
+        {
+          "item_id": 4234,
+          "quantity": 4,
+          "name": "Cuir lourd"
+        },
+        {
+          "item_id": 4389,
+          "quantity": 4,
+          "name": "Gyrochronatome"
+        },
+        {
+          "item_id": 10026,
+          "quantity": 1,
+          "name": "Bottes noires en tisse-mage"
+        },
+        {
+          "item_id": 10505,
+          "quantity": 8,
+          "name": "Poudre noire solide"
+        },
+        {
+          "item_id": 10559,
+          "quantity": 2,
+          "name": "Tube en mithril"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 10724,
+          "quantity": 1,
+          "name": "Bottes-fusées gnomes"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:3929",
+      "name": "Poudre d'explosion grossière",
+      "skill_required": 75,
+      "previous_skill_required": 65,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/engineering/max-skill-level:100",
+      "evidence": "Ligne Coarse Blasting Powder : Trainer, Engineering 75.",
+      "ingredients": [
+        {
+          "item_id": 2836,
+          "quantity": 1,
+          "name": "Pierre grossière"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4364,
+          "quantity": 1,
+          "name": "Poudre d'explosion grossière"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:3931",
+      "name": "Dynamite grossière",
+      "skill_required": 75,
+      "previous_skill_required": 65,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=3931/coarse-dynamite",
+      "evidence": "Quick Facts : Engineering 75 pour apprendre le sort.",
+      "ingredients": [
+        {
+          "item_id": 2589,
+          "quantity": 1,
+          "name": "Etoffe de lin"
+        },
+        {
+          "item_id": 4364,
+          "quantity": 3,
+          "name": "Poudre d'explosion grossière"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4365,
+          "quantity": 2,
+          "name": "Dynamite grossière"
+        }
+      ]
+    },
+    {
+      "recipe_id": "first-aid:3278",
+      "name": "Bandage épais en laine",
+      "skill_required": 115,
+      "previous_skill_required": 75,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/skill=129/first-aid",
+      "evidence": "Ligne Heavy Wool Bandage : Trainer, First Aid 115. Le niveau 75 dans le tooltip objet est un prérequis d’utilisation, pas d’apprentissage.",
+      "ingredients": [
+        {
+          "item_id": 2592,
+          "quantity": 2,
+          "name": "Etoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 3531,
+          "quantity": 1,
+          "name": "Bandage épais en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:2402",
+      "name": "Cape en laine",
+      "skill_required": 55,
+      "previous_skill_required": 75,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Woolen Cape : Trainer, Tailoring 55.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 1,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2997,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 2584,
+          "quantity": 1,
+          "name": "Cape en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "skill_required": 85,
+      "previous_skill_required": 110,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Double-stitched Woolen Shoulders : Trainer, Tailoring 85.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2997,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4314,
+          "quantity": 1,
+          "name": "Épaulières à double couture en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:23665",
+      "name": "Epaulières de l'Aube d'argent",
+      "skill_required": 290,
+      "previous_skill_required": 300,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19217/pattern-argent-shoulders",
+      "evidence": "Patron d’apprentissage : Tailoring 290.",
+      "ingredients": [
+        {
+          "item_id": 12809,
+          "quantity": 2,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 14227,
+          "quantity": 2,
+          "name": "Soie d'araignée toilacier"
+        },
+        {
+          "item_id": 14342,
+          "quantity": 5,
+          "name": "Etoffe lunaire"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19059,
+          "quantity": 1,
+          "name": "Epaulières de l'Aube d'argent"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:18401",
+      "name": "Rouleau d'étoffe runique",
+      "skill_required": 205,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Runecloth : Trainer, Tailoring 205 ; jaune 210.",
+      "ingredients": [
+        {
+          "item_id": 14047,
+          "quantity": 5,
+          "name": "Etoffe runique"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 14048,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe runique"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:2964",
+      "name": "Rouleau d'étoffe de laine",
+      "skill_required": 55,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Bolt of Woolen Cloth : Trainer, Tailoring 55 ; jaune 70.",
+      "ingredients": [
+        {
+          "item_id": 2592,
+          "quantity": 3,
+          "name": "Etoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 2997,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3839",
+      "name": "Rouleau d'étoffe de soie",
+      "skill_required": 100,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Silk Cloth : Trainer, Tailoring 100 ; jaune 110.",
+      "ingredients": [
+        {
+          "item_id": 4306,
+          "quantity": 4,
+          "name": "Etoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4305,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3865",
+      "name": "Rouleau de tisse-mage",
+      "skill_required": 140,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Mageweave : Trainer, Tailoring 140 ; jaune 145.",
+      "ingredients": [
+        {
+          "item_id": 4338,
+          "quantity": 5,
+          "name": "Etoffe de tisse-mage"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4339,
+          "quantity": 1,
+          "name": "Rouleau de tisse-mage"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8791",
+      "name": "Gilet cramoisi en soie",
+      "skill_required": 150,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Crimson Silk Vest : Trainer, Tailoring 150.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2604,
+          "quantity": 2,
+          "name": "Teinture rouge"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 4,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7058,
+          "quantity": 1,
+          "name": "Gilet cramoisi en soie"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3871",
+      "name": "Chemise blanche habillée",
+      "skill_required": 135,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Formal White Shirt : Trainer, Tailoring 135.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 1,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2324,
+          "quantity": 2,
+          "name": "Décolorant"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4334,
+          "quantity": 1,
+          "name": "Chemise blanche habillée"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8764",
+      "name": "Gilet terrestre",
+      "skill_required": 135,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Earthen Vest : Trainer, Tailoring 135.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de soie"
+        },
+        {
+          "item_id": 7067,
+          "quantity": 1,
+          "name": "Terre élémentaire"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7051,
+          "quantity": 1,
+          "name": "Gilet terrestre"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249630",
+      "name": "Teinture céruléenne",
+      "skill_required": 40,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Cerulean Dye, minimum 40, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3371,
+          "quantity": 1,
+          "name": "Fiole vide"
+        },
+        {
+          "item_id": 249399,
+          "quantity": 2,
+          "name": "Lichen à volants"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249409,
+          "quantity": 1,
+          "name": "Teinture céruléenne"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249631",
+      "name": "Teinture magenta",
+      "skill_required": 120,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Magenta Dye, minimum 120, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3372,
+          "quantity": 1,
+          "name": "Fiole plombée"
+        },
+        {
+          "item_id": 249424,
+          "quantity": 2,
+          "name": "Chaperose"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249430,
+          "quantity": 1,
+          "name": "Teinture magenta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249632",
+      "name": "Teinture viridienne",
+      "skill_required": 220,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Viridian Dye, minimum 220, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 8925,
+          "quantity": 1,
+          "name": "Fiole de cristal"
+        },
+        {
+          "item_id": 249274,
+          "quantity": 2,
+          "name": "Stranglevigne"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249431,
+          "quantity": 1,
+          "name": "Teinture viridienne"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249633",
+      "name": "Acide sulfurique",
+      "skill_required": 40,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Sulfuric Acid, minimum 40, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3371,
+          "quantity": 1,
+          "name": "Fiole vide"
+        },
+        {
+          "item_id": 249391,
+          "quantity": 2,
+          "name": "Pyrite"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249410,
+          "quantity": 1,
+          "name": "Acide sulfurique"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1250775",
+      "name": "Breuvage de révélation",
+      "skill_required": 205,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Revealing Draught, minimum 205 ; origine d’apprentissage non confirmée.",
+      "ingredients": [
+        {
+          "item_id": 3358,
+          "quantity": 1,
+          "name": "Moustache de Khadgar"
+        },
+        {
+          "item_id": 3372,
+          "quantity": 1,
+          "name": "Fiole plombée"
+        },
+        {
+          "item_id": 3818,
+          "quantity": 3,
+          "name": "Pâlerette"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "recipe_id": "tailoring:18560",
+      "name": "Etoffe lunaire",
+      "skill_required": 230,
+      "previous_skill_required": 230,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=14526/pattern-mooncloth",
+      "evidence": "Patron d’apprentissage : Tailoring 230.",
+      "ingredients": [
+        {
+          "item_id": 14256,
+          "quantity": 2,
+          "name": "Gangrétoffe"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 14342,
+          "quantity": 1,
+          "name": "Etoffe lunaire"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:1257013",
+      "name": "Sac de composants en lin",
+      "skill_required": 5,
+      "previous_skill_required": 5,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=253665/pattern-linen-reagent-bag",
+      "evidence": "Patron d’apprentissage : Tailoring 5.",
+      "ingredients": [
+        {
+          "item_id": 2320,
+          "quantity": 6,
+          "name": "Bobine de fil grossier"
+        },
+        {
+          "item_id": 2996,
+          "quantity": 6,
+          "name": "Rouleau d'étoffe en lin"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 253664,
+          "quantity": 1,
+          "name": "Sac de composants en lin"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "skill_required": 125,
+      "previous_skill_required": 125,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=274049/schematic-9-60-battery-pack",
+      "evidence": "Schéma d’apprentissage : Engineering 125 ; production Batterie 9-60, trois composants.",
+      "ingredients": [
+        {
+          "item_id": 3575,
+          "quantity": 1,
+          "name": "Barre de fer"
+        },
+        {
+          "item_id": 249391,
+          "quantity": 1,
+          "name": "Pyrite"
+        },
+        {
+          "item_id": 249409,
+          "quantity": 1,
+          "name": "Teinture céruléenne"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 274048,
+          "quantity": 1,
+          "name": "Batterie 9-60"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "skill_required": 275,
+      "previous_skill_required": 275,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=12958/recipe-transmute-arcanite",
+      "evidence": "Recette d’apprentissage : Alchemy 275 ; production Arcanite Bar.",
+      "ingredients": [
+        {
+          "item_id": 12359,
+          "quantity": 1,
+          "name": "Barre de thorium"
+        },
+        {
+          "item_id": 12363,
+          "quantity": 1,
+          "name": "Cristal des arcanes"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 12360,
+          "quantity": 1,
+          "name": "Barre d'arcanite"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:23664",
+      "name": "Bottes de l'Aube d'argent",
+      "skill_required": 290,
+      "previous_skill_required": 290,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19216/pattern-argent-boots",
+      "evidence": "Patron : Tailoring 290. Valeur conservée : le guide indique 255, conflit non résolu ; le prérequis explicite du patron est privilégié.",
+      "ingredients": [
+        {
+          "item_id": 12809,
+          "quantity": 2,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 12810,
+          "quantity": 4,
+          "name": "Cuir enchanté"
+        },
+        {
+          "item_id": 13926,
+          "quantity": 2,
+          "name": "Perle dorée"
+        },
+        {
+          "item_id": 14048,
+          "quantity": 6,
+          "name": "Rouleau d'étoffe runique"
+        },
+        {
+          "item_id": 14227,
+          "quantity": 2,
+          "name": "Soie d'araignée toilacier"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19056,
+          "quantity": 1,
+          "name": "Bottes de l'Aube d'argent"
+        }
+      ]
+    },
+    {
+      "recipe_id": "leatherworking:23706",
+      "name": "Mantelet doré de l'Aube",
+      "skill_required": 300,
+      "previous_skill_required": 300,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19329/pattern-golden-mantle-of-the-dawn",
+      "evidence": "Patron d’apprentissage : Leatherworking 300 ; ne pas remplacer par la référence Classic 295 de Wowcalc.",
+      "ingredients": [
+        {
+          "item_id": 12803,
+          "quantity": 4,
+          "name": "Essence de vie"
+        },
+        {
+          "item_id": 12809,
+          "quantity": 4,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 12810,
+          "quantity": 8,
+          "name": "Cuir enchanté"
+        },
+        {
+          "item_id": 14341,
+          "quantity": 2,
+          "name": "Fil runique"
+        },
+        {
+          "item_id": 15407,
+          "quantity": 2,
+          "name": "Peau robuste traitée"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19058,
+          "quantity": 1,
+          "name": "Mantelet doré de l'Aube"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8776",
+      "name": "Ceinture en lin",
+      "skill_required": 15,
+      "previous_skill_required": 15,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Linen Belt : Trainer, Tailoring 15 ; ne pas remplacer par la référence Classic 10 de Wowcalc.",
+      "ingredients": [
+        {
+          "item_id": 2320,
+          "quantity": 1,
+          "name": "Bobine de fil grossier"
+        },
+        {
+          "item_id": 2996,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe en lin"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7026,
+          "quantity": 1,
+          "name": "Ceinture en lin"
+        }
+      ]
+    }
+  ]
+}

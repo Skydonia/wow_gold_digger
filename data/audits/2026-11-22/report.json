@@ -1,0 +1,4712 @@
+{
+  "checked_at": "2026-11-22T09:00:47.970850+00:00",
+  "game": "wow-forever",
+  "catalog_build": "1.60.1.71037",
+  "summary": {
+    "items": 21983,
+    "items_added": 2,
+    "recipes": 2233,
+    "recipes_added": 1,
+    "recipes_quantities_checked_against_french_source": 2233,
+    "variable_or_unreadable_recipes_excluded": 0,
+    "existing_recipes_with_corrected_output": 46,
+    "skills_corrected": 9,
+    "skills_completed": 12,
+    "wowhead_skill_reviews": 28,
+    "unknown_skills": 276,
+    "known_positive_timings": 2215
+  },
+  "limits": [
+    "Les 21 983 noms/identifiants et les recettes sont comparés au corpus Endgame Forever : ce contrôle ne constitue pas une confirmation indépendante de chaque donnée du jeu.",
+    "Wowhead recoupé sur 28 niveaux seulement ; accès HTML direct refusé (403), consultation des fiches et résultats indexés. Commentaires utilisateurs non utilisés.",
+    "Les références Classic de Wowcalc ne corrigent pas automatiquement les niveaux Forever. Les seuils jaunes ne sont pas des seuils d’apprentissage.",
+    "Les seuils non documentés restent inconnus. Disponibilité en jeu, recettes liées, changements serveur et exhaustivité du catalogue non certifiés.",
+    "Prix PNJ et offres marchandes conservés, pas de nouveau contrôle exhaustif des prix. Les catégories du filtre restent issues du CSV HDV.",
+    "Durées réassociées au corpus Wowcalc antérieur (1.60.1.70888), seulement lorsque composants et produits concordent."
+  ],
+  "source_manifest": [
+    {
+      "url": "https://endgametools.com/fr/wow-forever/items/search.json",
+      "file": "data/cache/audit-2026-11-22/d5664a537ed1bb091730ef1b70dd3547015322513c49f59f513f10d78e46cc7e.html",
+      "sha256": "45cb994162ff8bb556b07cb8d2caa2f472de60d7f874b90399ad77cb3bc719f8"
+    },
+    {
+      "url": "https://endgametools.com/en/wow-forever/items/search.json",
+      "file": "data/cache/audit-2026-11-22/f4a7ca40e2ac486622c845f93469cc7cf8827bc2cac918a9dfe65a89066225f2.html",
+      "sha256": "2401dcd6463fe2efb6b40008e833f41a5abd7b98d8c229073e4b662704e4f315"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/alchemy",
+      "file": "data/cache/audit-2026-11-22/dc0d2f50f4f3a515374c9a20477c4116d635aafb8e5034d875aedc97399b0f9c.html",
+      "sha256": "05439c71e03f38abb904ecc608e18a0243e7a123e52a00e0b83f14b52523eb3c"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/alchemy",
+      "file": "data/cache/audit-2026-11-22/c0c7e01e27290195871b7c60af04a388b9bc415d14434e70ff6df3f927a2595b.html",
+      "sha256": "ab71626e653aef48c059f6f4ee289678e245426d75730869f31473f8cb7ec1cb"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/blacksmithing",
+      "file": "data/cache/audit-2026-11-22/bc36e94c18dba1e44ff3e5cfa40f4e41d3a42c3da50134bdc9b5330c9f8d71d7.html",
+      "sha256": "f10e43be302c770e818b0984953aded68ffb21fdcca1e329ae325e9286b1f685"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/blacksmithing",
+      "file": "data/cache/audit-2026-11-22/71ae58745c5e85e32973b52100f11c1d410b4998d0e6416c40d0d027f16efbad.html",
+      "sha256": "909b5dd8f6a98b038f126b10ac1315922b8c6e366359d8431810a29a918b9e3e"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/enchanting",
+      "file": "data/cache/audit-2026-11-22/87d0f384a117dafb34163cac08b2340b03b6d89a38e56422768196af320f72cd.html",
+      "sha256": "b8a749e1573e9114bf9e660c3dd4b3d6e8440d35c3e8d0fec21fed84ebc32acf"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/enchanting",
+      "file": "data/cache/audit-2026-11-22/5788d74b733dfe136f3420d5b0a2d654c7486a139b2caf57efa00851b948e649.html",
+      "sha256": "f329c3a7a6ae7f4134f9b883e80d903045f1c490e226e175ff6b525ea572f3cb"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/engineering",
+      "file": "data/cache/audit-2026-11-22/3d25482352c157741447d600627d08ee7313c3e9bf0a02297464170ce9cce11d.html",
+      "sha256": "af499e0d62b0e2124c207d6fe4a6253cb4aad2a5b6485ccf9a3feabc3df61d96"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/engineering",
+      "file": "data/cache/audit-2026-11-22/0080c61eb59a858bbfe5427dbbc82137fc654e9723e7c772f484a0a8954335e2.html",
+      "sha256": "358885657ce14ad4cf8929e2db8b574af4c90548ce05e687a905aced15ba9568"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/herbalism",
+      "file": "data/cache/audit-2026-11-22/c0414728c0a0a8a1afe914438d1bd01b6ecdeaadb74a44a30a08c993718b8acb.html",
+      "sha256": "7b098bc8259f43d933cd62374ccc9c8de97a28e5a7143fa6ce2895481fb1aaf6"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/leatherworking",
+      "file": "data/cache/audit-2026-11-22/b3100d746c3bbc9596e7be91f16f551511ea0b9b2ace03fe1e96a17d62ba260e.html",
+      "sha256": "d9432cab5ebfa4b520bfc69e78f6f8f1ef4524843fc5a53b55ad44e51db2d6f7"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/leatherworking",
+      "file": "data/cache/audit-2026-11-22/eec2e5587d5ec37530fa2760bb886d86b9d09e4559d9003674c5b940995e5594.html",
+      "sha256": "169e2dfc2f691d92adb80a9dae4a2f1f09d2d4b19ccb98e1cfd05cbf88d5f0b6"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/mining",
+      "file": "data/cache/audit-2026-11-22/a9551b2ad3138e321a2f3c30d3dde639b62a0db67acf3f3003fca0ec4f4306bf.html",
+      "sha256": "4b152ad16efc924bd97c0ca7018a3cd2375514cde7fd07db9e71406c333be0d4"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/skinning",
+      "file": "data/cache/audit-2026-11-22/a2eaf68c033ef2aa4dd47e85c40b5f439df9b0b3330195224f8c7de74bcdf7fc.html",
+      "sha256": "91d02a6e7ef80d0662b8e7fd5064689cf56dd2b0547d2df087a9e604debee7e7"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/tailoring",
+      "file": "data/cache/audit-2026-11-22/c8f91245bdfc8466f907b3c2fac7cbfa66e4ae4910c2fef612996891afbada48.html",
+      "sha256": "8edc052e17ba1f12a5443ee79501d0162e1a61c24a6edb06d2633e86d2d8002b"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/tailoring",
+      "file": "data/cache/audit-2026-11-22/048a92206968b05f71769dfa208e78bfc68c7ce57eb5116b38702a27b256f7a0.html",
+      "sha256": "d979a37822f21c92fa1557f7e54a6fd83ec78294c85287c384a61f8e32251464"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/cooking",
+      "file": "data/cache/audit-2026-11-22/2ddd064c9aa689ea910356b41cd5487ccbb28c104235d6ed779c619b7e5aba44.html",
+      "sha256": "d37b20e3e01ec1947a0f2ce1b356ed50a427b905300f93e3980f0a0967393b2a"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/cooking",
+      "file": "data/cache/audit-2026-11-22/00d3edb8bd87173c11d9a1dd7f44f6d843e80ee82460b4b9fd3336eb7f4d34d4.html",
+      "sha256": "d7a39ab74535609309e8118bb45c7e7836cb642be9afaf5777c34462f22408e6"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/first-aid",
+      "file": "data/cache/audit-2026-11-22/3f41620dca54b9c9ea6fd58dbeedd7d90c15cd1d8d0c82a5066e9e3fd5275be6.html",
+      "sha256": "0b73eab1130723880d5aaa41fc3d5371bbaf442287654dfc794cb0b3c8c92624"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/leveling/first-aid",
+      "file": "data/cache/audit-2026-11-22/964546326fd7028070a4ad9966ea9b56c60849e2983d1d6a20580066ab2a282d.html",
+      "sha256": "5828b606b6c4f4dc4680bdc81de0068181b3e4696a1b857f43bfbfc76c4cc3f8"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/fishing",
+      "file": "data/cache/audit-2026-11-22/a0cac5a63ae260428ca530ecb20d3140b29de7e6f1df92f69e4c788a63cd4b09.html",
+      "sha256": "baf2794c4f2df3044aca01e65e03fa5ba5376ef4be5f19e08c90f8b509468e1e"
+    },
+    {
+      "url": "https://endgametools.com/fr/wow-forever/professions/poisons",
+      "file": "data/cache/audit-2026-11-22/a69c9e1db08b08a6f3b0524db75122463740eb51e2676755d851000c0f8b2eb7.html",
+      "sha256": "037e17c9a4a9e3b75fefcc591df131db9c95ae903a9044554ef2530ba76d55aa"
+    }
+  ],
+  "skill_reviews": [
+    {
+      "recipe_id": "enchanting:14293",
+      "name": "Baguette magique inférieure",
+      "skill_required": 10,
+      "previous_skill_required": 15,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=14293/lesser-magic-wand",
+      "evidence": "Quick Facts : compétence Enchanting requise pour le sort, pas le niveau de personnage.",
+      "ingredients": [
+        {
+          "item_id": 4470,
+          "quantity": 1,
+          "name": "Bois simple"
+        },
+        {
+          "item_id": 10938,
+          "quantity": 1,
+          "name": "Essence de magie inférieure"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 11287,
+          "quantity": 1,
+          "name": "Baguette magique inférieure"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:12897",
+      "name": "Lunettes gnomes",
+      "skill_required": 210,
+      "previous_skill_required": 215,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=10545/gnomish-goggles",
+      "evidence": "Table Created by : Engineering: Gnomish Engineer (210).",
+      "ingredients": [
+        {
+          "item_id": 4234,
+          "quantity": 2,
+          "name": "Cuir lourd"
+        },
+        {
+          "item_id": 8151,
+          "quantity": 2,
+          "name": "Flacon de mojo"
+        },
+        {
+          "item_id": 10500,
+          "quantity": 1,
+          "name": "Lunettes de feu"
+        },
+        {
+          "item_id": 10558,
+          "quantity": 2,
+          "name": "Batterie en or"
+        },
+        {
+          "item_id": 10559,
+          "quantity": 1,
+          "name": "Tube en mithril"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 10545,
+          "quantity": 1,
+          "name": "Lunettes gnomes"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:12905",
+      "name": "Bottes-fusées gnomes",
+      "skill_required": 225,
+      "previous_skill_required": 210,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=12905/gnomish-rocket-boots",
+      "evidence": "Quick Facts : Engineering 225 pour apprendre le sort.",
+      "ingredients": [
+        {
+          "item_id": 4234,
+          "quantity": 4,
+          "name": "Cuir lourd"
+        },
+        {
+          "item_id": 4389,
+          "quantity": 4,
+          "name": "Gyrochronatome"
+        },
+        {
+          "item_id": 10026,
+          "quantity": 1,
+          "name": "Bottes noires en tisse-mage"
+        },
+        {
+          "item_id": 10505,
+          "quantity": 8,
+          "name": "Poudre noire solide"
+        },
+        {
+          "item_id": 10559,
+          "quantity": 2,
+          "name": "Tube en mithril"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 10724,
+          "quantity": 1,
+          "name": "Bottes-fusées gnomes"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:3929",
+      "name": "Poudre d'explosion grossière",
+      "skill_required": 75,
+      "previous_skill_required": 65,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/engineering/max-skill-level:100",
+      "evidence": "Ligne Coarse Blasting Powder : Trainer, Engineering 75.",
+      "ingredients": [
+        {
+          "item_id": 2836,
+          "quantity": 1,
+          "name": "Pierre grossière"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4364,
+          "quantity": 1,
+          "name": "Poudre d'explosion grossière"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:3931",
+      "name": "Dynamite grossière",
+      "skill_required": 75,
+      "previous_skill_required": 65,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spell=3931/coarse-dynamite",
+      "evidence": "Quick Facts : Engineering 75 pour apprendre le sort.",
+      "ingredients": [
+        {
+          "item_id": 2589,
+          "quantity": 1,
+          "name": "Etoffe de lin"
+        },
+        {
+          "item_id": 4364,
+          "quantity": 3,
+          "name": "Poudre d'explosion grossière"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4365,
+          "quantity": 2,
+          "name": "Dynamite grossière"
+        }
+      ]
+    },
+    {
+      "recipe_id": "first-aid:3278",
+      "name": "Bandage épais en laine",
+      "skill_required": 115,
+      "previous_skill_required": 75,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/skill=129/first-aid",
+      "evidence": "Ligne Heavy Wool Bandage : Trainer, First Aid 115. Le niveau 75 dans le tooltip objet est un prérequis d’utilisation, pas d’apprentissage.",
+      "ingredients": [
+        {
+          "item_id": 2592,
+          "quantity": 2,
+          "name": "Etoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 3531,
+          "quantity": 1,
+          "name": "Bandage épais en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:2402",
+      "name": "Cape en laine",
+      "skill_required": 55,
+      "previous_skill_required": 75,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Woolen Cape : Trainer, Tailoring 55.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 1,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2997,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 2584,
+          "quantity": 1,
+          "name": "Cape en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "skill_required": 85,
+      "previous_skill_required": 110,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Double-stitched Woolen Shoulders : Trainer, Tailoring 85.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2997,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4314,
+          "quantity": 1,
+          "name": "Épaulières à double couture en laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:23665",
+      "name": "Epaulières de l'Aube d'argent",
+      "skill_required": 290,
+      "previous_skill_required": 300,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19217/pattern-argent-shoulders",
+      "evidence": "Patron d’apprentissage : Tailoring 290.",
+      "ingredients": [
+        {
+          "item_id": 12809,
+          "quantity": 2,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 14227,
+          "quantity": 2,
+          "name": "Soie d'araignée toilacier"
+        },
+        {
+          "item_id": 14342,
+          "quantity": 5,
+          "name": "Etoffe lunaire"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19059,
+          "quantity": 1,
+          "name": "Epaulières de l'Aube d'argent"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:18401",
+      "name": "Rouleau d'étoffe runique",
+      "skill_required": 205,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Runecloth : Trainer, Tailoring 205 ; jaune 210.",
+      "ingredients": [
+        {
+          "item_id": 14047,
+          "quantity": 5,
+          "name": "Etoffe runique"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 14048,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe runique"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:2964",
+      "name": "Rouleau d'étoffe de laine",
+      "skill_required": 55,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Bolt of Woolen Cloth : Trainer, Tailoring 55 ; jaune 70.",
+      "ingredients": [
+        {
+          "item_id": 2592,
+          "quantity": 3,
+          "name": "Etoffe de laine"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 2997,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de laine"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3839",
+      "name": "Rouleau d'étoffe de soie",
+      "skill_required": 100,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Silk Cloth : Trainer, Tailoring 100 ; jaune 110.",
+      "ingredients": [
+        {
+          "item_id": 4306,
+          "quantity": 4,
+          "name": "Etoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4305,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3865",
+      "name": "Rouleau de tisse-mage",
+      "skill_required": 140,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Bolt of Mageweave : Trainer, Tailoring 140 ; jaune 145.",
+      "ingredients": [
+        {
+          "item_id": 4338,
+          "quantity": 5,
+          "name": "Etoffe de tisse-mage"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4339,
+          "quantity": 1,
+          "name": "Rouleau de tisse-mage"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8791",
+      "name": "Gilet cramoisi en soie",
+      "skill_required": 150,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Crimson Silk Vest : Trainer, Tailoring 150.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2604,
+          "quantity": 2,
+          "name": "Teinture rouge"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 4,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7058,
+          "quantity": 1,
+          "name": "Gilet cramoisi en soie"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:3871",
+      "name": "Chemise blanche habillée",
+      "skill_required": 135,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Formal White Shirt : Trainer, Tailoring 135.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 1,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 2324,
+          "quantity": 2,
+          "name": "Décolorant"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de soie"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 4334,
+          "quantity": 1,
+          "name": "Chemise blanche habillée"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8764",
+      "name": "Gilet terrestre",
+      "skill_required": 135,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor",
+      "evidence": "Ligne Earthen Vest : Trainer, Tailoring 135.",
+      "ingredients": [
+        {
+          "item_id": 2321,
+          "quantity": 2,
+          "name": "Bobine de fil raffiné"
+        },
+        {
+          "item_id": 4305,
+          "quantity": 3,
+          "name": "Rouleau d'étoffe de soie"
+        },
+        {
+          "item_id": 7067,
+          "quantity": 1,
+          "name": "Terre élémentaire"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7051,
+          "quantity": 1,
+          "name": "Gilet terrestre"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249630",
+      "name": "Teinture céruléenne",
+      "skill_required": 40,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Cerulean Dye, minimum 40, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3371,
+          "quantity": 1,
+          "name": "Fiole vide"
+        },
+        {
+          "item_id": 249399,
+          "quantity": 2,
+          "name": "Lichen à volants"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249409,
+          "quantity": 1,
+          "name": "Teinture céruléenne"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249631",
+      "name": "Teinture magenta",
+      "skill_required": 120,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Magenta Dye, minimum 120, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3372,
+          "quantity": 1,
+          "name": "Fiole plombée"
+        },
+        {
+          "item_id": 249424,
+          "quantity": 2,
+          "name": "Chaperose"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249430,
+          "quantity": 1,
+          "name": "Teinture magenta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249632",
+      "name": "Teinture viridienne",
+      "skill_required": 220,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Viridian Dye, minimum 220, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 8925,
+          "quantity": 1,
+          "name": "Fiole de cristal"
+        },
+        {
+          "item_id": 249274,
+          "quantity": 2,
+          "name": "Stranglevigne"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249431,
+          "quantity": 1,
+          "name": "Teinture viridienne"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1249633",
+      "name": "Acide sulfurique",
+      "skill_required": 40,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Sulfuric Acid, minimum 40, Trainer.",
+      "ingredients": [
+        {
+          "item_id": 3371,
+          "quantity": 1,
+          "name": "Fiole vide"
+        },
+        {
+          "item_id": 249391,
+          "quantity": 2,
+          "name": "Pyrite"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 249410,
+          "quantity": 1,
+          "name": "Acide sulfurique"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:1250775",
+      "name": "Breuvage de révélation",
+      "skill_required": 205,
+      "previous_skill_required": null,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+      "evidence": "Table des nouvelles recettes : Revealing Draught, minimum 205 ; origine d’apprentissage non confirmée.",
+      "ingredients": [
+        {
+          "item_id": 3358,
+          "quantity": 1,
+          "name": "Moustache de Khadgar"
+        },
+        {
+          "item_id": 3372,
+          "quantity": 1,
+          "name": "Fiole plombée"
+        },
+        {
+          "item_id": 3818,
+          "quantity": 3,
+          "name": "Pâlerette"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "recipe_id": "tailoring:18560",
+      "name": "Etoffe lunaire",
+      "skill_required": 230,
+      "previous_skill_required": 230,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=14526/pattern-mooncloth",
+      "evidence": "Patron d’apprentissage : Tailoring 230.",
+      "ingredients": [
+        {
+          "item_id": 14256,
+          "quantity": 2,
+          "name": "Gangrétoffe"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 14342,
+          "quantity": 1,
+          "name": "Etoffe lunaire"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:1257013",
+      "name": "Sac de composants en lin",
+      "skill_required": 5,
+      "previous_skill_required": 5,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=253665/pattern-linen-reagent-bag",
+      "evidence": "Patron d’apprentissage : Tailoring 5.",
+      "ingredients": [
+        {
+          "item_id": 2320,
+          "quantity": 6,
+          "name": "Bobine de fil grossier"
+        },
+        {
+          "item_id": 2996,
+          "quantity": 6,
+          "name": "Rouleau d'étoffe en lin"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 253664,
+          "quantity": 1,
+          "name": "Sac de composants en lin"
+        }
+      ]
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "skill_required": 125,
+      "previous_skill_required": 125,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=274049/schematic-9-60-battery-pack",
+      "evidence": "Schéma d’apprentissage : Engineering 125 ; production Batterie 9-60, trois composants.",
+      "ingredients": [
+        {
+          "item_id": 3575,
+          "quantity": 1,
+          "name": "Barre de fer"
+        },
+        {
+          "item_id": 249391,
+          "quantity": 1,
+          "name": "Pyrite"
+        },
+        {
+          "item_id": 249409,
+          "quantity": 1,
+          "name": "Teinture céruléenne"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 274048,
+          "quantity": 1,
+          "name": "Batterie 9-60"
+        }
+      ]
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "skill_required": 275,
+      "previous_skill_required": 275,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=12958/recipe-transmute-arcanite",
+      "evidence": "Recette d’apprentissage : Alchemy 275 ; production Arcanite Bar.",
+      "ingredients": [
+        {
+          "item_id": 12359,
+          "quantity": 1,
+          "name": "Barre de thorium"
+        },
+        {
+          "item_id": 12363,
+          "quantity": 1,
+          "name": "Cristal des arcanes"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 12360,
+          "quantity": 1,
+          "name": "Barre d'arcanite"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:23664",
+      "name": "Bottes de l'Aube d'argent",
+      "skill_required": 290,
+      "previous_skill_required": 290,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19216/pattern-argent-boots",
+      "evidence": "Patron : Tailoring 290. Valeur conservée : le guide indique 255, conflit non résolu ; le prérequis explicite du patron est privilégié.",
+      "ingredients": [
+        {
+          "item_id": 12809,
+          "quantity": 2,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 12810,
+          "quantity": 4,
+          "name": "Cuir enchanté"
+        },
+        {
+          "item_id": 13926,
+          "quantity": 2,
+          "name": "Perle dorée"
+        },
+        {
+          "item_id": 14048,
+          "quantity": 6,
+          "name": "Rouleau d'étoffe runique"
+        },
+        {
+          "item_id": 14227,
+          "quantity": 2,
+          "name": "Soie d'araignée toilacier"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19056,
+          "quantity": 1,
+          "name": "Bottes de l'Aube d'argent"
+        }
+      ]
+    },
+    {
+      "recipe_id": "leatherworking:23706",
+      "name": "Mantelet doré de l'Aube",
+      "skill_required": 300,
+      "previous_skill_required": 300,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/item=19329/pattern-golden-mantle-of-the-dawn",
+      "evidence": "Patron d’apprentissage : Leatherworking 300 ; ne pas remplacer par la référence Classic 295 de Wowcalc.",
+      "ingredients": [
+        {
+          "item_id": 12803,
+          "quantity": 4,
+          "name": "Essence de vie"
+        },
+        {
+          "item_id": 12809,
+          "quantity": 4,
+          "name": "Pierre de gardien"
+        },
+        {
+          "item_id": 12810,
+          "quantity": 8,
+          "name": "Cuir enchanté"
+        },
+        {
+          "item_id": 14341,
+          "quantity": 2,
+          "name": "Fil runique"
+        },
+        {
+          "item_id": 15407,
+          "quantity": 2,
+          "name": "Peau robuste traitée"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 19058,
+          "quantity": 1,
+          "name": "Mantelet doré de l'Aube"
+        }
+      ]
+    },
+    {
+      "recipe_id": "tailoring:8776",
+      "name": "Ceinture en lin",
+      "skill_required": 15,
+      "previous_skill_required": 15,
+      "matched_catalog_build": "1.60.1.71037",
+      "checked_on": "2026-11-22",
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100",
+      "evidence": "Ligne Linen Belt : Trainer, Tailoring 15 ; ne pas remplacer par la référence Classic 10 de Wowcalc.",
+      "ingredients": [
+        {
+          "item_id": 2320,
+          "quantity": 1,
+          "name": "Bobine de fil grossier"
+        },
+        {
+          "item_id": 2996,
+          "quantity": 1,
+          "name": "Rouleau d'étoffe en lin"
+        }
+      ],
+      "outputs": [
+        {
+          "item_id": 7026,
+          "quantity": 1,
+          "name": "Ceinture en lin"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "recipe_id": "alchemy:11479",
+      "name": "Barre d'or",
+      "field": "name",
+      "before": "Transmutation : Fer en Or",
+      "after": "Barre d'or",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11479"
+    },
+    {
+      "recipe_id": "alchemy:11479",
+      "name": "Barre d'or",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3577,
+          "quantity": 1,
+          "name": "Barre d'or"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11479"
+    },
+    {
+      "recipe_id": "alchemy:11479",
+      "name": "Barre d'or",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11479"
+    },
+    {
+      "recipe_id": "alchemy:11479",
+      "name": "Barre d'or",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11479"
+    },
+    {
+      "recipe_id": "alchemy:11479",
+      "name": "Barre d'or",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 3600,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11479"
+    },
+    {
+      "recipe_id": "alchemy:11480",
+      "name": "Barre de vrai-argent",
+      "field": "name",
+      "before": "Transmutation de mithril en vrai-argent",
+      "after": "Barre de vrai-argent",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11480"
+    },
+    {
+      "recipe_id": "alchemy:11480",
+      "name": "Barre de vrai-argent",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 6037,
+          "quantity": 1,
+          "name": "Barre de vrai-argent"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11480"
+    },
+    {
+      "recipe_id": "alchemy:11480",
+      "name": "Barre de vrai-argent",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11480"
+    },
+    {
+      "recipe_id": "alchemy:11480",
+      "name": "Barre de vrai-argent",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11480"
+    },
+    {
+      "recipe_id": "alchemy:11480",
+      "name": "Barre de vrai-argent",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 3600,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11480"
+    },
+    {
+      "recipe_id": "alchemy:1249630",
+      "name": "Teinture céruléenne",
+      "field": "skill_required",
+      "before": null,
+      "after": 40,
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes"
+    },
+    {
+      "recipe_id": "alchemy:1249631",
+      "name": "Teinture magenta",
+      "field": "skill_required",
+      "before": null,
+      "after": 120,
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes"
+    },
+    {
+      "recipe_id": "alchemy:1249632",
+      "name": "Teinture viridienne",
+      "field": "skill_required",
+      "before": null,
+      "after": 220,
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes"
+    },
+    {
+      "recipe_id": "alchemy:1249633",
+      "name": "Acide sulfurique",
+      "field": "skill_required",
+      "before": null,
+      "after": 40,
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes"
+    },
+    {
+      "recipe_id": "alchemy:1250775",
+      "name": "Breuvage de révélation",
+      "field": "skill_required",
+      "before": null,
+      "after": 205,
+      "source": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes"
+    },
+    {
+      "recipe_id": "alchemy:1317279",
+      "name": "Barre de légionite",
+      "field": "name",
+      "before": "Transmutation : légionite",
+      "after": "Barre de légionite",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279"
+    },
+    {
+      "recipe_id": "alchemy:1317279",
+      "name": "Barre de légionite",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 251290,
+          "quantity": 1,
+          "name": "Barre de légionite"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279"
+    },
+    {
+      "recipe_id": "alchemy:1317279",
+      "name": "Barre de légionite",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279"
+    },
+    {
+      "recipe_id": "alchemy:1317279",
+      "name": "Barre de légionite",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279"
+    },
+    {
+      "recipe_id": "alchemy:1317279",
+      "name": "Barre de légionite",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 169200,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1317279"
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "field": "name",
+      "before": "Transmutation d'arcanite",
+      "after": "Barre d'arcanite",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17187"
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 12360,
+          "quantity": 1,
+          "name": "Barre d'arcanite"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17187"
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17187"
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17187"
+    },
+    {
+      "recipe_id": "alchemy:17187",
+      "name": "Barre d'arcanite",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 169200,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17187"
+    },
+    {
+      "recipe_id": "alchemy:17559",
+      "name": "Essence de feu",
+      "field": "name",
+      "before": "Transmutation de l'Air en Feu",
+      "after": "Essence de feu",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17559"
+    },
+    {
+      "recipe_id": "alchemy:17559",
+      "name": "Essence de feu",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7078,
+          "quantity": 1,
+          "name": "Essence de feu"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17559"
+    },
+    {
+      "recipe_id": "alchemy:17559",
+      "name": "Essence de feu",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17559"
+    },
+    {
+      "recipe_id": "alchemy:17559",
+      "name": "Essence de feu",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17559"
+    },
+    {
+      "recipe_id": "alchemy:17559",
+      "name": "Essence de feu",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17559"
+    },
+    {
+      "recipe_id": "alchemy:17560",
+      "name": "Essence de terre",
+      "field": "name",
+      "before": "Transmutation du Feu en Terre",
+      "after": "Essence de terre",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17560"
+    },
+    {
+      "recipe_id": "alchemy:17560",
+      "name": "Essence de terre",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7076,
+          "quantity": 1,
+          "name": "Essence de terre"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17560"
+    },
+    {
+      "recipe_id": "alchemy:17560",
+      "name": "Essence de terre",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17560"
+    },
+    {
+      "recipe_id": "alchemy:17560",
+      "name": "Essence de terre",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17560"
+    },
+    {
+      "recipe_id": "alchemy:17560",
+      "name": "Essence de terre",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17560"
+    },
+    {
+      "recipe_id": "alchemy:17561",
+      "name": "Essence d'eau",
+      "field": "name",
+      "before": "Transmutation de la Terre en Eau",
+      "after": "Essence d'eau",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17561"
+    },
+    {
+      "recipe_id": "alchemy:17561",
+      "name": "Essence d'eau",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7080,
+          "quantity": 1,
+          "name": "Essence d'eau"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17561"
+    },
+    {
+      "recipe_id": "alchemy:17561",
+      "name": "Essence d'eau",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17561"
+    },
+    {
+      "recipe_id": "alchemy:17561",
+      "name": "Essence d'eau",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17561"
+    },
+    {
+      "recipe_id": "alchemy:17561",
+      "name": "Essence d'eau",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17561"
+    },
+    {
+      "recipe_id": "alchemy:17562",
+      "name": "Essence d'air",
+      "field": "name",
+      "before": "Transmutation de l'Eau en Air",
+      "after": "Essence d'air",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17562"
+    },
+    {
+      "recipe_id": "alchemy:17562",
+      "name": "Essence d'air",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7082,
+          "quantity": 1,
+          "name": "Essence d'air"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17562"
+    },
+    {
+      "recipe_id": "alchemy:17562",
+      "name": "Essence d'air",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17562"
+    },
+    {
+      "recipe_id": "alchemy:17562",
+      "name": "Essence d'air",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17562"
+    },
+    {
+      "recipe_id": "alchemy:17562",
+      "name": "Essence d'air",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17562"
+    },
+    {
+      "recipe_id": "alchemy:17563",
+      "name": "Essence d'eau",
+      "field": "name",
+      "before": "Transmutation du Non-mort en Eau",
+      "after": "Essence d'eau",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17563"
+    },
+    {
+      "recipe_id": "alchemy:17563",
+      "name": "Essence d'eau",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7080,
+          "quantity": 1,
+          "name": "Essence d'eau"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17563"
+    },
+    {
+      "recipe_id": "alchemy:17563",
+      "name": "Essence d'eau",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17563"
+    },
+    {
+      "recipe_id": "alchemy:17563",
+      "name": "Essence d'eau",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17563"
+    },
+    {
+      "recipe_id": "alchemy:17563",
+      "name": "Essence d'eau",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17563"
+    },
+    {
+      "recipe_id": "alchemy:17564",
+      "name": "Essence de non-mort",
+      "field": "name",
+      "before": "Transmutation de l'Eau en Non-mort",
+      "after": "Essence de non-mort",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17564"
+    },
+    {
+      "recipe_id": "alchemy:17564",
+      "name": "Essence de non-mort",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 12808,
+          "quantity": 1,
+          "name": "Essence de non-mort"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17564"
+    },
+    {
+      "recipe_id": "alchemy:17564",
+      "name": "Essence de non-mort",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17564"
+    },
+    {
+      "recipe_id": "alchemy:17564",
+      "name": "Essence de non-mort",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17564"
+    },
+    {
+      "recipe_id": "alchemy:17564",
+      "name": "Essence de non-mort",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17564"
+    },
+    {
+      "recipe_id": "alchemy:17565",
+      "name": "Essence de terre",
+      "field": "name",
+      "before": "Transmutation de la Vie en Terre",
+      "after": "Essence de terre",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17565"
+    },
+    {
+      "recipe_id": "alchemy:17565",
+      "name": "Essence de terre",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7076,
+          "quantity": 1,
+          "name": "Essence de terre"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17565"
+    },
+    {
+      "recipe_id": "alchemy:17565",
+      "name": "Essence de terre",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17565"
+    },
+    {
+      "recipe_id": "alchemy:17565",
+      "name": "Essence de terre",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17565"
+    },
+    {
+      "recipe_id": "alchemy:17565",
+      "name": "Essence de terre",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17565"
+    },
+    {
+      "recipe_id": "alchemy:17566",
+      "name": "Essence de vie",
+      "field": "name",
+      "before": "Transmutation de la Terre en Vie",
+      "after": "Essence de vie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17566"
+    },
+    {
+      "recipe_id": "alchemy:17566",
+      "name": "Essence de vie",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 12803,
+          "quantity": 1,
+          "name": "Essence de vie"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17566"
+    },
+    {
+      "recipe_id": "alchemy:17566",
+      "name": "Essence de vie",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17566"
+    },
+    {
+      "recipe_id": "alchemy:17566",
+      "name": "Essence de vie",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17566"
+    },
+    {
+      "recipe_id": "alchemy:17566",
+      "name": "Essence de vie",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 82800,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r17566"
+    },
+    {
+      "recipe_id": "alchemy:25146",
+      "name": "Feu élémentaire",
+      "field": "name",
+      "before": "Transmutation : Feu élémentaire",
+      "after": "Feu élémentaire",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r25146"
+    },
+    {
+      "recipe_id": "alchemy:25146",
+      "name": "Feu élémentaire",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 7068,
+          "quantity": 3,
+          "name": "Feu élémentaire"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r25146"
+    },
+    {
+      "recipe_id": "alchemy:25146",
+      "name": "Feu élémentaire",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r25146"
+    },
+    {
+      "recipe_id": "alchemy:25146",
+      "name": "Feu élémentaire",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r25146"
+    },
+    {
+      "recipe_id": "alchemy:25146",
+      "name": "Feu élémentaire",
+      "field": "cooldown_seconds",
+      "before": null,
+      "after": 600,
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r25146"
+    },
+    {
+      "recipe_id": "cooking:1229737",
+      "name": "Kit de feu de camp basique",
+      "field": "name",
+      "before": "Feu de camp basique Palier 1",
+      "after": "Kit de feu de camp basique",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1229737"
+    },
+    {
+      "recipe_id": "cooking:1229737",
+      "name": "Kit de feu de camp basique",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 279981,
+          "quantity": 1,
+          "name": "Kit de feu de camp basique"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1229737"
+    },
+    {
+      "recipe_id": "cooking:1229737",
+      "name": "Kit de feu de camp basique",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 10000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1229737"
+    },
+    {
+      "recipe_id": "cooking:1283400",
+      "name": "Kit de feu de camp de compagnon",
+      "field": "name",
+      "before": "Feu de camp de compagnon Palier 2",
+      "after": "Kit de feu de camp de compagnon",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1283400"
+    },
+    {
+      "recipe_id": "cooking:1283400",
+      "name": "Kit de feu de camp de compagnon",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 279961,
+          "quantity": 1,
+          "name": "Kit de feu de camp de compagnon"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1283400"
+    },
+    {
+      "recipe_id": "cooking:1283400",
+      "name": "Kit de feu de camp de compagnon",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 10000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1283400"
+    },
+    {
+      "recipe_id": "cooking:1291341",
+      "name": "Kit de feu de camp de spécialiste",
+      "field": "name",
+      "before": "Feu de camp de spécialiste Palier 3",
+      "after": "Kit de feu de camp de spécialiste",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1291341"
+    },
+    {
+      "recipe_id": "cooking:1291341",
+      "name": "Kit de feu de camp de spécialiste",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 279974,
+          "quantity": 1,
+          "name": "Kit de feu de camp de spécialiste"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1291341"
+    },
+    {
+      "recipe_id": "cooking:1291341",
+      "name": "Kit de feu de camp de spécialiste",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 10000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1291341"
+    },
+    {
+      "recipe_id": "cooking:20916",
+      "name": "Truite tête-mithril",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 8364,
+          "quantity": 1,
+          "name": "Truite tête-mithril"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r20916"
+    },
+    {
+      "recipe_id": "cooking:20916",
+      "name": "Truite tête-mithril",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r20916"
+    },
+    {
+      "recipe_id": "cooking:20916",
+      "name": "Truite tête-mithril",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r20916"
+    },
+    {
+      "recipe_id": "enchanting:1245320",
+      "name": "Granule de magie",
+      "field": "name",
+      "before": "De poussière à granules",
+      "after": "Granule de magie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320"
+    },
+    {
+      "recipe_id": "enchanting:1245320",
+      "name": "Granule de magie",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 247786,
+          "quantity": 3,
+          "name": "Granule de magie"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320"
+    },
+    {
+      "recipe_id": "enchanting:1245320",
+      "name": "Granule de magie",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320"
+    },
+    {
+      "recipe_id": "enchanting:1245320",
+      "name": "Granule de magie",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 5125,
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r1245320"
+    },
+    {
+      "recipe_id": "enchanting:14293",
+      "name": "Baguette magique inférieure",
+      "field": "skill_required",
+      "before": 15,
+      "after": 10,
+      "source": "https://www.wowhead.com/forever/spell=14293/lesser-magic-wand"
+    },
+    {
+      "recipe_id": "enchanting:17180",
+      "name": "Barre de thorium enchanté",
+      "field": "name",
+      "before": "Thorium enchanté",
+      "after": "Barre de thorium enchanté",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r17180"
+    },
+    {
+      "recipe_id": "enchanting:17180",
+      "name": "Barre de thorium enchanté",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 12655,
+          "quantity": 1,
+          "name": "Barre de thorium enchanté"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r17180"
+    },
+    {
+      "recipe_id": "enchanting:17180",
+      "name": "Barre de thorium enchanté",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r17180"
+    },
+    {
+      "recipe_id": "enchanting:17180",
+      "name": "Barre de thorium enchanté",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 12500,
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r17180"
+    },
+    {
+      "recipe_id": "engineering:12715",
+      "name": "Recette : Carburant de fusée des gobelins",
+      "field": "name",
+      "before": "Recette du carburant de fusée gobelin",
+      "after": "Recette : Carburant de fusée des gobelins",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12715"
+    },
+    {
+      "recipe_id": "engineering:12715",
+      "name": "Recette : Carburant de fusée des gobelins",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 10644,
+          "quantity": 1,
+          "name": "Recette : Carburant de fusée des gobelins"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12715"
+    },
+    {
+      "recipe_id": "engineering:12715",
+      "name": "Recette : Carburant de fusée des gobelins",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12715"
+    },
+    {
+      "recipe_id": "engineering:12715",
+      "name": "Recette : Carburant de fusée des gobelins",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12715"
+    },
+    {
+      "recipe_id": "engineering:12895",
+      "name": "Plans : Cylindre damasquiné en mithril",
+      "field": "name",
+      "before": "Cylindre damasquiné en mithril",
+      "after": "Plans : Cylindre damasquiné en mithril",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12895"
+    },
+    {
+      "recipe_id": "engineering:12895",
+      "name": "Plans : Cylindre damasquiné en mithril",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 10713,
+          "quantity": 1,
+          "name": "Plans : Cylindre damasquiné en mithril"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12895"
+    },
+    {
+      "recipe_id": "engineering:12895",
+      "name": "Plans : Cylindre damasquiné en mithril",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12895"
+    },
+    {
+      "recipe_id": "engineering:12895",
+      "name": "Plans : Cylindre damasquiné en mithril",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12895"
+    },
+    {
+      "recipe_id": "engineering:12897",
+      "name": "Lunettes gnomes",
+      "field": "skill_required",
+      "before": 215,
+      "after": 210,
+      "source": "https://www.wowhead.com/forever/item=10545/gnomish-goggles"
+    },
+    {
+      "recipe_id": "engineering:12905",
+      "name": "Bottes-fusées gnomes",
+      "field": "skill_required",
+      "before": 210,
+      "after": 225,
+      "source": "https://www.wowhead.com/forever/spell=12905/gnomish-rocket-boots"
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "field": "ingredients",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3575,
+          "quantity": 1,
+          "name": "Barre de fer"
+        },
+        {
+          "item_id": 249391,
+          "quantity": 1,
+          "name": "Pyrite"
+        },
+        {
+          "item_id": 249409,
+          "quantity": 1,
+          "name": "Teinture céruléenne"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1293088"
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 274048,
+          "quantity": 1,
+          "name": "Batterie 9-60"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1293088"
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "field": "exclusion",
+      "before": "Rendement variable non modélisé",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1293088"
+    },
+    {
+      "recipe_id": "engineering:1293088",
+      "name": "Batterie 9-60",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1293088"
+    },
+    {
+      "recipe_id": "engineering:13240",
+      "name": "Mortier des gobelins",
+      "field": "name",
+      "before": "Le mortier : rechargé",
+      "after": "Mortier des gobelins",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r13240"
+    },
+    {
+      "recipe_id": "engineering:13240",
+      "name": "Mortier des gobelins",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 10577,
+          "quantity": 1,
+          "name": "Mortier des gobelins"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r13240"
+    },
+    {
+      "recipe_id": "engineering:13240",
+      "name": "Mortier des gobelins",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r13240"
+    },
+    {
+      "recipe_id": "engineering:13240",
+      "name": "Mortier des gobelins",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r13240"
+    },
+    {
+      "recipe_id": "engineering:23069",
+      "name": "Dynamite Ev-Lan II",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 18588,
+          "quantity": 1,
+          "name": "Dynamite Ev-Lan II"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23069"
+    },
+    {
+      "recipe_id": "engineering:23069",
+      "name": "Dynamite Ev-Lan II",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23069"
+    },
+    {
+      "recipe_id": "engineering:23069",
+      "name": "Dynamite Ev-Lan II",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 5125,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23069"
+    },
+    {
+      "recipe_id": "engineering:23096",
+      "name": "Robot d'alarme gnome",
+      "field": "name",
+      "before": "Robot d'alarme",
+      "after": "Robot d'alarme gnome",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23096"
+    },
+    {
+      "recipe_id": "engineering:23096",
+      "name": "Robot d'alarme gnome",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 18645,
+          "quantity": 1,
+          "name": "Robot d'alarme gnome"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23096"
+    },
+    {
+      "recipe_id": "engineering:23096",
+      "name": "Robot d'alarme gnome",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23096"
+    },
+    {
+      "recipe_id": "engineering:23096",
+      "name": "Robot d'alarme gnome",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 25000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23096"
+    },
+    {
+      "recipe_id": "engineering:23489",
+      "name": "Transporteur ultra-sécurisé : Gadgetzan",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 18986,
+          "quantity": 1,
+          "name": "Transporteur ultra-sécurisé : Gadgetzan"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23489"
+    },
+    {
+      "recipe_id": "engineering:23489",
+      "name": "Transporteur ultra-sécurisé : Gadgetzan",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23489"
+    },
+    {
+      "recipe_id": "engineering:23489",
+      "name": "Transporteur ultra-sécurisé : Gadgetzan",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 45000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23489"
+    },
+    {
+      "recipe_id": "engineering:26443",
+      "name": "Lanceur de chapelets",
+      "field": "name",
+      "before": "Lanceur de chapelets de fusées",
+      "after": "Lanceur de chapelets",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r26443"
+    },
+    {
+      "recipe_id": "engineering:26443",
+      "name": "Lanceur de chapelets",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 21570,
+          "quantity": 1,
+          "name": "Lanceur de chapelets"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r26443"
+    },
+    {
+      "recipe_id": "engineering:26443",
+      "name": "Lanceur de chapelets",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r26443"
+    },
+    {
+      "recipe_id": "engineering:26443",
+      "name": "Lanceur de chapelets",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 12500,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r26443"
+    },
+    {
+      "recipe_id": "engineering:3928",
+      "name": "Caisse d'Ecureuil mécanique",
+      "field": "name",
+      "before": "Ecureuil mécanique",
+      "after": "Caisse d'Ecureuil mécanique",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3928"
+    },
+    {
+      "recipe_id": "engineering:3928",
+      "name": "Caisse d'Ecureuil mécanique",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 4401,
+          "quantity": 1,
+          "name": "Caisse d'Ecureuil mécanique"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3928"
+    },
+    {
+      "recipe_id": "engineering:3928",
+      "name": "Caisse d'Ecureuil mécanique",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3928"
+    },
+    {
+      "recipe_id": "engineering:3928",
+      "name": "Caisse d'Ecureuil mécanique",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 8000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3928"
+    },
+    {
+      "recipe_id": "engineering:3929",
+      "name": "Poudre d'explosion grossière",
+      "field": "skill_required",
+      "before": 65,
+      "after": 75,
+      "source": "https://www.wowhead.com/forever/spells/professions/engineering/max-skill-level:100"
+    },
+    {
+      "recipe_id": "engineering:3931",
+      "name": "Dynamite grossière",
+      "field": "skill_required",
+      "before": 65,
+      "after": 75,
+      "source": "https://www.wowhead.com/forever/spell=3931/coarse-dynamite"
+    },
+    {
+      "recipe_id": "engineering:8339",
+      "name": "Dynamite Ev-Lan",
+      "field": "name",
+      "before": "2 × Dynamite Ev-Lan",
+      "after": "Dynamite Ev-Lan",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r8339"
+    },
+    {
+      "recipe_id": "engineering:8339",
+      "name": "Dynamite Ev-Lan",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 6714,
+          "quantity": 2,
+          "name": "Dynamite Ev-Lan"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r8339"
+    },
+    {
+      "recipe_id": "engineering:8339",
+      "name": "Dynamite Ev-Lan",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r8339"
+    },
+    {
+      "recipe_id": "engineering:8339",
+      "name": "Dynamite Ev-Lan",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 5125,
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r8339"
+    },
+    {
+      "recipe_id": "first-aid:3278",
+      "name": "Bandage épais en laine",
+      "field": "skill_required",
+      "before": 75,
+      "after": 115,
+      "source": "https://www.wowhead.com/forever/skill=129/first-aid"
+    },
+    {
+      "recipe_id": "leatherworking:1255058",
+      "name": "Épaulières de furtivité en cuir",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 252535,
+          "quantity": 1,
+          "name": "Épaulières de furtivité en cuir"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058"
+    },
+    {
+      "recipe_id": "leatherworking:1255058",
+      "name": "Épaulières de furtivité en cuir",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058"
+    },
+    {
+      "recipe_id": "leatherworking:1255058",
+      "name": "Épaulières de furtivité en cuir",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 12500,
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1255058"
+    },
+    {
+      "recipe_id": "leatherworking:1294289",
+      "name": "Cache-sabots de centaure",
+      "field": "added",
+      "before": null,
+      "after": {
+        "id": "leatherworking:1294289",
+        "name": "Cache-sabots de centaure",
+        "profession": "Travail du cuir",
+        "ingredients": [
+          {
+            "item_id": 4304,
+            "quantity": 12,
+            "name": "Cuir épais"
+          },
+          {
+            "item_id": 8343,
+            "quantity": 2,
+            "name": "Bobine de soie lourde"
+          }
+        ],
+        "outputs": [
+          {
+            "item_id": 274490,
+            "quantity": 1,
+            "name": "Cache-sabots de centaure"
+          }
+        ],
+        "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289",
+        "build": "1.60.1.71037",
+        "restrictions": [
+          "Armure : 76, +10 Endurance, +4 Agilité",
+          "S’apprend avec Patron : cache-sabots de centaure (compétence 165)"
+        ],
+        "cooldown_seconds": null,
+        "exclusion": "",
+        "skill_required": 165,
+        "skill_basis": "Seuil explicite dans la recette",
+        "skill_source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289",
+        "tools": [],
+        "cast_time_ms": null,
+        "timing_source": "",
+        "timing_build": ""
+      },
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1294289"
+    },
+    {
+      "recipe_id": "leatherworking:19064",
+      "name": "Gantelets en écailles de scorpide épaisses",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 15078,
+          "quantity": 1,
+          "name": "Gantelets en écailles de scorpide épaisses"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064"
+    },
+    {
+      "recipe_id": "leatherworking:19064",
+      "name": "Gantelets en écailles de scorpide épaisses",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064"
+    },
+    {
+      "recipe_id": "leatherworking:19064",
+      "name": "Gantelets en écailles de scorpide épaisses",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 60000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19064"
+    },
+    {
+      "recipe_id": "mining:10097",
+      "name": "Barre de mithril",
+      "field": "name",
+      "before": "Fonte du mithril",
+      "after": "Barre de mithril",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10097"
+    },
+    {
+      "recipe_id": "mining:10097",
+      "name": "Barre de mithril",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3860,
+          "quantity": 1,
+          "name": "Barre de mithril"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10097"
+    },
+    {
+      "recipe_id": "mining:10097",
+      "name": "Barre de mithril",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10097"
+    },
+    {
+      "recipe_id": "mining:10097",
+      "name": "Barre de mithril",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10097"
+    },
+    {
+      "recipe_id": "mining:10098",
+      "name": "Barre de vrai-argent",
+      "field": "name",
+      "before": "Fonte du vrai-argent",
+      "after": "Barre de vrai-argent",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10098"
+    },
+    {
+      "recipe_id": "mining:10098",
+      "name": "Barre de vrai-argent",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 6037,
+          "quantity": 1,
+          "name": "Barre de vrai-argent"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10098"
+    },
+    {
+      "recipe_id": "mining:10098",
+      "name": "Barre de vrai-argent",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10098"
+    },
+    {
+      "recipe_id": "mining:10098",
+      "name": "Barre de vrai-argent",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10098"
+    },
+    {
+      "recipe_id": "mining:1249637",
+      "name": "Barre d’azerothium",
+      "field": "name",
+      "before": "Fonte d’azerothium",
+      "after": "Barre d’azerothium",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1249637"
+    },
+    {
+      "recipe_id": "mining:1249637",
+      "name": "Barre d’azerothium",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 249726,
+          "quantity": 1,
+          "name": "Barre d’azerothium"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1249637"
+    },
+    {
+      "recipe_id": "mining:1249637",
+      "name": "Barre d’azerothium",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1249637"
+    },
+    {
+      "recipe_id": "mining:1249637",
+      "name": "Barre d’azerothium",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 5000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1249637"
+    },
+    {
+      "recipe_id": "mining:1306126",
+      "name": "Barre de thorium lourd",
+      "field": "name",
+      "before": "Fonte de thorium lourd",
+      "after": "Barre de thorium lourd",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1306126"
+    },
+    {
+      "recipe_id": "mining:1306126",
+      "name": "Barre de thorium lourd",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 251291,
+          "quantity": 1,
+          "name": "Barre de thorium lourd"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1306126"
+    },
+    {
+      "recipe_id": "mining:1306126",
+      "name": "Barre de thorium lourd",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1306126"
+    },
+    {
+      "recipe_id": "mining:1306126",
+      "name": "Barre de thorium lourd",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1306126"
+    },
+    {
+      "recipe_id": "mining:14891",
+      "name": "Barre de sombrefer",
+      "field": "name",
+      "before": "Fonte du sombrefer",
+      "after": "Barre de sombrefer",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r14891"
+    },
+    {
+      "recipe_id": "mining:14891",
+      "name": "Barre de sombrefer",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 11371,
+          "quantity": 1,
+          "name": "Barre de sombrefer"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r14891"
+    },
+    {
+      "recipe_id": "mining:14891",
+      "name": "Barre de sombrefer",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r14891"
+    },
+    {
+      "recipe_id": "mining:14891",
+      "name": "Barre de sombrefer",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r14891"
+    },
+    {
+      "recipe_id": "mining:16153",
+      "name": "Barre de thorium",
+      "field": "name",
+      "before": "Fonte du thorium",
+      "after": "Barre de thorium",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r16153"
+    },
+    {
+      "recipe_id": "mining:16153",
+      "name": "Barre de thorium",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 12359,
+          "quantity": 1,
+          "name": "Barre de thorium"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r16153"
+    },
+    {
+      "recipe_id": "mining:16153",
+      "name": "Barre de thorium",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r16153"
+    },
+    {
+      "recipe_id": "mining:16153",
+      "name": "Barre de thorium",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r16153"
+    },
+    {
+      "recipe_id": "mining:22967",
+      "name": "Barre d'élémentium",
+      "field": "name",
+      "before": "Fonte de l'élémentium",
+      "after": "Barre d'élémentium",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r22967"
+    },
+    {
+      "recipe_id": "mining:22967",
+      "name": "Barre d'élémentium",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 17771,
+          "quantity": 1,
+          "name": "Barre d'élémentium"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r22967"
+    },
+    {
+      "recipe_id": "mining:22967",
+      "name": "Barre d'élémentium",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r22967"
+    },
+    {
+      "recipe_id": "mining:22967",
+      "name": "Barre d'élémentium",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 10000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r22967"
+    },
+    {
+      "recipe_id": "mining:2657",
+      "name": "Barre de cuivre",
+      "field": "name",
+      "before": "Fonte du cuivre",
+      "after": "Barre de cuivre",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2657"
+    },
+    {
+      "recipe_id": "mining:2657",
+      "name": "Barre de cuivre",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 2840,
+          "quantity": 1,
+          "name": "Barre de cuivre"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2657"
+    },
+    {
+      "recipe_id": "mining:2657",
+      "name": "Barre de cuivre",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2657"
+    },
+    {
+      "recipe_id": "mining:2657",
+      "name": "Barre de cuivre",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2657"
+    },
+    {
+      "recipe_id": "mining:2658",
+      "name": "Barre d'argent",
+      "field": "name",
+      "before": "Fonte de l'argent",
+      "after": "Barre d'argent",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2658"
+    },
+    {
+      "recipe_id": "mining:2658",
+      "name": "Barre d'argent",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 2842,
+          "quantity": 1,
+          "name": "Barre d'argent"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2658"
+    },
+    {
+      "recipe_id": "mining:2658",
+      "name": "Barre d'argent",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2658"
+    },
+    {
+      "recipe_id": "mining:2658",
+      "name": "Barre d'argent",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2658"
+    },
+    {
+      "recipe_id": "mining:2659",
+      "name": "Barre de bronze",
+      "field": "name",
+      "before": "Fonte du bronze",
+      "after": "Barre de bronze",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2659"
+    },
+    {
+      "recipe_id": "mining:2659",
+      "name": "Barre de bronze",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 2841,
+          "quantity": 2,
+          "name": "Barre de bronze"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2659"
+    },
+    {
+      "recipe_id": "mining:2659",
+      "name": "Barre de bronze",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2659"
+    },
+    {
+      "recipe_id": "mining:2659",
+      "name": "Barre de bronze",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2659"
+    },
+    {
+      "recipe_id": "mining:3304",
+      "name": "Barre d'étain",
+      "field": "name",
+      "before": "Fonte de l'étain",
+      "after": "Barre d'étain",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3304"
+    },
+    {
+      "recipe_id": "mining:3304",
+      "name": "Barre d'étain",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3576,
+          "quantity": 1,
+          "name": "Barre d'étain"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3304"
+    },
+    {
+      "recipe_id": "mining:3304",
+      "name": "Barre d'étain",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3304"
+    },
+    {
+      "recipe_id": "mining:3304",
+      "name": "Barre d'étain",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3304"
+    },
+    {
+      "recipe_id": "mining:3307",
+      "name": "Barre de fer",
+      "field": "name",
+      "before": "Fonte du fer",
+      "after": "Barre de fer",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3307"
+    },
+    {
+      "recipe_id": "mining:3307",
+      "name": "Barre de fer",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3575,
+          "quantity": 1,
+          "name": "Barre de fer"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3307"
+    },
+    {
+      "recipe_id": "mining:3307",
+      "name": "Barre de fer",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3307"
+    },
+    {
+      "recipe_id": "mining:3307",
+      "name": "Barre de fer",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3307"
+    },
+    {
+      "recipe_id": "mining:3308",
+      "name": "Barre d'or",
+      "field": "name",
+      "before": "Fonte de l'or",
+      "after": "Barre d'or",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3308"
+    },
+    {
+      "recipe_id": "mining:3308",
+      "name": "Barre d'or",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3577,
+          "quantity": 1,
+          "name": "Barre d'or"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3308"
+    },
+    {
+      "recipe_id": "mining:3308",
+      "name": "Barre d'or",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3308"
+    },
+    {
+      "recipe_id": "mining:3308",
+      "name": "Barre d'or",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3308"
+    },
+    {
+      "recipe_id": "mining:3569",
+      "name": "Barre d'acier",
+      "field": "name",
+      "before": "Fonte de l'acier",
+      "after": "Barre d'acier",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3569"
+    },
+    {
+      "recipe_id": "mining:3569",
+      "name": "Barre d'acier",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 3859,
+          "quantity": 1,
+          "name": "Barre d'acier"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3569"
+    },
+    {
+      "recipe_id": "mining:3569",
+      "name": "Barre d'acier",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3569"
+    },
+    {
+      "recipe_id": "mining:3569",
+      "name": "Barre d'acier",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 3000,
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3569"
+    },
+    {
+      "recipe_id": "tailoring:18401",
+      "name": "Rouleau d'étoffe runique",
+      "field": "skill_required",
+      "before": null,
+      "after": 205,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    },
+    {
+      "recipe_id": "tailoring:23665",
+      "name": "Epaulières de l'Aube d'argent",
+      "field": "skill_required",
+      "before": 300,
+      "after": 290,
+      "source": "https://www.wowhead.com/forever/item=19217/pattern-argent-shoulders"
+    },
+    {
+      "recipe_id": "tailoring:2402",
+      "name": "Cape en laine",
+      "field": "skill_required",
+      "before": 75,
+      "after": 55,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100"
+    },
+    {
+      "recipe_id": "tailoring:2964",
+      "name": "Rouleau d'étoffe de laine",
+      "field": "skill_required",
+      "before": null,
+      "after": 55,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100"
+    },
+    {
+      "recipe_id": "tailoring:3839",
+      "name": "Rouleau d'étoffe de soie",
+      "field": "skill_required",
+      "before": null,
+      "after": 100,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "field": "name",
+      "before": "Epaulières à double couture en laine",
+      "after": "Épaulières à double couture en laine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3848"
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "field": "outputs",
+      "before": [],
+      "after": [
+        {
+          "item_id": 4314,
+          "quantity": 1,
+          "name": "Épaulières à double couture en laine"
+        }
+      ],
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3848"
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "field": "exclusion",
+      "before": "Résultat objet ou rendement non documenté",
+      "after": "",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3848"
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "field": "skill_required",
+      "before": 110,
+      "after": 85,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/max-skill-level:100"
+    },
+    {
+      "recipe_id": "tailoring:3848",
+      "name": "Épaulières à double couture en laine",
+      "field": "cast_time_ms",
+      "before": null,
+      "after": 12500,
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3848"
+    },
+    {
+      "recipe_id": "tailoring:3865",
+      "name": "Rouleau de tisse-mage",
+      "field": "skill_required",
+      "before": null,
+      "after": 140,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    },
+    {
+      "recipe_id": "tailoring:3871",
+      "name": "Chemise blanche habillée",
+      "field": "skill_required",
+      "before": null,
+      "after": 135,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    },
+    {
+      "recipe_id": "tailoring:8764",
+      "name": "Gilet terrestre",
+      "field": "skill_required",
+      "before": null,
+      "after": 135,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    },
+    {
+      "recipe_id": "tailoring:8791",
+      "name": "Gilet cramoisi en soie",
+      "field": "skill_required",
+      "before": null,
+      "after": 150,
+      "source": "https://www.wowhead.com/forever/spells/professions/tailoring/kul-tiran-patterns/armor"
+    }
+  ],
+  "unknown_skills": [
+    {
+      "recipe_id": "alchemy:11452",
+      "name": "Potion de restauration",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r11452"
+    },
+    {
+      "recipe_id": "alchemy:1230564",
+      "name": "Puits de mana",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1230564"
+    },
+    {
+      "recipe_id": "alchemy:1244645",
+      "name": "Potion de soins inférieure décolorée",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1244645"
+    },
+    {
+      "recipe_id": "alchemy:1244646",
+      "name": "Potion de soins décolorée",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1244646"
+    },
+    {
+      "recipe_id": "alchemy:1244647",
+      "name": "Potion de soins supérieure décolorée",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1244647"
+    },
+    {
+      "recipe_id": "alchemy:1244648",
+      "name": "Potion de soins excellente décolorée",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r1244648"
+    },
+    {
+      "recipe_id": "alchemy:22430",
+      "name": "Ecaille d'Onyxia raffinée",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r22430"
+    },
+    {
+      "recipe_id": "alchemy:2365",
+      "name": "Breuvage des langages",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r2365"
+    },
+    {
+      "recipe_id": "alchemy:24266",
+      "name": "Folie mojo des Gurubashi",
+      "profession": "Alchimie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/alchemy#r24266"
+    },
+    {
+      "recipe_id": "blacksmithing:10003",
+      "name": "Le Briseur",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r10003"
+    },
+    {
+      "recipe_id": "blacksmithing:10007",
+      "name": "Lame fantôme",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r10007"
+    },
+    {
+      "recipe_id": "blacksmithing:10011",
+      "name": "Corruptrice",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r10011"
+    },
+    {
+      "recipe_id": "blacksmithing:10015",
+      "name": "Championne en vrai-argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r10015"
+    },
+    {
+      "recipe_id": "blacksmithing:1230171",
+      "name": "Meule à aiguiser",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r1230171"
+    },
+    {
+      "recipe_id": "blacksmithing:14379",
+      "name": "Bâtonnet doré",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r14379"
+    },
+    {
+      "recipe_id": "blacksmithing:14380",
+      "name": "Bâtonnet en vrai-argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r14380"
+    },
+    {
+      "recipe_id": "blacksmithing:16639",
+      "name": "Silex à aiguiser dense",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16639"
+    },
+    {
+      "recipe_id": "blacksmithing:16640",
+      "name": "Caillou dense",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16640"
+    },
+    {
+      "recipe_id": "blacksmithing:16641",
+      "name": "Pierre à aiguiser dense",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16641"
+    },
+    {
+      "recipe_id": "blacksmithing:16960",
+      "name": "Epée de guerre en thorium",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16960"
+    },
+    {
+      "recipe_id": "blacksmithing:16965",
+      "name": "Bois morne taillé",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16965"
+    },
+    {
+      "recipe_id": "blacksmithing:16967",
+      "name": "Marteau damasquiné en thorium",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16967"
+    },
+    {
+      "recipe_id": "blacksmithing:16980",
+      "name": "Lame runique",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16980"
+    },
+    {
+      "recipe_id": "blacksmithing:16986",
+      "name": "Serre de sang",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16986"
+    },
+    {
+      "recipe_id": "blacksmithing:16987",
+      "name": "Lance noire",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r16987"
+    },
+    {
+      "recipe_id": "blacksmithing:19666",
+      "name": "Passe-partout en argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r19666"
+    },
+    {
+      "recipe_id": "blacksmithing:19667",
+      "name": "Passe-partout en or",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r19667"
+    },
+    {
+      "recipe_id": "blacksmithing:19668",
+      "name": "Passe-partout en vrai-argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r19668"
+    },
+    {
+      "recipe_id": "blacksmithing:19669",
+      "name": "Passe-partout en arcanite",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r19669"
+    },
+    {
+      "recipe_id": "blacksmithing:20201",
+      "name": "Bâtonnet en arcanite",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r20201"
+    },
+    {
+      "recipe_id": "blacksmithing:2665",
+      "name": "Pierre à aiguiser grossière",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r2665"
+    },
+    {
+      "recipe_id": "blacksmithing:2671",
+      "name": "Brassards grossiers en bronze",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r2671"
+    },
+    {
+      "recipe_id": "blacksmithing:2674",
+      "name": "Pierre à aiguiser lourde",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r2674"
+    },
+    {
+      "recipe_id": "blacksmithing:2737",
+      "name": "Masse en cuivre",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r2737"
+    },
+    {
+      "recipe_id": "blacksmithing:27585",
+      "name": "Ceinture lourde en obsidienne",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r27585"
+    },
+    {
+      "recipe_id": "blacksmithing:27588",
+      "name": "Ceinture légère en obsidienne",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r27588"
+    },
+    {
+      "recipe_id": "blacksmithing:28461",
+      "name": "Cuirasse de vignefer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r28461"
+    },
+    {
+      "recipe_id": "blacksmithing:28462",
+      "name": "Gants de vignefer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r28462"
+    },
+    {
+      "recipe_id": "blacksmithing:28463",
+      "name": "Ceinture de vignefer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r28463"
+    },
+    {
+      "recipe_id": "blacksmithing:3116",
+      "name": "Caillou grossier",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r3116"
+    },
+    {
+      "recipe_id": "blacksmithing:3117",
+      "name": "Caillou lourd",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r3117"
+    },
+    {
+      "recipe_id": "blacksmithing:3326",
+      "name": "Silex à aiguiser grossier",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r3326"
+    },
+    {
+      "recipe_id": "blacksmithing:3337",
+      "name": "Silex à aiguiser lourd",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r3337"
+    },
+    {
+      "recipe_id": "blacksmithing:6517",
+      "name": "Dague à perles",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r6517"
+    },
+    {
+      "recipe_id": "blacksmithing:7818",
+      "name": "Bâtonnet en argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r7818"
+    },
+    {
+      "recipe_id": "blacksmithing:8366",
+      "name": "Cotte d'anneaux de Forgefer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r8366"
+    },
+    {
+      "recipe_id": "blacksmithing:8368",
+      "name": "Gantelets de Forgefer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r8368"
+    },
+    {
+      "recipe_id": "blacksmithing:8768",
+      "name": "Boucle en fer",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r8768"
+    },
+    {
+      "recipe_id": "blacksmithing:9918",
+      "name": "Pierre à aiguiser solide",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9918"
+    },
+    {
+      "recipe_id": "blacksmithing:9920",
+      "name": "Silex à aiguiser solide",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9920"
+    },
+    {
+      "recipe_id": "blacksmithing:9921",
+      "name": "Caillou solide",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9921"
+    },
+    {
+      "recipe_id": "blacksmithing:9926",
+      "name": "Epaulières lourdes en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9926"
+    },
+    {
+      "recipe_id": "blacksmithing:9928",
+      "name": "Gantelets lourds en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9928"
+    },
+    {
+      "recipe_id": "blacksmithing:9931",
+      "name": "Jambières en plaques de mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9931"
+    },
+    {
+      "recipe_id": "blacksmithing:9935",
+      "name": "Heaume en plaques d'acier",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9935"
+    },
+    {
+      "recipe_id": "blacksmithing:9942",
+      "name": "Gants en plaques de mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9942"
+    },
+    {
+      "recipe_id": "blacksmithing:9954",
+      "name": "Gantelets en vrai-argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9954"
+    },
+    {
+      "recipe_id": "blacksmithing:9959",
+      "name": "Cuirasse lourde en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9959"
+    },
+    {
+      "recipe_id": "blacksmithing:9961",
+      "name": "Camail en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9961"
+    },
+    {
+      "recipe_id": "blacksmithing:9968",
+      "name": "Bottes lourdes en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9968"
+    },
+    {
+      "recipe_id": "blacksmithing:9972",
+      "name": "Cuirasse ornée en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9972"
+    },
+    {
+      "recipe_id": "blacksmithing:9974",
+      "name": "Cuirasse en vrai-argent",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9974"
+    },
+    {
+      "recipe_id": "blacksmithing:9979",
+      "name": "Bottes ornées en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9979"
+    },
+    {
+      "recipe_id": "blacksmithing:9980",
+      "name": "Heaume orné en mithril",
+      "profession": "Forge",
+      "source": "https://endgametools.com/fr/wow-forever/professions/blacksmithing#r9980"
+    },
+    {
+      "recipe_id": "cooking:1247741",
+      "name": "Flétan épineux",
+      "profession": "Cuisine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1247741"
+    },
+    {
+      "recipe_id": "cooking:1255241",
+      "name": "Ragoût purificateur",
+      "profession": "Cuisine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1255241"
+    },
+    {
+      "recipe_id": "cooking:1270632",
+      "name": "Biscuit en forme de bestiole",
+      "profession": "Cuisine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r1270632"
+    },
+    {
+      "recipe_id": "cooking:13028",
+      "name": "Thé de dorépine",
+      "profession": "Cuisine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r13028"
+    },
+    {
+      "recipe_id": "cooking:24801",
+      "name": "Boulettes fumées du désert",
+      "profession": "Cuisine",
+      "source": "https://endgametools.com/fr/wow-forever/professions/cooking#r24801"
+    },
+    {
+      "recipe_id": "enchanting:1230643",
+      "name": "Luth enchanté",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r1230643"
+    },
+    {
+      "recipe_id": "enchanting:13607",
+      "name": "Enchantement de plastron (Intelligence)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13607"
+    },
+    {
+      "recipe_id": "enchanting:13622",
+      "name": "Ench. de bracelets (Intelligence inférieure)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13622"
+    },
+    {
+      "recipe_id": "enchanting:13626",
+      "name": "Ench. de plastron (Caract. mineures)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13626"
+    },
+    {
+      "recipe_id": "enchanting:13640",
+      "name": "Enchantement de plastron (Endurance supérieure)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13640"
+    },
+    {
+      "recipe_id": "enchanting:13657",
+      "name": "Ench. de cape (Résistance au Feu)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13657"
+    },
+    {
+      "recipe_id": "enchanting:13663",
+      "name": "Enchantement de plastron (Intelligence supérieure)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13663"
+    },
+    {
+      "recipe_id": "enchanting:13700",
+      "name": "Ench. de plastron (Caract. inférieures)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13700"
+    },
+    {
+      "recipe_id": "enchanting:13702",
+      "name": "Bâtonnet runique en vrai-argent",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13702"
+    },
+    {
+      "recipe_id": "enchanting:13794",
+      "name": "Ench. de cape (Résistance)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13794"
+    },
+    {
+      "recipe_id": "enchanting:13815",
+      "name": "Ench. de gants (Agilité)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13815"
+    },
+    {
+      "recipe_id": "enchanting:13858",
+      "name": "Enchantement de plastron (Endurance excellente)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13858"
+    },
+    {
+      "recipe_id": "enchanting:13917",
+      "name": "Enchantement de plastron (Intelligence excellente)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13917"
+    },
+    {
+      "recipe_id": "enchanting:13941",
+      "name": "Ench. de plastron (Caractéristiques)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13941"
+    },
+    {
+      "recipe_id": "enchanting:13948",
+      "name": "Ench. de gants (Hâte mineure)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r13948"
+    },
+    {
+      "recipe_id": "enchanting:17180",
+      "name": "Barre de thorium enchanté",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r17180"
+    },
+    {
+      "recipe_id": "enchanting:7420",
+      "name": "Enchantement de plastron (Endurance médiocre)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r7420"
+    },
+    {
+      "recipe_id": "enchanting:7748",
+      "name": "Enchantement de plastron (Endurance inférieure)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r7748"
+    },
+    {
+      "recipe_id": "enchanting:7795",
+      "name": "Bâtonnet runique en argent",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r7795"
+    },
+    {
+      "recipe_id": "enchanting:7857",
+      "name": "Enchantement de plastron (Endurance)",
+      "profession": "Enchantement",
+      "source": "https://endgametools.com/fr/wow-forever/professions/enchanting#r7857"
+    },
+    {
+      "recipe_id": "engineering:1230656",
+      "name": "Robot vendeur de composants",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1230656"
+    },
+    {
+      "recipe_id": "engineering:1249634",
+      "name": "Papier de verre",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r1249634"
+    },
+    {
+      "recipe_id": "engineering:12715",
+      "name": "Recette : Carburant de fusée des gobelins",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12715"
+    },
+    {
+      "recipe_id": "engineering:12719",
+      "name": "Flèche explosive",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12719"
+    },
+    {
+      "recipe_id": "engineering:12720",
+      "name": "Boîte à \"Boum\" des gobelins",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12720"
+    },
+    {
+      "recipe_id": "engineering:12722",
+      "name": "Radio des gobelins",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12722"
+    },
+    {
+      "recipe_id": "engineering:12895",
+      "name": "Plans : Cylindre damasquiné en mithril",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12895"
+    },
+    {
+      "recipe_id": "engineering:12900",
+      "name": "Alarme mobile",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12900"
+    },
+    {
+      "recipe_id": "engineering:12904",
+      "name": "Petite radio gnome",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12904"
+    },
+    {
+      "recipe_id": "engineering:12906",
+      "name": "Coq de combat gnome",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r12906"
+    },
+    {
+      "recipe_id": "engineering:13240",
+      "name": "Mortier des gobelins",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r13240"
+    },
+    {
+      "recipe_id": "engineering:23486",
+      "name": "Déchiquetteur dimensionnel - Long-guet",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23486"
+    },
+    {
+      "recipe_id": "engineering:23489",
+      "name": "Transporteur ultra-sécurisé : Gadgetzan",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r23489"
+    },
+    {
+      "recipe_id": "engineering:26011",
+      "name": "Yéti mécanique paisible",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r26011"
+    },
+    {
+      "recipe_id": "engineering:3922",
+      "name": "Poignée de boulons en cuivre",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3922"
+    },
+    {
+      "recipe_id": "engineering:3926",
+      "name": "Modulateur en cuivre",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3926"
+    },
+    {
+      "recipe_id": "engineering:3936",
+      "name": "Tromblon mortel",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3936"
+    },
+    {
+      "recipe_id": "engineering:3947",
+      "name": "Balle dure fabriquée",
+      "profession": "Ingénierie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/engineering#r3947"
+    },
+    {
+      "recipe_id": "first-aid:1230117",
+      "name": "Trousse de premiers soins",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1230117"
+    },
+    {
+      "recipe_id": "first-aid:1244431",
+      "name": "Potion de soins mineure",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1244431"
+    },
+    {
+      "recipe_id": "first-aid:1244432",
+      "name": "Potion de soins inférieure",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1244432"
+    },
+    {
+      "recipe_id": "first-aid:1244433",
+      "name": "Potion de soins",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1244433"
+    },
+    {
+      "recipe_id": "first-aid:1259342",
+      "name": "Cataplasme simple",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1259342"
+    },
+    {
+      "recipe_id": "first-aid:1259347",
+      "name": "Garrot en laine",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r1259347"
+    },
+    {
+      "recipe_id": "first-aid:30021",
+      "name": "Bandage imprégné de cristaux",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r30021"
+    },
+    {
+      "recipe_id": "first-aid:7934",
+      "name": "Anti-venin",
+      "profession": "Secourisme",
+      "source": "https://endgametools.com/fr/wow-forever/professions/first-aid#r7934"
+    },
+    {
+      "recipe_id": "fishing:1229745",
+      "name": "Bocal à poisson",
+      "profession": "Pêche",
+      "source": "https://endgametools.com/fr/wow-forever/professions/fishing#r1229745"
+    },
+    {
+      "recipe_id": "herbalism:1229705",
+      "name": "Bougie d’encens",
+      "profession": "Herboristerie",
+      "source": "https://endgametools.com/fr/wow-forever/professions/herbalism#r1229705"
+    },
+    {
+      "recipe_id": "leatherworking:10482",
+      "name": "Peau épaisse traitée",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10482"
+    },
+    {
+      "recipe_id": "leatherworking:10487",
+      "name": "Renfort d'armure épais",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10487"
+    },
+    {
+      "recipe_id": "leatherworking:10499",
+      "name": "Tunique de la nuit",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10499"
+    },
+    {
+      "recipe_id": "leatherworking:10507",
+      "name": "Bandeau de la nuit",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10507"
+    },
+    {
+      "recipe_id": "leatherworking:10511",
+      "name": "Cuirasse en écailles de tortue",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10511"
+    },
+    {
+      "recipe_id": "leatherworking:10518",
+      "name": "Brassards en écailles de tortue",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10518"
+    },
+    {
+      "recipe_id": "leatherworking:10548",
+      "name": "Pantalon de la nuit",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10548"
+    },
+    {
+      "recipe_id": "leatherworking:10552",
+      "name": "Casque en écailles de tortue",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10552"
+    },
+    {
+      "recipe_id": "leatherworking:10556",
+      "name": "Jambières en écailles de tortue",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10556"
+    },
+    {
+      "recipe_id": "leatherworking:10558",
+      "name": "Bottes de la nuit",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10558"
+    },
+    {
+      "recipe_id": "leatherworking:10619",
+      "name": "Gantelets en écailles de dragon",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10619"
+    },
+    {
+      "recipe_id": "leatherworking:10621",
+      "name": "Casque tête-de-loup",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10621"
+    },
+    {
+      "recipe_id": "leatherworking:10630",
+      "name": "Gantelets de la mer",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10630"
+    },
+    {
+      "recipe_id": "leatherworking:10632",
+      "name": "Casque de feu",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10632"
+    },
+    {
+      "recipe_id": "leatherworking:10647",
+      "name": "Cuirasse de plumes",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10647"
+    },
+    {
+      "recipe_id": "leatherworking:10650",
+      "name": "Cuirasse en écailles de dragon",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r10650"
+    },
+    {
+      "recipe_id": "leatherworking:1229432",
+      "name": "Tente du camp",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r1229432"
+    },
+    {
+      "recipe_id": "leatherworking:14930",
+      "name": "Carquois de tir rapide",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r14930"
+    },
+    {
+      "recipe_id": "leatherworking:14932",
+      "name": "Giberne en cuir épais",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r14932"
+    },
+    {
+      "recipe_id": "leatherworking:19047",
+      "name": "Peau robuste traitée",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19047"
+    },
+    {
+      "recipe_id": "leatherworking:19058",
+      "name": "Renfort d'armure robuste",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19058"
+    },
+    {
+      "recipe_id": "leatherworking:19093",
+      "name": "Cape en écailles d'Onyxia",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19093"
+    },
+    {
+      "recipe_id": "leatherworking:19106",
+      "name": "Cuirasse en écailles d'Onyxia",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r19106"
+    },
+    {
+      "recipe_id": "leatherworking:20648",
+      "name": "Cuir moyen",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r20648"
+    },
+    {
+      "recipe_id": "leatherworking:20649",
+      "name": "Cuir lourd",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r20649"
+    },
+    {
+      "recipe_id": "leatherworking:20650",
+      "name": "Cuir épais",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r20650"
+    },
+    {
+      "recipe_id": "leatherworking:2159",
+      "name": "Cape élégante en cuir",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r2159"
+    },
+    {
+      "recipe_id": "leatherworking:2165",
+      "name": "Renfort d'armure moyen",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r2165"
+    },
+    {
+      "recipe_id": "leatherworking:22331",
+      "name": "Cuir robuste",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r22331"
+    },
+    {
+      "recipe_id": "leatherworking:22815",
+      "name": "Tenue d'ogre gordok",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r22815"
+    },
+    {
+      "recipe_id": "leatherworking:24655",
+      "name": "Gantelets en écailles de dragon vert",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24655"
+    },
+    {
+      "recipe_id": "leatherworking:24703",
+      "name": "Cuirasse de rêvécaille",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24703"
+    },
+    {
+      "recipe_id": "leatherworking:24846",
+      "name": "Brassards de crache-feu",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24846"
+    },
+    {
+      "recipe_id": "leatherworking:24847",
+      "name": "Gantelets de crache-feu",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24847"
+    },
+    {
+      "recipe_id": "leatherworking:24848",
+      "name": "Cuirasse de crache-feu",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24848"
+    },
+    {
+      "recipe_id": "leatherworking:24849",
+      "name": "Brassards de traqueuse des sables",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24849"
+    },
+    {
+      "recipe_id": "leatherworking:24850",
+      "name": "Gantelets de traqueuse des sables",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24850"
+    },
+    {
+      "recipe_id": "leatherworking:24851",
+      "name": "Cuirasse de traqueuse des sables",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r24851"
+    },
+    {
+      "recipe_id": "leatherworking:28219",
+      "name": "Tunique polaire",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28219"
+    },
+    {
+      "recipe_id": "leatherworking:28220",
+      "name": "Gants polaires",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28220"
+    },
+    {
+      "recipe_id": "leatherworking:28221",
+      "name": "Brassards polaires",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28221"
+    },
+    {
+      "recipe_id": "leatherworking:28222",
+      "name": "Cuirasse glacécaille",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28222"
+    },
+    {
+      "recipe_id": "leatherworking:28223",
+      "name": "Gantelets glacécaille",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28223"
+    },
+    {
+      "recipe_id": "leatherworking:28224",
+      "name": "Brassards glacécaille",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28224"
+    },
+    {
+      "recipe_id": "leatherworking:28472",
+      "name": "Casque de la ronceraie",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28472"
+    },
+    {
+      "recipe_id": "leatherworking:28473",
+      "name": "Bottes de la ronceraie",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28473"
+    },
+    {
+      "recipe_id": "leatherworking:28474",
+      "name": "Ceinture de la ronceraie",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r28474"
+    },
+    {
+      "recipe_id": "leatherworking:3760",
+      "name": "Cape d'homme des collines",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3760"
+    },
+    {
+      "recipe_id": "leatherworking:3774",
+      "name": "Ceinture verte en cuir",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3774"
+    },
+    {
+      "recipe_id": "leatherworking:3776",
+      "name": "Brassards verts en cuir",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3776"
+    },
+    {
+      "recipe_id": "leatherworking:3780",
+      "name": "Renfort d'armure lourd",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3780"
+    },
+    {
+      "recipe_id": "leatherworking:3817",
+      "name": "Peau moyenne traitée",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3817"
+    },
+    {
+      "recipe_id": "leatherworking:3818",
+      "name": "Peau lourde traitée",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r3818"
+    },
+    {
+      "recipe_id": "leatherworking:6661",
+      "name": "Harnais barbare",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r6661"
+    },
+    {
+      "recipe_id": "leatherworking:7135",
+      "name": "Pantalon noir en cuir",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r7135"
+    },
+    {
+      "recipe_id": "leatherworking:7147",
+      "name": "Pantalon de gardien",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r7147"
+    },
+    {
+      "recipe_id": "leatherworking:7151",
+      "name": "Epaulières barbares",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r7151"
+    },
+    {
+      "recipe_id": "leatherworking:7156",
+      "name": "Gants de gardien",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r7156"
+    },
+    {
+      "recipe_id": "leatherworking:9193",
+      "name": "Carquois lourd",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9193"
+    },
+    {
+      "recipe_id": "leatherworking:9194",
+      "name": "Giberne en cuir lourd",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9194"
+    },
+    {
+      "recipe_id": "leatherworking:9196",
+      "name": "Armure en cuir mat",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9196"
+    },
+    {
+      "recipe_id": "leatherworking:9198",
+      "name": "Cape de givre en cuir",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9198"
+    },
+    {
+      "recipe_id": "leatherworking:9201",
+      "name": "Brassards mats",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9201"
+    },
+    {
+      "recipe_id": "leatherworking:9206",
+      "name": "Ceinture matte",
+      "profession": "Travail du cuir",
+      "source": "https://endgametools.com/fr/wow-forever/professions/leatherworking#r9206"
+    },
+    {
+      "recipe_id": "mining:10097",
+      "name": "Barre de mithril",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10097"
+    },
+    {
+      "recipe_id": "mining:10098",
+      "name": "Barre de vrai-argent",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r10098"
+    },
+    {
+      "recipe_id": "mining:1230161",
+      "name": "Magnétite",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1230161"
+    },
+    {
+      "recipe_id": "mining:1249637",
+      "name": "Barre d’azerothium",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1249637"
+    },
+    {
+      "recipe_id": "mining:1306126",
+      "name": "Barre de thorium lourd",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r1306126"
+    },
+    {
+      "recipe_id": "mining:14891",
+      "name": "Barre de sombrefer",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r14891"
+    },
+    {
+      "recipe_id": "mining:16153",
+      "name": "Barre de thorium",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r16153"
+    },
+    {
+      "recipe_id": "mining:22967",
+      "name": "Barre d'élémentium",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r22967"
+    },
+    {
+      "recipe_id": "mining:2657",
+      "name": "Barre de cuivre",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2657"
+    },
+    {
+      "recipe_id": "mining:2658",
+      "name": "Barre d'argent",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r2658"
+    },
+    {
+      "recipe_id": "mining:3304",
+      "name": "Barre d'étain",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3304"
+    },
+    {
+      "recipe_id": "mining:3307",
+      "name": "Barre de fer",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3307"
+    },
+    {
+      "recipe_id": "mining:3569",
+      "name": "Barre d'acier",
+      "profession": "Minage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/mining#r3569"
+    },
+    {
+      "recipe_id": "poisons:11341",
+      "name": "Poison instantané IV",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11341"
+    },
+    {
+      "recipe_id": "poisons:11342",
+      "name": "Poison instantané V",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11342"
+    },
+    {
+      "recipe_id": "poisons:11343",
+      "name": "Poison instantané VI",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11343"
+    },
+    {
+      "recipe_id": "poisons:11357",
+      "name": "Poison mortel III",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11357"
+    },
+    {
+      "recipe_id": "poisons:11358",
+      "name": "Poison mortel IV",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11358"
+    },
+    {
+      "recipe_id": "poisons:11400",
+      "name": "Poison de distraction mentale III",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r11400"
+    },
+    {
+      "recipe_id": "poisons:1214168",
+      "name": "Poison occulte II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r1214168"
+    },
+    {
+      "recipe_id": "poisons:13220",
+      "name": "Poison douloureux",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r13220"
+    },
+    {
+      "recipe_id": "poisons:13228",
+      "name": "Poison douloureux II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r13228"
+    },
+    {
+      "recipe_id": "poisons:13229",
+      "name": "Poison douloureux III",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r13229"
+    },
+    {
+      "recipe_id": "poisons:13230",
+      "name": "Poison douloureux IV",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r13230"
+    },
+    {
+      "recipe_id": "poisons:25347",
+      "name": "Poison mortel V",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r25347"
+    },
+    {
+      "recipe_id": "poisons:2835",
+      "name": "Poison mortel",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r2835"
+    },
+    {
+      "recipe_id": "poisons:2837",
+      "name": "Poison mortel II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r2837"
+    },
+    {
+      "recipe_id": "poisons:3420",
+      "name": "Poison affaiblissant",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r3420"
+    },
+    {
+      "recipe_id": "poisons:3421",
+      "name": "Poison affaiblissant II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r3421"
+    },
+    {
+      "recipe_id": "poisons:439500",
+      "name": "Poison sébacé",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r439500"
+    },
+    {
+      "recipe_id": "poisons:439503",
+      "name": "Poison atrophiant",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r439503"
+    },
+    {
+      "recipe_id": "poisons:439505",
+      "name": "Poison ankylosant",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r439505"
+    },
+    {
+      "recipe_id": "poisons:458822",
+      "name": "Poison occulte I",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r458822"
+    },
+    {
+      "recipe_id": "poisons:5763",
+      "name": "Poison de distraction mentale",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r5763"
+    },
+    {
+      "recipe_id": "poisons:6510",
+      "name": "Poudre aveuglante",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r6510"
+    },
+    {
+      "recipe_id": "poisons:8681",
+      "name": "Poison instantané",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r8681"
+    },
+    {
+      "recipe_id": "poisons:8687",
+      "name": "Poison instantané II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r8687"
+    },
+    {
+      "recipe_id": "poisons:8691",
+      "name": "Poison instantané III",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r8691"
+    },
+    {
+      "recipe_id": "poisons:8694",
+      "name": "Poison de distraction mentale II",
+      "profession": "Poisons",
+      "source": "https://endgametools.com/fr/wow-forever/professions/poisons#r8694"
+    },
+    {
+      "recipe_id": "skinning:1229517",
+      "name": "Chaise du camp",
+      "profession": "Dépeçage",
+      "source": "https://endgametools.com/fr/wow-forever/professions/skinning#r1229517"
+    },
+    {
+      "recipe_id": "tailoring:12048",
+      "name": "Gilet noir en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12048"
+    },
+    {
+      "recipe_id": "tailoring:12049",
+      "name": "Pantalon noir en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12049"
+    },
+    {
+      "recipe_id": "tailoring:12050",
+      "name": "Robe noire en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12050"
+    },
+    {
+      "recipe_id": "tailoring:12052",
+      "name": "Pantalon en tisse-ombre",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12052"
+    },
+    {
+      "recipe_id": "tailoring:12053",
+      "name": "Gants noirs en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12053"
+    },
+    {
+      "recipe_id": "tailoring:12055",
+      "name": "Robe en tisse-ombre",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12055"
+    },
+    {
+      "recipe_id": "tailoring:12061",
+      "name": "Chemise orange en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12061"
+    },
+    {
+      "recipe_id": "tailoring:12065",
+      "name": "Sac en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12065"
+    },
+    {
+      "recipe_id": "tailoring:12067",
+      "name": "Gants en tisse-rêve",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12067"
+    },
+    {
+      "recipe_id": "tailoring:12069",
+      "name": "Robe en étoffe cendrée",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12069"
+    },
+    {
+      "recipe_id": "tailoring:12070",
+      "name": "Gilet en tisse-rêve",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12070"
+    },
+    {
+      "recipe_id": "tailoring:12071",
+      "name": "Gants en tisse-ombre",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12071"
+    },
+    {
+      "recipe_id": "tailoring:12072",
+      "name": "Bandeau noir en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12072"
+    },
+    {
+      "recipe_id": "tailoring:12073",
+      "name": "Bottes noires en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12073"
+    },
+    {
+      "recipe_id": "tailoring:12074",
+      "name": "Epaulières noires en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12074"
+    },
+    {
+      "recipe_id": "tailoring:12076",
+      "name": "Epaulières en tisse-ombre",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12076"
+    },
+    {
+      "recipe_id": "tailoring:12077",
+      "name": "Robe noire simple",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12077"
+    },
+    {
+      "recipe_id": "tailoring:12079",
+      "name": "Sac rouge en tisse-mage",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12079"
+    },
+    {
+      "recipe_id": "tailoring:12082",
+      "name": "Bottes en tisse-ombre",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12082"
+    },
+    {
+      "recipe_id": "tailoring:12088",
+      "name": "Bottes en étoffe cendrée",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12088"
+    },
+    {
+      "recipe_id": "tailoring:12092",
+      "name": "Diadème en tisse-rêve",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r12092"
+    },
+    {
+      "recipe_id": "tailoring:1229504",
+      "name": "Bannière de faction",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r1229504"
+    },
+    {
+      "recipe_id": "tailoring:1263425",
+      "name": "Bannière de faction",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r1263425"
+    },
+    {
+      "recipe_id": "tailoring:18402",
+      "name": "Ceinture en étoffe runique",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r18402"
+    },
+    {
+      "recipe_id": "tailoring:19435",
+      "name": "Bottes en étoffe lunaire",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r19435"
+    },
+    {
+      "recipe_id": "tailoring:22813",
+      "name": "Tenue d'ogre gordok",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r22813"
+    },
+    {
+      "recipe_id": "tailoring:2395",
+      "name": "Gilet barbare en lin",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r2395"
+    },
+    {
+      "recipe_id": "tailoring:2396",
+      "name": "Chemise verte en lin",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r2396"
+    },
+    {
+      "recipe_id": "tailoring:2406",
+      "name": "Chemise grise en laine",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r2406"
+    },
+    {
+      "recipe_id": "tailoring:26086",
+      "name": "Sac en gangrétoffe",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r26086"
+    },
+    {
+      "recipe_id": "tailoring:28205",
+      "name": "Gants glaciaires",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r28205"
+    },
+    {
+      "recipe_id": "tailoring:28207",
+      "name": "Gilet glaciaire",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r28207"
+    },
+    {
+      "recipe_id": "tailoring:28208",
+      "name": "Cape glaciaire",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r28208"
+    },
+    {
+      "recipe_id": "tailoring:28209",
+      "name": "Poignets glaciaires",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r28209"
+    },
+    {
+      "recipe_id": "tailoring:3757",
+      "name": "Sac en laine",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3757"
+    },
+    {
+      "recipe_id": "tailoring:3813",
+      "name": "Petit sac en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3813"
+    },
+    {
+      "recipe_id": "tailoring:3843",
+      "name": "Gants en laine épaisse",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3843"
+    },
+    {
+      "recipe_id": "tailoring:3845",
+      "name": "Bottes en lin à semelle souple",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3845"
+    },
+    {
+      "recipe_id": "tailoring:3852",
+      "name": "Gants de méditation",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3852"
+    },
+    {
+      "recipe_id": "tailoring:3859",
+      "name": "Gilet azur en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3859"
+    },
+    {
+      "recipe_id": "tailoring:3861",
+      "name": "Longue cape en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r3861"
+    },
+    {
+      "recipe_id": "tailoring:6690",
+      "name": "Robe de sorcier inférieur",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r6690"
+    },
+    {
+      "recipe_id": "tailoring:7636",
+      "name": "Robe verte en laine",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r7636"
+    },
+    {
+      "recipe_id": "tailoring:8483",
+      "name": "Chemise blanche de bretteur",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8483"
+    },
+    {
+      "recipe_id": "tailoring:8489",
+      "name": "Chemise rouge de bretteur",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8489"
+    },
+    {
+      "recipe_id": "tailoring:8758",
+      "name": "Pantalon azur en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8758"
+    },
+    {
+      "recipe_id": "tailoring:8760",
+      "name": "Chaperon azur en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8760"
+    },
+    {
+      "recipe_id": "tailoring:8762",
+      "name": "Bandeau en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8762"
+    },
+    {
+      "recipe_id": "tailoring:8766",
+      "name": "Ceinture azur en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8766"
+    },
+    {
+      "recipe_id": "tailoring:8770",
+      "name": "Robe de puissance",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8770"
+    },
+    {
+      "recipe_id": "tailoring:8772",
+      "name": "Ceinture cramoisie en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8772"
+    },
+    {
+      "recipe_id": "tailoring:8774",
+      "name": "Epaulières vertes en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8774"
+    },
+    {
+      "recipe_id": "tailoring:8778",
+      "name": "Bottes des ténèbres",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8778"
+    },
+    {
+      "recipe_id": "tailoring:8799",
+      "name": "Culotte cramoisie en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8799"
+    },
+    {
+      "recipe_id": "tailoring:8804",
+      "name": "Gants cramoisis en soie",
+      "profession": "Couture",
+      "source": "https://endgametools.com/fr/wow-forever/professions/tailoring#r8804"
+    }
+  ],
+  "unreadable_or_variable_recipe_ids": [],
+  "unresolved_skill_candidates": [
+    {
+      "recipe_id": "blacksmithing:3292",
+      "reason": "Source actuelle 95 ; référence Classic Wowcalc 90. Aucune confirmation Forever exploitable trouvée."
+    },
+    {
+      "recipe_id": "blacksmithing:3491",
+      "reason": "Source actuelle 105 ; référence Classic 100 et ancien commentaire Wowhead : insuffisant pour corriger."
+    },
+    {
+      "recipe_id": "enchanting:7428",
+      "reason": "Source apprentissage automatique 1 ; référence Classic 20, non appliquée."
+    },
+    {
+      "recipe_id": "leatherworking:7153",
+      "reason": "Patron Forever 160 ; référence Classic 125 non appliquée."
+    },
+    {
+      "recipe_id": "tailoring:3755",
+      "reason": "Apprentissage automatique 1 selon la source ; référence Classic 45 non appliquée."
+    },
+    {
+      "recipe_id": "tailoring:23664",
+      "reason": "Patron Forever 290, guide Wowhead 255 ; valeur du patron conservée."
+    }
+  ]
+}
