@@ -39,8 +39,12 @@ def estimate_auction(result: Result, market: dict[int, MarketItem], fee_percent:
     return AuctionEstimate(gross=gross, net=net, profit=profit, gold_per_minute=rate)
 
 
-def profitability(result, auction, disenchant=None):
+def profitability(result, auction, disenchant=None, direct=None):
     """Common classification for the table, counters and filters."""
+    if direct is not None and direct.profit is not None and direct.profit>0:
+        craft_status=profitability(result,auction,disenchant)
+        return (craft_status+' et désenchantement seul' if craft_status.startswith('Rentable ')
+                else 'Rentable désenchantement seul')
     if result.status=='Exclue':
         return 'Exclue'
     pnj=result.first_profit is not None and result.first_profit>0
@@ -64,7 +68,7 @@ def auction_roi(result, auction):
     return auction.profit/result.investment*100 if auction.profit is not None and result.investment>0 else None
 
 
-def filter_roi(result, auction, mode, disenchant=None):
+def filter_roi(result, auction, mode, disenchant=None, direct=None):
     pnj=result.batch_roi
     hdv=auction_roi(result,auction)
     if mode=='Rentables HDV':
@@ -74,5 +78,8 @@ def filter_roi(result, auction, mode, disenchant=None):
     de=auction_roi(result,disenchant) if disenchant is not None else None
     if mode=='Rentables désenchantement':
         return de
-    known=[v for v in (pnj,hdv,de) if v is not None]
+    direct_roi=direct.profit/direct.purchase_cost*100 if direct is not None and direct.profit is not None and direct.purchase_cost else None
+    if mode=='Rentables désenchantement seul':
+        return direct_roi
+    known=[v for v in (pnj,hdv,de,direct_roi) if v is not None]
     return max(known) if known else None

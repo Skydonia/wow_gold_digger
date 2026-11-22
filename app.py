@@ -136,7 +136,7 @@ direct_items={i.item_id:estimate_direct_disenchant(i.item_id,report.items,catalo
               for r in results for i in r.recipe.outputs}
 direct_disenchants={r.recipe.id:(direct_items[r.recipe.outputs[0].item_id] if len({i.item_id for i in r.recipe.outputs})==1
                               else DisenchantEstimate(reason='Recette sans équipement unique à comparer')) for r in results}
-statuses={r.recipe.id:profitability(r,auctions[r.recipe.id],disenchants[r.recipe.id]) for r in results}
+statuses={r.recipe.id:profitability(r,auctions[r.recipe.id],disenchants[r.recipe.id],direct_disenchants[r.recipe.id]) for r in results}
 counts=Counter(statuses.values())
 metrics=st.columns(4)
 metrics[0].metric('Recettes analysées',len(eligible))
@@ -153,10 +153,7 @@ def name(r):
 
 
 def selected_roi(r):
-    if mode=='Rentables désenchantement seul':
-        direct=direct_disenchants[r.recipe.id]
-        return direct.profit/direct.purchase_cost*100 if direct.profit is not None and direct.purchase_cost else None
-    return filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id])
+    return filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id],direct_disenchants[r.recipe.id])
 
 
 def matches(r):
@@ -219,10 +216,10 @@ def row(r):
 ranking,coverage,method=st.tabs(['Classement','Base de données','Méthode'])
 with ranking:
     st.subheader(f'{len(filtered)} recette(s)')
-    st.caption('Désenchantement seul : achat d’un équipement au prix unitaire HDV le plus bas disponible, puis revente moyenne des matériaux après commission. Le temps compte uniquement un désenchantement. Valeur positive = achat rentable en moyenne ; valeur négative = perte. Le filtre « Rentables désenchantement seul » inclut ces opportunités même si le craft est impossible ou déficitaire ; son seuil en % est calculé sur le prix de l’équipement. Les autres filtres et statuts concernent la fabrication. Cette colonne couvre les équipements des recettes affichées, pas tous les équipements du marché.')
+    st.caption('Désenchantement seul : achat d’un équipement au prix unitaire HDV le plus bas disponible, puis revente moyenne des matériaux après commission. Le temps compte uniquement un désenchantement. Valeur positive = achat rentable en moyenne ; valeur négative = perte. Le filtre « Rentables désenchantement seul » inclut ces opportunités même si le craft est impossible ou déficitaire ; son seuil en % est calculé sur le prix de l’équipement. Le filtre général « Rentables » et les statuts incluent également cette voie. Cette colonne couvre les équipements des recettes affichées, pas tous les équipements du marché.')
     st.caption('Désenchantement : valeur moyenne des matériaux × chances d’obtention, moins commission HDV et coût du craft. Quantités et chances affichées par objet désenchanté ; quantités moyennes supposées uniformes dans chaque intervalle. Le débit inclut la fabrication et le désenchantement de tous les objets produits, avec le délai de récupération si celui-ci est plus long. Un résultat individuel peut être déficitaire. Bonus de désenchantement non inclus.')
     st.warning('Probabilités de désenchantement estimées : tables Classic utilisées par Professions_Forever, tranches de niveaux issues du client Forever. Les taux, exceptions et exclusions ne sont pas confirmés pour tous les objets sur Forever.')
-    st.caption('« Rentables » inclut aussi les recettes bénéficiaires par désenchantement. Le filtre « Rentables désenchantement » et le tri dédié permettent de les isoler. Le seuil de rentabilité utilise le canal sélectionné, ou le meilleur des trois.')
+    st.caption('« Rentables » inclut toute ligne bénéficiaire dans au moins une des quatre voies, y compris le désenchantement seul. Le filtre « Rentables désenchantement » et le tri dédié permettent de les isoler. Le seuil de rentabilité utilise le canal sélectionné, ou le meilleur des quatre.')
     st.caption('Tous les résultats portent sur une fabrication, qui peut produire plusieurs objets. Rentabilité PNJ = bénéfice ÷ coût des achats nécessaires × 100.')
     st.caption('Or/min : bénéfice net, temps de fabrication et délais de récupération connus. Achats, déplacements, vente, latence et bonus personnels non inclus. Les durées inconnues ou instantanées n’ont pas de débit calculé.')
     st.caption(f'HDV : estimation pour une fabrication, au plus bas prix unitaire des annonces du scan, moins {auction_fee} % de commission simulée et le coût des composants. Vente non garantie ; dépôts perdus sur les invendus non inclus. « — » : donnée manquante ou calcul non applicable. Le débit HDV utilise le même temps de référence que le PNJ, sans inclure le temps nécessaire pour vendre. Sans durée de fabrication positive connue, les débits sont indisponibles.')
@@ -351,7 +348,7 @@ with coverage:
 
 with method:
     st.markdown('''
-**Le tri initial utilise le meilleur pourcentage de rentabilité connu entre PNJ, HDV et désenchantement pour une fabrication, ou celui du canal sélectionné.** Les bénéfices absolus restent disponibles comme tris secondaires.
+**Le tri initial utilise le meilleur pourcentage de rentabilité connu entre vente PNJ, vente HDV, craft puis désenchantement et achat HDV puis désenchantement, ou celui du canal sélectionné.** Les bénéfices absolus restent disponibles comme tris secondaires.
 
 **Désenchantement : bénéfice moyen = somme(chance × quantité moyenne × prix unitaire HDV × nombre d’objets produits), après commission HDV, moins les achats du craft.** Les quantités moyennes supposent une distribution uniforme entre minimum et maximum. Le calcul conserve les fractions de cuivre jusqu’à l’affichage. Le temps de cycle est le maximum entre le délai de récupération et la somme du temps de craft et des désenchantements. Un prix de matériau manquant rend le bénéfice indisponible, jamais nul. Les chances restent visibles même sans prix.
 

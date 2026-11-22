@@ -125,6 +125,26 @@ def test_direct_purchase_missing_prices_and_non_disenchantable_items():
     assert direct.purchase_cost == 1 and direct.profit is None and direct.outcomes
 
 
+@pytest.mark.parametrize('craft_unavailable', [False, True])
+def test_general_profitability_includes_direct_only_with_its_own_investment(craft_unavailable):
+    recipe, market, profiles = example()
+    market[1] = replace(market[1], tiers=(Tier(1000, 20),))
+    market[2] = replace(market[2], tiers=(Tier(200, 1),))
+    if craft_unavailable:
+        del market[1]
+    result = analyze_single(recipe, market)
+    auction = estimate_auction(result, market)
+    craft_de = estimate_disenchant(result, market, profiles)
+    direct = estimate_direct_disenchant(2, market, profiles)
+    assert profitability(result, auction, craft_de, direct) == 'Rentable désenchantement seul'
+    assert filter_roi(result, auction, 'Rentables', craft_de, direct) == pytest.approx(223)
+    assert filter_roi(result, auction, 'Rentables HDV', craft_de, direct) == (None if craft_unavailable else pytest.approx(-90.5))
+    excluded = analyze_single(replace(recipe, exclusion='Craft exclu'), market)
+    assert profitability(excluded, estimate_auction(excluded, market), direct=direct) == 'Rentable désenchantement seul'
+    loss = replace(direct, profit=-1)
+    assert not profitability(result, auction, craft_de, loss).startswith('Rentable ')
+
+
 def test_source_reference_item_level_boundaries_exceptions_and_exclusions():
     data = reference()
     validate_reference(data)

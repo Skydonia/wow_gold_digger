@@ -195,10 +195,15 @@ def test_disenchant_filter_rate_links_and_commission():
 
 def test_direct_disenchant_column_sort_filter_and_fee():
     app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+    general=ranking_frame(app)
     app.sidebar.selectbox(key='status').set_value('Rentables désenchantement seul')
     app.sidebar.selectbox(key='sort').set_value('Désenchantement seul (po/min)').run()
     assert not app.exception
     frame=ranking_frame(app)
+    assert set(frame['Identifiant'])<=set(general['Identifiant'])
+    direct_only=general[general['Statut']=='Rentable désenchantement seul']
+    assert len(direct_only)>0
+    assert (direct_only['Rentabilité (%)']>0).all()
     rates=pd.to_numeric(frame['Désenchantement seul (po/min)'],errors='coerce').dropna().tolist()
     assert rates and all(v>0 for v in rates) and rates==sorted(rates,reverse=True)
     app.sidebar.number_input(key='min_roi').set_value(10).run()
