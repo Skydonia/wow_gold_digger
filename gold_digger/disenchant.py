@@ -1,6 +1,7 @@
 """Espérance de revente des composants de désenchantement, pour un craft."""
 from dataclasses import dataclass
 from math import isfinite
+from .market import money
 
 
 def validate_reference(data):
@@ -134,13 +135,16 @@ def estimate_disenchant(result, market, profiles, fee_percent=5, seconds_per_ite
     return DisenchantEstimate(gross, net, profit, profit*6/duration if duration else None, duration, details)
 
 
-def outcome_labels(estimate, items):
-    """Chance and quantity per item, even when the AH price is missing."""
+def outcome_labels(estimate, items, market=None):
+    """Chance, quantity and lowest listed unit price; missing prices stay explicit."""
     labels = []
     multiple = len({o['output_id'] for o in estimate.outcomes}) > 1
     for o in estimate.outcomes:
         name = items.get(o['item_id'], {}).get('name_fr', f"Objet {o['item_id']}")
         amount = str(o['min_quantity']) if o['min_quantity'] == o['max_quantity'] else f"{o['min_quantity']}–{o['max_quantity']}"
         prefix = items.get(o['output_id'], {}).get('name_fr', str(o['output_id'])) + ' → ' if multiple else ''
-        labels.append((prefix, name, o['item_id'], f" : {o['probability']*100:g} % × {amount}"))
+        material=(market or {}).get(o['item_id'])
+        price=min((t.price for t in material.tiers),default=None) if material else None
+        price_label=f'{money(price)} / unité' if price is not None else 'prix HDV absent'
+        labels.append((prefix, name, o['item_id'], f" ({price_label}) : {o['probability']*100:g} % × {amount}"))
     return labels

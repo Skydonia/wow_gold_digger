@@ -193,7 +193,7 @@ def row(r):
         'Bénéfice HDV estimé (po/min)':round(auction.gold_per_minute,6) if auction.gold_per_minute is not None else None,
         'Bénéfice désenchantement estimé (po/min)':round(de.gold_per_minute,6) if de.gold_per_minute is not None else None,
         'Désenchantement seul (po/min)':round(direct.gold_per_minute,6) if direct.gold_per_minute is not None else None,
-        'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(de,items)) or '—',
+        'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(de,items,report.items)) or '—',
         'Métier':r.recipe.profession,'Compétence requise':r.recipe.skill_required,'Type de recette':', '.join(categories[r.recipe.id]),
         'Rentabilité (%)':round(roi,2) if roi is not None else None,
         'Rentabilité HDV estimée (%)':round(hdv_roi,2) if hdv_roi is not None else None,
@@ -227,7 +227,7 @@ with ranking:
     else:
         table([row(r) for r in filtered],component_links=[
             [(i.quantity,item_name(i.item_id,items,report.items,i.name),i.item_id) for i in r.recipe.ingredients]
-            for r in filtered],disenchant_links=[outcome_labels(disenchants[r.recipe.id],items) for r in filtered])
+            for r in filtered],disenchant_links=[outcome_labels(disenchants[r.recipe.id],items,report.items) for r in filtered])
         exports=[]
         for r in filtered:
             exports.append({**row(r),'investissement_cuivre':r.investment,'benefice_cuivre':r.profit,'benefice_hdv_estime_cuivre':estimate_auction(r,report.items,auction_fee).profit,'commission_hdv_pourcent':auction_fee,'source':r.recipe.source,'build':r.recipe.build,'duree_reference_ms':r.reference_time_ms,'source_duree':r.recipe.timing_source,'build_duree':r.recipe.timing_build})
@@ -368,11 +368,11 @@ with disenchant_market_tab:
                 'Valeur moyenne nette des matériaux':money(round(estimate.net)) if estimate.net is not None else '—',
                 'Bénéfice moyen par objet':money(round(estimate.profit)) if estimate.profit is not None else '—',
                 'Rentabilité (%)':round(record['roi'],2) if record['roi'] is not None else None,
-                'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(estimate,items)) or '—',
+                'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(estimate,items,report.items)) or '—',
                 'Niveau d’objet':record['item_level'],'Stock HDV connu':record['stock'],
                 'Statut':record['status'],'Motif':estimate.reason,'Identifiant':record['item_id'],
                 'Wowhead':wowhead_url(record['item_id'])})
-        table(de_rows,disenchant_links=[outcome_labels(r['estimate'],items) for r in de_filtered])
+        table(de_rows,disenchant_links=[outcome_labels(r['estimate'],items,report.items) for r in de_filtered])
         de_exports=[{**row,'achat_cuivre':record['purchase_cost'],'valeur_nette_moyenne_cuivre':record['estimate'].net,
                      'benefice_moyen_cuivre':record['estimate'].profit,'commission_hdv_pourcent':auction_fee,
                      'secondes_par_objet':disenchant_seconds,'source':catalog.get('disenchant_info',{}).get('source'),
