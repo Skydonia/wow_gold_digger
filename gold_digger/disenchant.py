@@ -65,6 +65,37 @@ class DisenchantEstimate:
     duration_ms: float | None = None
     outcomes: tuple = ()
     reason: str = ''
+    purchase_cost: int | None = None
+
+
+def estimate_direct_disenchant(item_id, market, profiles, fee_percent=5, seconds_per_item=3.0):
+    """Buy exactly one listed equipment item; no craft inputs, time or cooldown."""
+    if type(fee_percent) is not int or not 0 <= fee_percent <= 100:
+        raise ValueError('Commission HDV invalide')
+    if not isfinite(seconds_per_item) or seconds_per_item <= 0:
+        raise ValueError('Durée de désenchantement invalide')
+    profile = profiles.get(item_id)
+    if not profile or not profile.get('outcomes'):
+        return DisenchantEstimate(reason=(profile or {}).get('reason', 'Désenchantement non documenté'))
+    outcomes = tuple({**o, 'output_id': item_id, 'output_quantity': 1,
+                      'source': profile['source'], 'evidence': profile['evidence']}
+                     for o in profile['outcomes'])
+    equipment = market.get(item_id)
+    tiers = [t for t in equipment.tiers if t.quantity > 0] if equipment else []
+    if not tiers:
+        return DisenchantEstimate(outcomes=outcomes, reason='Équipement absent des annonces HDV disponibles')
+    cost = min(t.price for t in tiers)
+    gross = 0.0
+    for o in outcomes:
+        material = market.get(o['item_id'])
+        if not material or not material.tiers:
+            return DisenchantEstimate(outcomes=outcomes, purchase_cost=cost,
+                                     reason=f"Prix HDV absent : composant {o['item_id']}")
+        gross += o['probability'] * (o['min_quantity']+o['max_quantity'])/2 * min(t.price for t in material.tiers)
+    net = gross * (100-fee_percent)/100
+    profit = net-cost
+    duration = seconds_per_item*1000
+    return DisenchantEstimate(gross, net, profit, profit*6/duration, duration, outcomes, purchase_cost=cost)
 
 
 def estimate_disenchant(result, market, profiles, fee_percent=5, seconds_per_item=3.0):

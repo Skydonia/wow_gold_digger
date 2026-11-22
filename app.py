@@ -11,7 +11,7 @@ from gold_digger.categories import recipe_categories
 from gold_digger.catalog import load_catalog
 from gold_digger.database import wowhead_url
 from gold_digger.engine import analyze_single
-from gold_digger.disenchant import estimate_disenchant, outcome_labels
+from gold_digger.disenchant import estimate_disenchant, estimate_direct_disenchant, DisenchantEstimate, outcome_labels
 from gold_digger.market import parse_market, money
 from gold_digger.presentation import components_table, item_name, recipe_matches, search_matches, interactive_table, text_link
 
@@ -118,8 +118,8 @@ with st.sidebar:
     auction_fee=st.number_input('Commission HDV simulée (%)',min_value=0,max_value=100,value=5,step=1,key='auction_fee',help='Hypothèse modifiable pour estimer la revente HDV. Les dépôts perdus sur les invendus ne sont pas inclus.')
     disenchant_seconds=st.number_input('Désenchantement : secondes par objet',min_value=0.1,max_value=60.0,value=3.0,step=0.1,key='disenchant_seconds',help='3 secondes de base (Wowhead, sort 13262). Augmente cette durée pour inclure le ramassage ou la latence.')
     minimum_roi=st.number_input('Rentabilité minimale (%)',min_value=0.0,value=0.0,step=1.0,key='min_roi')
-    mode=st.selectbox('Afficher',['Rentables','Rentables HDV','Rentables PNJ','Rentables désenchantement','Toutes les recettes','Non rentables','Données insuffisantes','Exclues'],key='status')
-    sort_label=st.selectbox('Trier par',['Rentabilité (%)','Bénéfice par fabrication','Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Bénéfice désenchantement estimé (po/min)'],key='sort')
+    mode=st.selectbox('Afficher',['Rentables','Rentables HDV','Rentables PNJ','Rentables désenchantement','Rentables désenchantement seul','Toutes les recettes','Non rentables','Données insuffisantes','Exclues'],key='status')
+    sort_label=st.selectbox('Trier par',['Rentabilité (%)','Bénéfice par fabrication','Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Bénéfice désenchantement estimé (po/min)','Désenchantement seul (po/min)'],key='sort')
     timed_only=st.checkbox('Durée de fabrication connue uniquement',value=False,key='timed_only')
 
 if min_skill>max_skill:
@@ -132,6 +132,10 @@ with st.spinner('Calcul des coûts HDV et marchands…'):
     results=calculate(eligible,report.items,catalog['vendor_prices'],offers,policy)
 auctions={r.recipe.id:estimate_auction(r,report.items,auction_fee) for r in results}
 disenchants={r.recipe.id:estimate_disenchant(r,report.items,catalog.get('disenchant',{}),auction_fee,disenchant_seconds) for r in results}
+direct_items={i.item_id:estimate_direct_disenchant(i.item_id,report.items,catalog.get('disenchant',{}),auction_fee,disenchant_seconds)
+              for r in results for i in r.recipe.outputs}
+direct_disenchants={r.recipe.id:(direct_items[r.recipe.outputs[0].item_id] if len({i.item_id for i in r.recipe.outputs})==1
+                              else DisenchantEstimate(reason='Recette sans équipement unique à comparer')) for r in results}
 statuses={r.recipe.id:profitability(r,auctions[r.recipe.id],disenchants[r.recipe.id]) for r in results}
 counts=Counter(statuses.values())
 metrics=st.columns(4)
@@ -148,13 +152,20 @@ def name(r):
     return item_name(r.recipe.outputs[0].item_id,items,report.items,r.recipe.name) if r.recipe.outputs else r.recipe.name
 
 
+def selected_roi(r):
+    if mode=='Rentables désenchantement seul':
+        direct=direct_disenchants[r.recipe.id]
+        return direct.profit/direct.purchase_cost*100 if direct.profit is not None and direct.purchase_cost else None
+    return filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id])
+
+
 def matches(r):
-    if timed_only and not (r.recipe.cast_time_ms is not None and r.recipe.cast_time_ms>0):
+    if timed_only and mode!='Rentables désenchantement seul' and not (r.recipe.cast_time_ms is not None and r.recipe.cast_time_ms>0):
         return False
     text=' '.join([name(r),r.recipe.name,r.recipe.id,r.recipe.profession,*categories[r.recipe.id]]+[item_name(i.item_id,items,report.items,i.name) for i in (*r.recipe.ingredients,*r.recipe.outputs)])
     if not search_matches(query,text):
         return False
-    channel_profit={'Rentables HDV':auctions[r.recipe.id].profit,'Rentables PNJ':r.first_profit,'Rentables désenchantement':disenchants[r.recipe.id].profit}
+    channel_profit={'Rentables HDV':auctions[r.recipe.id].profit,'Rentables PNJ':r.first_profit,'Rentables désenchantement':disenchants[r.recipe.id].profit,'Rentables désenchantement seul':direct_disenchants[r.recipe.id].profit}
     if mode=='Rentables' and not statuses[r.recipe.id].startswith('Rentable '):
         return False
     if mode in channel_profit and (channel_profit[mode] is None or channel_profit[mode]<=0):
@@ -162,7 +173,7 @@ def matches(r):
     allowed={'Non rentables':{'Non rentable'},'Données insuffisantes':{'Données insuffisantes'},'Exclues':{'Exclue'}}
     if mode in allowed and statuses[r.recipe.id] not in allowed[mode]:
         return False
-    roi=filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id])
+    roi=selected_roi(r)
     return minimum_roi==0 or (roi is not None and roi>=minimum_roi)
 
 
@@ -170,8 +181,9 @@ filtered=[r for r in results if matches(r)]
 auction_rates={r.recipe.id:estimate_auction(r,report.items,auction_fee).gold_per_minute for r in filtered}
 key={'Bénéfice HDV estimé (po/min)':lambda r:auction_rates[r.recipe.id] if auction_rates[r.recipe.id] is not None else float('-inf'),
      'Bénéfice désenchantement estimé (po/min)':lambda r:disenchants[r.recipe.id].gold_per_minute if disenchants[r.recipe.id].gold_per_minute is not None else float('-inf'),
+     'Désenchantement seul (po/min)':lambda r:direct_disenchants[r.recipe.id].gold_per_minute if direct_disenchants[r.recipe.id].gold_per_minute is not None else float('-inf'),
      'Bénéfice PNJ (po/min)':lambda r:r.gold_per_minute if r.gold_per_minute is not None else float('-inf'),
-     'Rentabilité (%)':lambda r:filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id]) if filter_roi(r,auctions[r.recipe.id],mode,disenchants[r.recipe.id]) is not None else float('-inf'),
+     'Rentabilité (%)':lambda r:selected_roi(r) if selected_roi(r) is not None else float('-inf'),
      'Bénéfice par fabrication':lambda r:r.first_profit if r.first_profit is not None else float('-inf')}[sort_label]
 filtered.sort(key=key,reverse=True)
 
@@ -179,12 +191,14 @@ filtered.sort(key=key,reverse=True)
 def row(r):
     auction=auctions[r.recipe.id]
     de=disenchants[r.recipe.id]
-    roi=filter_roi(r,auction,mode,de)
+    roi=selected_roi(r)
+    direct=direct_disenchants[r.recipe.id]
     hdv_roi=auction_roi(r,auction)
     return {'Recette':name(r),
         'Bénéfice PNJ (po/min)':round(r.gold_per_minute,6) if r.gold_per_minute is not None else None,
         'Bénéfice HDV estimé (po/min)':round(auction.gold_per_minute,6) if auction.gold_per_minute is not None else None,
         'Bénéfice désenchantement estimé (po/min)':round(de.gold_per_minute,6) if de.gold_per_minute is not None else None,
+        'Désenchantement seul (po/min)':round(direct.gold_per_minute,6) if direct.gold_per_minute is not None else None,
         'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(de,items)) or '—',
         'Métier':r.recipe.profession,'Compétence requise':r.recipe.skill_required,'Type de recette':', '.join(categories[r.recipe.id]),
         'Rentabilité (%)':round(roi,2) if roi is not None else None,
@@ -205,6 +219,7 @@ def row(r):
 ranking,coverage,method=st.tabs(['Classement','Base de données','Méthode'])
 with ranking:
     st.subheader(f'{len(filtered)} recette(s)')
+    st.caption('Désenchantement seul : achat d’un équipement au prix unitaire HDV le plus bas disponible, puis revente moyenne des matériaux après commission. Le temps compte uniquement un désenchantement. Valeur positive = achat rentable en moyenne ; valeur négative = perte. Le filtre « Rentables désenchantement seul » inclut ces opportunités même si le craft est impossible ou déficitaire ; son seuil en % est calculé sur le prix de l’équipement. Les autres filtres et statuts concernent la fabrication. Cette colonne couvre les équipements des recettes affichées, pas tous les équipements du marché.')
     st.caption('Désenchantement : valeur moyenne des matériaux × chances d’obtention, moins commission HDV et coût du craft. Quantités et chances affichées par objet désenchanté ; quantités moyennes supposées uniformes dans chaque intervalle. Le débit inclut la fabrication et le désenchantement de tous les objets produits, avec le délai de récupération si celui-ci est plus long. Un résultat individuel peut être déficitaire. Bonus de désenchantement non inclus.')
     st.warning('Probabilités de désenchantement estimées : tables Classic utilisées par Professions_Forever, tranches de niveaux issues du client Forever. Les taux, exceptions et exclusions ne sont pas confirmés pour tous les objets sur Forever.')
     st.caption('« Rentables » inclut aussi les recettes bénéficiaires par désenchantement. Le filtre « Rentables désenchantement » et le tri dédié permettent de les isoler. Le seuil de rentabilité utilise le canal sélectionné, ou le meilleur des trois.')
@@ -221,6 +236,8 @@ with ranking:
         for r in filtered:
             exports.append({**row(r),'investissement_cuivre':r.investment,'benefice_cuivre':r.profit,'benefice_hdv_estime_cuivre':estimate_auction(r,report.items,auction_fee).profit,'commission_hdv_pourcent':auction_fee,'source':r.recipe.source,'build':r.recipe.build,'duree_reference_ms':r.reference_time_ms,'source_duree':r.recipe.timing_source,'build_duree':r.recipe.timing_build})
             exports[-1].update(benefice_desenchantement_estime_cuivre=disenchants[r.recipe.id].profit,duree_cycle_desenchantement_ms=disenchants[r.recipe.id].duration_ms,secondes_desenchantement_par_objet=disenchant_seconds,source_desenchantement=catalog.get('disenchant_info',{}).get('source'),preuve_desenchantement=catalog.get('disenchant_info',{}).get('evidence'))
+            direct=direct_disenchants[r.recipe.id]
+            exports[-1].update(achat_equipement_cuivre=direct.purchase_cost,benefice_desenchantement_seul_cuivre=direct.profit,motif_desenchantement_seul=direct.reason)
         st.download_button('Exporter le classement',export_csv(exports),'gold_digger_classement.csv','text/csv')
         st.divider()
         chosen=st.selectbox('Détailler une recette',filtered,format_func=lambda r:f'{name(r)} · {r.recipe.profession} · {r.recipe.id}',key='recipe_detail')
@@ -235,6 +252,11 @@ with ranking:
         st.write('**Objets fabriqués**')
         table([{'Objet':item_name(i.item_id,items,report.items,i.name),'Par fabrication':i.quantity,'Wowhead':wowhead_url(i.item_id)} for i in chosen.recipe.outputs])
         st.write('**Désenchantement des équipements fabriqués**')
+        direct=direct_disenchants[chosen.recipe.id]
+        if direct.profit is not None:
+            st.write(f'**Achat HDV → désenchantement seul (1 objet)** : achat **{money(direct.purchase_cost)}**, matériaux après commission **{money(round(direct.net))}**, bénéfice moyen **{money(round(direct.profit))}**, soit **{direct.gold_per_minute:.6f} po/min**.')
+        else:
+            st.caption('Désenchantement seul : '+direct.reason)
         de=disenchants[chosen.recipe.id]
         if de.outcomes:
             loot=[]

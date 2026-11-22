@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 from gold_digger.auction import estimate_auction, profitability, filter_roi
-from gold_digger.disenchant import estimate_disenchant, item_profile, validate_reference
+from gold_digger.disenchant import estimate_disenchant, estimate_direct_disenchant, item_profile, validate_reference
 from gold_digger.engine import analyze_single
 from gold_digger.models import Ingredient, MarketItem, Recipe, Tier
 
@@ -97,6 +97,32 @@ def test_invalid_duration(seconds):
 
 def reference():
     return json.loads((Path(__file__).resolve().parents[1]/'data/sources/disenchant.json').read_text())
+
+
+def test_direct_purchase_uses_one_equipment_and_only_disenchant_time():
+    _, market, profiles = example()
+    del market[1]  # No craft resources: buying the equipment must still work.
+    market[2] = replace(market[2], tiers=(Tier(800, 10), Tier(200, 1)))
+    direct = estimate_direct_disenchant(2, market, profiles)
+    assert direct.purchase_cost == 200
+    assert direct.net == pytest.approx(646)
+    assert direct.profit == pytest.approx(446)
+    assert direct.duration_ms == 3000
+    assert direct.gold_per_minute == pytest.approx(.892)
+    assert estimate_direct_disenchant(2, market, profiles, seconds_per_item=6).gold_per_minute == pytest.approx(.446)
+    assert estimate_direct_disenchant(2, market, profiles, fee_percent=100).profit == -200
+    market[2] = replace(market[2], tiers=(Tier(700, 1),))
+    assert estimate_direct_disenchant(2, market, profiles).profit == -54
+
+
+def test_direct_purchase_missing_prices_and_non_disenchantable_items():
+    _, market, profiles = example()
+    assert estimate_direct_disenchant(2, market, {}).profit is None
+    no_stock = {**market, 2: replace(market[2], tiers=())}
+    assert estimate_direct_disenchant(2, no_stock, profiles).gold_per_minute is None
+    del market[4]
+    direct = estimate_direct_disenchant(2, market, profiles)
+    assert direct.purchase_cost == 1 and direct.profit is None and direct.outcomes
 
 
 def test_source_reference_item_level_boundaries_exceptions_and_exclusions():

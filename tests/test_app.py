@@ -191,3 +191,18 @@ def test_disenchant_filter_rate_links_and_commission():
             assert slowed.loc[row['Identifiant'],'Bénéfice désenchantement estimé (po/min)']<=row['Bénéfice désenchantement estimé (po/min)']
     app.sidebar.number_input(key='auction_fee').set_value(100).run()
     assert not app.exception and any('Aucune recette' in x.value for x in app.info)
+
+
+def test_direct_disenchant_column_sort_filter_and_fee():
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+    app.sidebar.selectbox(key='status').set_value('Rentables désenchantement seul')
+    app.sidebar.selectbox(key='sort').set_value('Désenchantement seul (po/min)').run()
+    assert not app.exception
+    frame=ranking_frame(app)
+    rates=pd.to_numeric(frame['Désenchantement seul (po/min)'],errors='coerce').dropna().tolist()
+    assert rates and all(v>0 for v in rates) and rates==sorted(rates,reverse=True)
+    app.sidebar.number_input(key='min_roi').set_value(10).run()
+    frame=ranking_frame(app)
+    assert (frame['Rentabilité (%)']>=10).all()
+    app.sidebar.number_input(key='auction_fee').set_value(100).run()
+    assert not app.exception and any('Aucune recette' in x.value for x in app.info)

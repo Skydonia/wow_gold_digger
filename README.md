@@ -61,6 +61,8 @@ Le lecteur accepte encore les bases versions 2 à 4 (désenchantement indisponib
 
 ## Désenchantement estimé
 
+La colonne **Désenchantement seul (po/min)** compare l’achat d’un seul équipement au meilleur prix unitaire HDV disponible avec la valeur moyenne de ses matériaux après commission. Formule : `(valeur moyenne nette − prix de l’équipement) / 10 000 × 60 / secondes par désenchantement`. Elle ne dépend ni des composants du craft, ni de son temps, de son rendement ou de son cooldown. Un prix absent laisse le résultat indisponible ; les pertes sont affichées négativement. Un tri et le filtre **Rentables désenchantement seul** sont disponibles ; dans ce filtre, le seuil de rentabilité porte sur le prix d’achat de l’équipement. Les statuts et le filtre général « Rentables » restent ceux de la fabrication. Cette comparaison porte sur l’objet unique produit par chaque recette affichée ; les recettes à plusieurs objets différents ne reçoivent pas de valeur ambiguë, et ce n’est pas un inventaire de tous les équipements HDV. Les exports incluent le coût d’achat et le bénéfice moyen par objet.
+
 Les deux nouvelles colonnes affichent le **bénéfice désenchantement estimé en po/min** et les **chances / quantités par objet** de chaque matériau, avec liens Wowhead sur les noms. Le détail fournit les prix HDV, les quantités moyennes par fabrication et un export CSV.
 
 `Valeur brute moyenne = Σ(chance × (quantité min + quantité max) / 2 × prix HDV minimum × objets produits)`.
