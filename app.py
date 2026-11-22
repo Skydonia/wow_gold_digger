@@ -186,13 +186,11 @@ def row(r):
     auction=auctions[r.recipe.id]
     de=disenchants[r.recipe.id]
     roi=selected_roi(r)
-    direct=direct_disenchants[r.recipe.id]
     hdv_roi=auction_roi(r,auction)
     return {'Recette':name(r),
         'Bénéfice PNJ (po/min)':round(r.gold_per_minute,6) if r.gold_per_minute is not None else None,
         'Bénéfice HDV estimé (po/min)':round(auction.gold_per_minute,6) if auction.gold_per_minute is not None else None,
         'Bénéfice désenchantement estimé (po/min)':round(de.gold_per_minute,6) if de.gold_per_minute is not None else None,
-        'Désenchantement seul (po/min)':round(direct.gold_per_minute,6) if direct.gold_per_minute is not None else None,
         'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(de,items,report.items)) or '—',
         'Métier':r.recipe.profession,'Compétence requise':r.recipe.skill_required,'Type de recette':', '.join(categories[r.recipe.id]),
         'Rentabilité (%)':round(roi,2) if roi is not None else None,

@@ -204,8 +204,8 @@ def test_direct_disenchant_column_sort_filter_and_fee():
     direct_only=general[general['Statut']=='Rentable désenchantement seul']
     assert len(direct_only)>0
     assert (direct_only['Rentabilité (%)']>0).all()
-    rates=pd.to_numeric(frame['Désenchantement seul (po/min)'],errors='coerce').dropna().tolist()
-    assert rates and all(v>0 for v in rates) and rates==sorted(rates,reverse=True)
+    assert len(frame)>0 and 'Désenchantement seul (po/min)' not in frame.columns
+    assert any('Désenchantement seul (po/min)' in m.proto.srcdoc for m in app.tabs[1].get('iframe'))
     app.sidebar.number_input(key='min_roi').set_value(10).run()
     frame=ranking_frame(app)
     assert (frame['Rentabilité (%)']>=10).all()
