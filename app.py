@@ -7,11 +7,12 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 from gold_digger.auction import estimate_auction, profitability, auction_roi, filter_roi
-from gold_digger.categories import recipe_categories
+from gold_digger.categories import recipe_categories, catalog_category, item_category
 from gold_digger.catalog import load_catalog
 from gold_digger.database import wowhead_url
 from gold_digger.engine import analyze_single
 from gold_digger.disenchant import estimate_disenchant, estimate_direct_disenchant, DisenchantEstimate, outcome_labels
+from gold_digger.disenchant_market import analyze_disenchant_market
 from gold_digger.market import parse_market, money
 from gold_digger.presentation import components_table, item_name, recipe_matches, search_matches, interactive_table, text_link
 
@@ -122,10 +123,6 @@ with st.sidebar:
     sort_label=st.selectbox('Trier par',['Rentabilité (%)','Bénéfice par fabrication','Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Bénéfice désenchantement estimé (po/min)','Désenchantement seul (po/min)'],key='sort')
     timed_only=st.checkbox('Durée de fabrication connue uniquement',value=False,key='timed_only')
 
-if min_skill>max_skill:
-    st.error('La compétence minimale doit être inférieure ou égale à la compétence maximale.')
-    st.stop()
-
 eligible=[r for r in recipes if recipe_matches(r,professions,max_skill,include_unknown,min_skill) and set(selected_types).intersection(categories[r.id])]
 offers=catalog['merchant_offers'] if use_merchants else {}
 with st.spinner('Calcul des coûts HDV et marchands…'):
@@ -213,8 +210,10 @@ def row(r):
         'Limite / motif':r.reason or r.stop_reason,'Identifiant':r.recipe.id}
 
 
-ranking,coverage,method=st.tabs(['Classement','Base de données','Méthode'])
+ranking,disenchant_market_tab,coverage,method=st.tabs(['Classement','Désenchantement HDV','Base de données','Méthode'])
 with ranking:
+    if min_skill>max_skill:
+        st.error('La compétence minimale doit être inférieure ou égale à la compétence maximale.')
     st.subheader(f'{len(filtered)} recette(s)')
     st.caption('Désenchantement seul : achat d’un équipement au prix unitaire HDV le plus bas disponible, puis revente moyenne des matériaux après commission. Le temps compte uniquement un désenchantement. Valeur positive = achat rentable en moyenne ; valeur négative = perte. Le filtre « Rentables désenchantement seul » inclut ces opportunités même si le craft est impossible ou déficitaire ; son seuil en % est calculé sur le prix de l’équipement. Le filtre général « Rentables » et les statuts incluent également cette voie. Cette colonne couvre les équipements des recettes affichées, pas tous les équipements du marché.')
     st.caption('Désenchantement : valeur moyenne des matériaux × chances d’obtention, moins commission HDV et coût du craft. Quantités et chances affichées par objet désenchanté ; quantités moyennes supposées uniformes dans chaque intervalle. Le débit inclut la fabrication et le désenchantement de tous les objets produits, avec le délai de récupération si celui-ci est plus long. Un résultat individuel peut être déficitaire. Bonus de désenchantement non inclus.')
@@ -318,6 +317,67 @@ with ranking:
                 st.write('• '+condition)
             st.markdown(f'[Recette complète en français]({chosen.recipe.source})')
             st.caption('Prix de revente : '+' ; '.join(chosen.price_sources))
+
+with disenchant_market_tab:
+    st.subheader('Acheter à l’HDV puis désenchanter')
+    st.caption('Tous les équipements identifiés dans le scan HDV, avec ou sans recette. Les filtres de métier, compétence et recette ne s’appliquent pas ici. L’export HDV, la commission et la durée de désenchantement de la barre latérale sont partagés.')
+    st.caption('Calcul pour un seul objet acheté au plus bas prix unitaire disponible : valeur moyenne des matériaux après commission − prix d’achat. Le débit compte uniquement le désenchantement ; achats, ramassage, déplacements et délai de vente ne sont pas chronométrés. Le stock affiché couvre tous les paliers connus, pas uniquement le prix le plus bas.')
+    st.warning('Les probabilités restent des estimations Classic appliquées aux tranches Forever, avec les mêmes exceptions et limites que le classement. Une moyenne positive ne garantit pas un gain sur chaque objet.')
+    market_records=analyze_disenchant_market(report.items,items,catalog.get('disenchant',{}),auction_fee,disenchant_seconds)
+    market_counts=Counter(record['status'] for record in market_records)
+    summary=st.columns(3)
+    summary[0].metric('Équipements du scan',len(market_records))
+    summary[1].metric('Achats rentables',market_counts['Rentable'])
+    summary[2].metric('Non calculables',market_counts['Non calculable'])
+    unknown_types=sum(catalog_category(items.get(i,{})) is None and item_category(m.item_type)=='Non renseigné' for i,m in report.items.items())
+    if unknown_types:
+        st.caption(f'{unknown_types} objet(s) du scan sans catégorie identifiable ne peuvent pas être classés comme équipements.')
+    controls=st.columns(3)
+    with controls[0]:
+        de_query=st.text_input('Rechercher un équipement ou un matériau',key='de_market_search')
+    with controls[1]:
+        de_mode=st.selectbox('Équipements à afficher',['Rentables','Tous les équipements','Non rentables','Non calculables'],key='de_market_status')
+    with controls[2]:
+        de_sort=st.selectbox('Trier les équipements par',['Bénéfice (po/min)','Rentabilité (%)','Bénéfice par objet','Prix d’achat croissant'],key='de_market_sort')
+    de_min_roi=st.number_input('Rentabilité minimale des achats (%)',min_value=0.0,value=0.0,step=1.0,key='de_market_min_roi')
+    de_filtered=[]
+    for record in market_records:
+        expected_status={'Rentables':'Rentable','Non rentables':'Non rentable','Non calculables':'Non calculable'}.get(de_mode)
+        if expected_status and record['status']!=expected_status:
+            continue
+        if de_min_roi and (record['roi'] is None or record['roi']<de_min_roi):
+            continue
+        text=' '.join([record['name'],str(record['item_id'])]+[item_name(o['item_id'],items,report.items) for o in record['estimate'].outcomes])
+        if search_matches(de_query,text):
+            de_filtered.append(record)
+    def market_sort_key(record):
+        value={'Bénéfice (po/min)':record['estimate'].gold_per_minute,'Rentabilité (%)':record['roi'],
+               'Bénéfice par objet':record['estimate'].profit,'Prix d’achat croissant':record['purchase_cost']}[de_sort]
+        return (value is None, 0 if value is None else value if de_sort=='Prix d’achat croissant' else -value)
+    de_filtered.sort(key=market_sort_key)
+    st.write(f'**{len(de_filtered)} équipement(s)**')
+    if not de_filtered:
+        st.info('Aucun équipement ne correspond à ces filtres.')
+    else:
+        de_rows=[]
+        for record in de_filtered:
+            estimate=record['estimate']
+            de_rows.append({'Objet':record['name'],
+                'Désenchantement seul (po/min)':round(estimate.gold_per_minute,6) if estimate.gold_per_minute is not None else None,
+                'Prix d’achat HDV':money(record['purchase_cost']),
+                'Valeur moyenne nette des matériaux':money(round(estimate.net)) if estimate.net is not None else '—',
+                'Bénéfice moyen par objet':money(round(estimate.profit)) if estimate.profit is not None else '—',
+                'Rentabilité (%)':round(record['roi'],2) if record['roi'] is not None else None,
+                'Désenchantement : chances et quantités':'; '.join(prefix+label+suffix for prefix,label,_,suffix in outcome_labels(estimate,items)) or '—',
+                'Niveau d’objet':record['item_level'],'Stock HDV connu':record['stock'],
+                'Statut':record['status'],'Motif':estimate.reason,'Identifiant':record['item_id'],
+                'Wowhead':wowhead_url(record['item_id'])})
+        table(de_rows,disenchant_links=[outcome_labels(r['estimate'],items) for r in de_filtered])
+        de_exports=[{**row,'achat_cuivre':record['purchase_cost'],'valeur_nette_moyenne_cuivre':record['estimate'].net,
+                     'benefice_moyen_cuivre':record['estimate'].profit,'commission_hdv_pourcent':auction_fee,
+                     'secondes_par_objet':disenchant_seconds,'source':catalog.get('disenchant_info',{}).get('source'),
+                     'fiabilite':catalog.get('disenchant_info',{}).get('evidence')} for row,record in zip(de_rows,de_filtered)]
+        st.download_button('Exporter les équipements HDV',export_csv(de_exports),'gold_digger_desenchantement_hdv.csv','text/csv',key='de_market_export')
 
 with coverage:
     st.subheader('Catalogue français')

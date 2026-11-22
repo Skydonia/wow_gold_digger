@@ -211,3 +211,33 @@ def test_direct_disenchant_column_sort_filter_and_fee():
     assert (frame['Rentabilité (%)']>=10).all()
     app.sidebar.number_input(key='auction_fee').set_value(100).run()
     assert not app.exception and any('Aucune recette' in x.value for x in app.info)
+
+
+def test_market_tab_includes_non_craft_equipment_and_ignores_recipe_filters():
+    from gold_digger.catalog import load_catalog
+    from gold_digger.market import parse_market
+    from gold_digger.disenchant_market import analyze_disenchant_market
+    catalog,recipes=load_catalog(ROOT/'data/catalog/forever.sqlite')
+    market=parse_market((ROOT/'data/input/export_hdv.csv').read_bytes()).items
+    crafted={i.item_id for r in recipes for i in r.outputs}
+    candidates=analyze_disenchant_market(market,catalog['items'],catalog['disenchant'])
+    target=next(r for r in candidates if r['item_id'] not in crafted and r['status']=='Rentable')
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+    assert [tab.label for tab in app.tabs]==['Classement','Désenchantement HDV','Base de données','Méthode']
+    app.text_input(key='de_market_search').set_value(str(target['item_id']))
+    app.sidebar.text_input(key='search').set_value('aucune-recette')
+    app.sidebar.number_input(key='min_skill').set_value(301)
+    app.sidebar.number_input(key='max_skill').set_value(1)
+    app.run()
+    assert not app.exception
+    tab=app.tabs[1]
+    html=next(m.proto.srcdoc for m in tab.get('iframe') if '<table class="item-table">' in m.proto.srcdoc)
+    soup=BeautifulSoup(html,'html.parser')
+    headers=[c.get_text() for c in soup.select('th')]
+    assert not set(headers)&{'Métier','Compétence requise','Coût de fabrication','Recette','Bénéfice PNJ (po/min)'}
+    assert soup.select_one(f'a[href="https://www.wowhead.com/forever/fr/item={target["item_id"]}"]')
+    app.sidebar.number_input(key='auction_fee').set_value(100).run()
+    assert not app.exception
+    assert any('Aucun équipement' in x.value for x in app.tabs[1].info)
+    app.selectbox(key='de_market_status').set_value('Tous les équipements').run()
+    assert not app.exception and app.tabs[1].get('iframe')
