@@ -1,10 +1,10 @@
 # Gold Digger — WoW Forever
 
-Application locale en français : classement des recettes par **pourcentage de rentabilité**, achats de composants optimisés entre l’hôtel des ventes et les marchands, puis revente des objets fabriqués au PNJ.
+Application Streamlit en français : comparaison des bénéfices PNJ et HDV estimés pour une fabrication, classement par rentabilité ou po/min, et achats de composants optimisés entre l’hôtel des ventes et les marchands.
 
 ## Lancer l’application
 
-Python 3.11+ et SQLite 3.37+ (tables STRICT).
+Python **3.14** recommandé (version testée), avec SQLite 3.37+ (tables STRICT).
 
 ```sh
 python3 -m venv .venv
@@ -12,14 +12,14 @@ python3 -m venv .venv
 .venv/bin/python -m streamlit run app.py
 ```
 
-Ouvrir http://localhost:8501. L’export `data/input/export_hdv.csv` est chargé par défaut. Un autre export peut être importé pour la session. L’interface fonctionne hors ligne et ne téléverse pas les fichiers.
+Ouvrir http://localhost:8501. L’export `data/input/export_hdv.csv` est chargé par défaut. Un autre export peut être importé pour la session. En local, l’application fonctionne sans accès au réseau. En hébergement cloud, les CSV importés sont transmis au serveur pour le calcul ; l’application ne les écrit pas sur disque.
 
 - Noms français des objets et recettes, liens **Wowhead Forever en français** pour chaque objet fabriqué, composant et outil identifié.
 - Filtres par métier, compétences minimale et maximale requises pour apprendre la recette, recherche dans les recettes/composants et rentabilité minimale.
 - Les compétences inconnues sont exclues par défaut ; une case permet de les inclure explicitement. Le seuil jaune n’est jamais assimilé à un seuil d’apprentissage.
-- Liste complète des composants directs pour une quantité choisie, outils réutilisables, plan d’achats distinguant HDV et marchand, surplus de lots et exports CSV.
-- Tri initial par rentabilité du lot ; bénéfice total, bénéfice de la première fabrication et **bénéfice net en or/minute** disponibles comme tris secondaires.
-- Durée par fabrication, temps actif du lot, filtre sur les durées connues et provenance des durées dans le détail.
+- Liste complète des composants directs pour une fabrication, outils réutilisables, plan d’achats distinguant HDV et marchand, surplus de lots et exports CSV.
+- Tri initial par rentabilité ; bénéfice par fabrication et **bénéfice net en or/minute PNJ et HDV** disponibles comme tris secondaires.
+- Durée par fabrication, filtre sur les durées connues et provenance des durées dans le détail.
 
 Le filtre **Types de recette** utilise en priorité les classes et sous-classes d’objets du catalogue client Forever, stockées dans SQLite, puis la colonne facultative `type` de l’export HDV en secours : équipement, composants, nourriture et boissons, potions, bandages, sacs, munitions, etc. Une recette à plusieurs résultats peut appartenir à plusieurs catégories. Les catégories absentes restent **Non renseigné** ; elles ne sont pas devinées à partir du métier ou des composants. Les types sont présentés en cases à cocher, toutes cochées par défaut. Les types cochés sont combinés avec OU et restent cumulables avec la recherche et la plage de compétence. Tout décocher masque toutes les recettes.
 
@@ -108,10 +108,26 @@ Le fichier **`data/sources/merchant_offers.json`** est un instantané sourcé, i
 
 Cette couverture n’est pas un inventaire exhaustif des marchands actuels. L’absence d’offre signifie « non documenté », pas « jamais vendu ». Les prix de revente du CSV restent prioritaires sur les prix complémentaires de la base.
 
+## Déployer sur Streamlit Community Cloud
+
+Le dépôt contient la base SQLite et un export HDV de démarrage. Aucun secret ni service de base de données externe n’est nécessaire.
+
+1. Ouvrir [Streamlit Community Cloud](https://share.streamlit.io/) et se connecter avec GitHub.
+2. Autoriser l’accès au dépôt privé `Skydonia/wow_gold_digger`, puis choisir **Create app** → **Yup, I have an app**.
+3. Sélectionner le dépôt `Skydonia/wow_gold_digger`, la branche `main` et le fichier `app.py`.
+4. Dans **Advanced settings**, sélectionner **Python 3.14**, la version utilisée pour les tests. Laisser les secrets vides.
+5. Choisir éventuellement un sous-domaine disponible, puis cliquer sur **Deploy**. Community Cloud fournit l’URL finale ; aucune URL n’est réservée par le dépôt.
+
+Le serveur écoute sur `0.0.0.0` en mode headless. Les dépendances de production sont fixées aux versions testées ; les dépendances de test sont dans `requirements-dev.txt`. Les caches sont bornés pour limiter la consommation mémoire entre imports. La base est lue depuis le dépôt ; les CSV importés ne sont pas enregistrés durablement. Un redémarrage du serveur recharge l’export de démarrage. Les changements poussés sur `main` sont repris par Community Cloud.
+
+La visibilité du dépôt GitHub et celle de l’application sont distinctes : choisir dans les paramètres Streamlit les personnes autorisées à ouvrir l’application. [Instructions officielles](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy).
+
 ## Tests
 
 ```sh
+.venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/python -m pytest -q
+node --test tests/test_table.cjs
 ```
 
 Les tests couvrent les calculs monétaires, les paliers HDV, les achats mixtes, les lots et surplus, les stocks illimités, les délais, l’intégrité SQLite, la conservation d’une base après échec, les compétences, les liens et les interactions Streamlit. Le coût optimisé est notamment comparé à une recherche exhaustive sur des scénarios aléatoires reproductibles.

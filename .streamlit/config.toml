@@ -5,6 +5,7 @@ backgroundColor = "#10171E"
 secondaryBackgroundColor = "#1B2631"
 textColor = "#EDF1F5"
 [server]
-address = "127.0.0.1"
+address = "0.0.0.0"
+headless = true
 [browser]
 gatherUsageStats = false

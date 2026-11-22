@@ -26,12 +26,12 @@ st.title('Gold Digger')
 st.write('Compare les recettes en pourcentage de rentabilité, avec les composants achetés à l’HDV ou chez les marchands.')
 
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False,max_entries=2)
 def read_database(path,version):
     return load_catalog(Path(path))
 
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False,max_entries=8,ttl=3600)
 def calculate(recipes,market,sell_prices,offers,policy):
     return [analyze_single(r,market,sell_prices,offers,policy) for r in recipes]
 
