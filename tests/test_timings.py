@@ -105,9 +105,9 @@ def test_timing_sqlite_roundtrip_and_provenance(tmp_path):
     data,recipes=load_database(path)
     assert recipes[0].cast_time_ms==2000
     assert recipes[0].timing_build=='old-build' and recipes[0].build=='current-build'
-    assert data['schema_version']==4
+    assert data['schema_version']==5
     with sqlite3.connect(path) as connection:
-        assert connection.execute('PRAGMA user_version').fetchone()[0]==4
+        assert connection.execute('PRAGMA user_version').fetchone()[0]==5
         assert not connection.execute('PRAGMA foreign_key_check').fetchall()
 
 

@@ -125,6 +125,7 @@ def main():
     parser.add_argument('--refresh',action='store_true')
     parser.add_argument('--skill-reviews',type=Path,default=Path('data/sources/skill_reviews.json'))
     parser.add_argument('--timings',type=Path,default=Path('data/sources/craft_timings.json'))
+    parser.add_argument('--disenchant',type=Path,default=Path('data/sources/disenchant.json'))
     args=parser.parse_args()
     data,originals=load_catalog(args.catalog)
     french=json.loads(fetch(FR+'/items/search.json',args.cache,args.refresh))
@@ -138,11 +139,11 @@ def main():
     item_classes={}
     en_rows={row[0]:row for row in english['rows']}
     for row in french['rows']:
-        if len(row)!=9 or any(type(row[i]) is not int or row[i]<0 for i in (5,6,7)):
+        if len(row)!=9 or any(type(row[i]) is not int or row[i]<0 for i in (2,3,5,6,7)):
             raise ValueError('Format des classes d’objet inattendu')
-        if en_rows[row[0]][5:8]!=row[5:8]:
+        if en_rows[row[0]][2:8]!=row[2:8]:
             raise ValueError('Classes françaises et anglaises incompatibles')
-        item_classes[row[0]]=dict(inventory_type=row[5],class_id=row[6],subclass_id=row[7])
+        item_classes[row[0]]=dict(inventory_type=row[5],class_id=row[6],subclass_id=row[7],quality=row[2],item_level=row[3])
     updated=[]
     for slug in PROFESSIONS:
         html=fetch(FR+'/professions/'+slug,args.cache,args.refresh)
@@ -180,7 +181,9 @@ def main():
         data['skill_reviews_count']=len(reviews['reviews'])
         data['skill_reviews_checked_on']=max(r['checked_on'] for r in reviews['reviews'])
     data['timings_count']=sum(r.cast_time_ms is not None for r in updated)
-    data.update(schema_version=4,imported_at=datetime.now(timezone.utc).isoformat(),merchant_capture=raw['captured_on'],merchant_source=raw['source'],locale='frFR')
+    data.update(schema_version=5,imported_at=datetime.now(timezone.utc).isoformat(),merchant_capture=raw['captured_on'],merchant_source=raw['source'],locale='frFR')
+    data['disenchant_reference']=json.loads(args.disenchant.read_text(encoding='utf-8'))
+    data['disenchant_info']={k:v for k,v in data['disenchant_reference'].items() if k not in ('tables','brackets','overrides','never')}
     publish_database(args.output,data,updated,items,offers)
     print(f'Base publiée : {len(items)} objets, {len(updated)} recettes, {sum(r.skill_required is not None for r in updated)} seuils connus, {len(offers)} offres marchandes.')
 

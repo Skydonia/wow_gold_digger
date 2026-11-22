@@ -14,7 +14,7 @@ def ranking_frame(app):
     assert 'Wowhead' not in headers
     assert soup.select_one('tbody td a')['href'].startswith('https://www.wowhead.com/forever/fr/item=')
     frame=pd.DataFrame([[cell.get_text() for cell in row.select('td')] for row in soup.select('tbody tr')],columns=headers)
-    for key in ('Compétence requise','Rentabilité (%)','Rentabilité HDV estimée (%)','Rentabilité PNJ (%)','Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Durée / fabrication (s)'):
+    for key in ('Compétence requise','Rentabilité (%)','Rentabilité HDV estimée (%)','Rentabilité PNJ (%)','Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Bénéfice désenchantement estimé (po/min)','Durée / fabrication (s)'):
         frame[key]=pd.to_numeric(frame[key],errors='coerce')
     return frame
 
@@ -162,3 +162,32 @@ def test_recipe_type_filter_combines_with_search_and_skill():
     app.run()
     assert not app.exception
     assert any('Aucune recette' in x.value for x in app.info)
+
+
+def test_disenchant_filter_rate_links_and_commission():
+    app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+    assert not app.exception
+    assert any('Classic' in w.value for w in app.warning)
+    initial=ranking_frame(app)
+    app.sidebar.selectbox(key='status').set_value('Rentables désenchantement')
+    app.sidebar.selectbox(key='sort').set_value('Bénéfice désenchantement estimé (po/min)').run()
+    frame=ranking_frame(app)
+    assert not app.exception and len(frame)>0
+    assert set(frame['Identifiant'])<=set(initial['Identifiant'])
+    assert frame['Type de recette'].str.contains('Équipement').all()
+    values=frame['Bénéfice désenchantement estimé (po/min)'].dropna().tolist()
+    assert values and all(v>0 for v in values)
+    assert values==sorted(values,reverse=True)
+    assert frame['Désenchantement : chances et quantités'].str.contains('%').all()
+    soup=BeautifulSoup(next(m.proto.srcdoc for m in app.get('iframe') if 'Désenchantement : chances' in m.proto.srcdoc),'html.parser')
+    headers=[c.get_text() for c in soup.select('th')]
+    assert headers[1:4]==['Bénéfice PNJ (po/min)','Bénéfice HDV estimé (po/min)','Bénéfice désenchantement estimé (po/min)']
+    chance_index=headers.index('Désenchantement : chances et quantités')
+    assert soup.select_one('tbody tr').select('td')[chance_index].select_one('a')['href'].startswith('https://www.wowhead.com/forever/fr/item=')
+    app.sidebar.number_input(key='disenchant_seconds').set_value(6.0).run()
+    slowed=ranking_frame(app).set_index('Identifiant')
+    for _,row in frame.iterrows():
+        if pd.notna(row['Bénéfice désenchantement estimé (po/min)']):
+            assert slowed.loc[row['Identifiant'],'Bénéfice désenchantement estimé (po/min)']<=row['Bénéfice désenchantement estimé (po/min)']
+    app.sidebar.number_input(key='auction_fee').set_value(100).run()
+    assert not app.exception and any('Aucune recette' in x.value for x in app.info)

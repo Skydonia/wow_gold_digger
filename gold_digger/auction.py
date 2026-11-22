@@ -39,19 +39,23 @@ def estimate_auction(result: Result, market: dict[int, MarketItem], fee_percent:
     return AuctionEstimate(gross=gross, net=net, profit=profit, gold_per_minute=rate)
 
 
-def profitability(result, auction):
+def profitability(result, auction, disenchant=None):
     """Common classification for the table, counters and filters."""
     if result.status=='Exclue':
         return 'Exclue'
     pnj=result.first_profit is not None and result.first_profit>0
     hdv=auction.profit is not None and auction.profit>0
+    de=disenchant is not None and disenchant.profit is not None and disenchant.profit>0
+    if de:
+        channels=([ 'PNJ' ] if pnj else [])+(['HDV'] if hdv else [])+['désenchantement']
+        return 'Rentable '+' et '.join(channels)
     if pnj and hdv:
         return 'Rentable PNJ et HDV'
     if hdv:
         return 'Rentable HDV'
     if pnj:
         return 'Rentable PNJ'
-    if result.first_profit is None or auction.profit is None:
+    if result.first_profit is None or auction.profit is None or (disenchant is not None and disenchant.outcomes and disenchant.profit is None):
         return 'Données insuffisantes'
     return 'Non rentable'
 
@@ -60,12 +64,15 @@ def auction_roi(result, auction):
     return auction.profit/result.investment*100 if auction.profit is not None and result.investment>0 else None
 
 
-def filter_roi(result, auction, mode):
+def filter_roi(result, auction, mode, disenchant=None):
     pnj=result.batch_roi
     hdv=auction_roi(result,auction)
     if mode=='Rentables HDV':
         return hdv
     if mode=='Rentables PNJ':
         return pnj
-    known=[v for v in (pnj,hdv) if v is not None]
+    de=auction_roi(result,disenchant) if disenchant is not None else None
+    if mode=='Rentables désenchantement':
+        return de
+    known=[v for v in (pnj,hdv,de) if v is not None]
     return max(known) if known else None

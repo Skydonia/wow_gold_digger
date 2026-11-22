@@ -1,6 +1,6 @@
 # Gold Digger — WoW Forever
 
-Application Streamlit en français : comparaison des bénéfices PNJ et HDV estimés pour une fabrication, classement par rentabilité ou po/min, et achats de composants optimisés entre l’hôtel des ventes et les marchands.
+Application Streamlit en français : comparaison des bénéfices PNJ, HDV et désenchantement estimés pour une fabrication, classement par rentabilité ou po/min, et achats de composants optimisés entre l’hôtel des ventes et les marchands.
 
 ## Lancer l’application
 
@@ -18,14 +18,14 @@ Ouvrir http://localhost:8501. L’export `data/input/export_hdv.csv` est chargé
 - Filtres par métier, compétences minimale et maximale requises pour apprendre la recette, recherche dans les recettes/composants et rentabilité minimale.
 - Les compétences inconnues sont exclues par défaut ; une case permet de les inclure explicitement. Le seuil jaune n’est jamais assimilé à un seuil d’apprentissage.
 - Liste complète des composants directs pour une fabrication, outils réutilisables, plan d’achats distinguant HDV et marchand, surplus de lots et exports CSV.
-- Tri initial par rentabilité ; bénéfice par fabrication et **bénéfice net en or/minute PNJ et HDV** disponibles comme tris secondaires.
+- Tri initial par rentabilité ; bénéfice par fabrication et **bénéfice net en or/minute PNJ, HDV et désenchantement** disponibles comme tris secondaires.
 - Durée par fabrication, filtre sur les durées connues et provenance des durées dans le détail.
 
 Le filtre **Types de recette** utilise en priorité les classes et sous-classes d’objets du catalogue client Forever, stockées dans SQLite, puis la colonne facultative `type` de l’export HDV en secours : équipement, composants, nourriture et boissons, potions, bandages, sacs, munitions, etc. Une recette à plusieurs résultats peut appartenir à plusieurs catégories. Les catégories absentes restent **Non renseigné** ; elles ne sont pas devinées à partir du métier ou des composants. Les types sont présentés en cases à cocher, toutes cochées par défaut. Les types cochés sont combinés avec OU et restent cumulables avec la recherche et la plage de compétence. Tout décocher masque toutes les recettes.
 
 ## Calcul des achats et de la rentabilité
 
-Les sommes sont des **entiers en cuivre**. L’export HDV doit être en UTF-8, séparateur `;`, avec `id`, `name`, `npc`, `first`, `quantity`, `min`. Les prix du CSV sont en or par unité ; `first` fournit les paliers `prixxquantité`. `npc` représente uniquement le **prix de revente** au PNJ.
+Les prix et achats sont des **entiers en cuivre** ; les espérances de désenchantement conservent les fractions de cuivre jusqu’à l’affichage. L’export HDV doit être en UTF-8, séparateur `;`, avec `id`, `name`, `npc`, `first`, `quantity`, `min`. Les prix du CSV sont en or par unité ; `first` fournit les paliers `prixxquantité`. `npc` représente uniquement le **prix de revente** au PNJ.
 
 Pour chaque composant, le moteur compare les paliers HDV avec le tarif marchand sélectionné. Il peut combiner des unités moins chères à l’HDV avec des achats marchands. Seules les offres **explicitement à stock illimité**, payables en pièces, sont utilisées. Les prix d’achat ne sont jamais déduits des prix de revente.
 
@@ -33,7 +33,7 @@ Les lots marchands sont indivisibles : un besoin de deux fioles peut imposer l�
 
 **Rentabilité PNJ (%) = (revente PNJ − coût des achats pour une fabrication) / coût des achats × 100.** Toutes les quantités produites par cette fabrication sont incluses. Les bénéfices PNJ et HDV estimés, ainsi que leurs débits en po/min, portent sur cette seule fabrication.
 
-Le filtre **Rentables** inclut les recettes bénéficiaires au PNJ ou à l’HDV. **Rentables HDV** et **Rentables PNJ** permettent de sélectionner un canal. Le seuil et le tri en pourcentage utilisent le meilleur taux connu des deux canaux, ou celui du canal sélectionné. Un prix PNJ nul ou absent ne bloque pas le calcul HDV. Un prix HDV absent reste une donnée inconnue, jamais une perte présumée.
+Le filtre **Rentables** inclut les recettes bénéficiaires au PNJ, à l’HDV ou par désenchantement. **Rentables HDV**, **Rentables PNJ** et **Rentables désenchantement** permettent de sélectionner un canal. Le seuil et le tri en pourcentage utilisent le meilleur taux connu des trois canaux, ou celui du canal sélectionné. Un prix PNJ nul ou absent ne bloque pas le calcul HDV ou désenchantement. Un prix HDV absent reste une donnée inconnue, jamais une perte présumée.
 
 L’interface calcule une fabrication par recette. Le stock doit suffire pour celle-ci ; les lots marchands nécessaires sont payés entiers, sans amortir leur surplus sur des fabrications futures.
 
@@ -57,13 +57,24 @@ Le snapshot `data/sources/craft_timings.json` contient **2 215 durées associée
 .venv/bin/python -m gold_digger.build_database
 ```
 
-Le lecteur accepte encore la base version 2 (durées inconnues). La reconstruction publie atomiquement la version 4 (classes, sous-classes et emplacements des objets). Les instantanés de durées ne sont jamais appliqués à une recette dont le build, les composants ou les produits ont changé ; refaire la collecte pour vérifier leur concordance.
+Le lecteur accepte encore les bases versions 2 à 4 (désenchantement indisponible). La reconstruction publie atomiquement la version 5 (qualité, niveau d’objet et tables de désenchantement en plus des classes). Les instantanés de durées ne sont jamais appliqués à une recette dont le build, les composants ou les produits ont changé ; refaire la collecte pour vérifier leur concordance.
+
+## Désenchantement estimé
+
+Les deux nouvelles colonnes affichent le **bénéfice désenchantement estimé en po/min** et les **chances / quantités par objet** de chaque matériau, avec liens Wowhead sur les noms. Le détail fournit les prix HDV, les quantités moyennes par fabrication et un export CSV.
+
+`Valeur brute moyenne = Σ(chance × (quantité min + quantité max) / 2 × prix HDV minimum × objets produits)`.
+Le bénéfice déduit la commission HDV paramétrée et le coût optimisé du craft (HDV / lots marchands illimités). Les quantités dans un intervalle sont supposées équiprobables. Le temps est `max(craft + nombre d’objets × désenchantement, cooldown)`. La durée par désenchantement vaut 3 s par défaut ([Wowhead Forever, sort 13262](https://www.wowhead.com/forever/spell=13262/disenchant)) et est modifiable. Un prix de matériau manquant empêche toute estimation partielle du bénéfice ; les chances restent visibles. Une durée de craft inconnue ou instantanée empêche le calcul en po/min.
+
+**Limite des données :** `data/sources/disenchant.json` est un instantané factuel de [Professions_Forever/Data/Disenchant.lua](https://github.com/ProfessionsForever/Professions_Forever/blob/main/Data/Disenchant.lua), blob `400b055fa35a404879d6da45c1a63d8b715f5469`, capturé le 22 novembre 2026. Ses tranches proviennent de `ItemDisenchantLoot` du client Forever **1.60.1.70938** ; ses probabilités, quantités, exceptions et exclusions proviennent de **cmangos/classic-db**, commit `c33f90b8eeb3f8bacb53d5cbfee45075c80b416c` (source GPL-3.0). Elles ne sont pas certifiées sur Forever : l’interface les indique comme estimations héritées de Classic. Les exclusions de cette référence restent à vérifier en jeu ; les tables incomplètes ne sont pas valorisées. Les bonus de camp / de personnage et les conversions d’essences sont exclus. Une moyenne positive ne garantit pas le résultat d’un désenchantement ni une vente à l’HDV.
+
+La reconstruction lit cet instantané avec `--disenchant chemin.json` ; `--refresh` ne l’actualise pas automatiquement. Les tables sont validées (probabilités, tranches disjointes, références), puis associées aux objets par **qualité, classe et niveau d’objet**, jamais par niveau de personnage ou compétence de métier.
 
 ## Backend et base de données
 
 L’interface lit **`data/catalog/forever.sqlite` en lecture seule**. Aucun téléchargement ou changement de schéma ne se produit à l’ouverture de l’application.
 
-La base normalisée, version 4, utilise des clés étrangères, contraintes de types, quantités positives, clés uniques et index :
+La base normalisée, version 5, utilise des clés étrangères, contraintes de types, quantités positives, clés uniques et index :
 
 | Table | Contenu |
 | --- | --- |
@@ -75,6 +86,9 @@ La base normalisée, version 4, utilise des clés étrangères, contraintes de t
 | `recipe_conditions` | Conditions et installations nécessaires en français |
 | `sell_prices` | Prix de revente PNJ, séparés des achats |
 | `merchant_offers` | Vendeur, prix et quantité du lot, stock illimité et provenance |
+| `disenchant_profiles` | Tables de butin, source/build et niveau de preuve |
+| `disenchant_outcomes` | Matériau, probabilité, quantités minimale et maximale |
+| `item_disenchant` | Association objet/table, ou motif d’absence de calcul |
 | `sources` | URL, build ou intervalle de builds observés et description |
 | `metadata` | Version, jeu, locale, date d’import et couverture |
 

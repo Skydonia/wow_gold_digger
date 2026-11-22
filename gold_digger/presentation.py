@@ -47,7 +47,7 @@ def text_link(label, url):
     return f'<a href="{escape(str(url),quote=True)}" target="_blank" rel="noopener noreferrer">{label}</a>'
 
 
-def linked_table(rows, component_links=None):
+def linked_table(rows, component_links=None, disenchant_links=None):
     """Render names as links, keeping plain rows intact for CSV exports.
 
     component_links contains (quantity, name, item_id) tuples for each row.
@@ -69,6 +69,9 @@ def linked_table(rows, component_links=None):
             elif key=='Composants par fabrication' and component_links is not None:
                 content='; '.join(f'{escape(str(qty))} × {text_link(name,wowhead_url(item_id))}'
                                  for qty,name,item_id in component_links[index])
+            elif key=='Désenchantement : chances et quantités' and disenchant_links is not None:
+                content='; '.join(escape(prefix)+text_link(name,wowhead_url(item_id))+escape(suffix)
+                                 for prefix,name,item_id,suffix in disenchant_links[index]) or '—'
             else:
                 content=escape(label)
             cells.append(f'<td>{content}</td>')
@@ -76,8 +79,8 @@ def linked_table(rows, component_links=None):
     return '<div class="item-table-scroll" tabindex="0"><table class="item-table"><thead><tr>'+header+'</tr></thead><tbody>'+''.join(body)+'</tbody></table></div>'
 
 
-def interactive_table(rows, component_links=None):
-    markup=linked_table(rows,component_links)
+def interactive_table(rows, component_links=None, disenchant_links=None):
+    markup=linked_table(rows,component_links,disenchant_links)
     script=Path(__file__).with_name('table.js').read_text()
     return """<!doctype html><html lang="fr"><head><meta charset="utf-8"><style>
 body{margin:0;background:#10171e;color:#edf1f5;font-family:system-ui,sans-serif;font-size:14px}

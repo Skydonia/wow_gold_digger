@@ -99,3 +99,27 @@ def test_item_classification_persists_in_database(tmp_path):
     assert loaded['items'][2]['subclass_id']==3
     assert loaded['items'][2]['inventory_type']==8
     assert loaded['items'][1]['class_id'] is None
+
+
+def test_disenchant_database_roundtrip_and_material_foreign_key(tmp_path):
+    data,rs,items,offers=inputs()
+    items[2].update(class_id=4,quality=2,item_level=10)
+    data['disenchant_reference']={
+        'game':'wow-forever','schema_version':1,'source':'https://source/de','build':'old',
+        'evidence':'Estimation','provenance':'Tranches Forever, probabilités Classic',
+        'tables':{'1':[dict(item_id=1,probability=1.0,min_quantity=1,max_quantity=2)]},
+        'brackets':[dict(class_id=4,quality=2,min_level=5,max_level=15,table_id=1)],
+        'overrides':{},'never':[]}
+    path=tmp_path/'de.sqlite'
+    publish_database(path,data,rs,items,offers)
+    loaded,_=load_database(path)
+    assert loaded['items'][2]['item_level']==10 and loaded['items'][2]['quality']==2
+    de=loaded['disenchant'][2]
+    assert de['source']=='https://source/de' and de['build']=='old'
+    assert de['evidence']=='Estimation'
+    assert de['outcomes'][0]['max_quantity']==2
+    original=path.read_bytes()
+    data['disenchant_reference']['tables']['1'][0]['item_id']=999
+    with pytest.raises(sqlite3.IntegrityError):
+        publish_database(path,data,rs,items,offers)
+    assert path.read_bytes()==original
