@@ -1,0 +1,344 @@
+{
+  "qualification": "Conformité technique à la source uniquement ; taux Forever non certifiés.",
+  "checks": {
+    "source_blob": true,
+    "tables": true,
+    "brackets": true,
+    "overrides": true,
+    "exclusions": true,
+    "sqlite_outcomes": true,
+    "sqlite_associations": true,
+    "sqlite_equipment_coverage": true,
+    "comparison_coverage": true
+  },
+  "tables": 37,
+  "outcomes": 80,
+  "brackets": 54,
+  "overrides": 165,
+  "exclusions": 1195,
+  "associations_checked": 11686,
+  "comparison_source": "https://bootybaybroker.com/forever/crafting/disenchant",
+  "divergent_brackets": [
+    {
+      "class_id": 2,
+      "quality": 2,
+      "min_level": 21,
+      "max_level": 25,
+      "table_id": 23,
+      "local": [
+        {
+          "item_id": 10998,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 10940,
+          "probability": 0.15,
+          "min_quantity": 4,
+          "max_quantity": 6
+        },
+        {
+          "item_id": 10978,
+          "probability": 0.1,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 10940,
+          "probability": 0.15,
+          "min_quantity": 4,
+          "max_quantity": 6
+        },
+        {
+          "item_id": 10939,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 10978,
+          "probability": 0.1,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "class_id": 2,
+      "quality": 2,
+      "min_level": 26,
+      "max_level": 30,
+      "table_id": 24,
+      "local": [
+        {
+          "item_id": 11082,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 11083,
+          "probability": 0.2,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 11084,
+          "probability": 0.05,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 11083,
+          "probability": 0.2,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 10939,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 11084,
+          "probability": 0.05,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "class_id": 2,
+      "quality": 2,
+      "min_level": 61,
+      "max_level": 99,
+      "table_id": 31,
+      "local": [
+        {
+          "item_id": 16203,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 16204,
+          "probability": 0.22,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.03,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 16204,
+          "probability": 0.22,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 16203,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 3
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.03,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "quality": 2,
+      "min_level": 51,
+      "max_level": 55,
+      "table_id": 9,
+      "local": [
+        {
+          "item_id": 11176,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 16202,
+          "probability": 0.2,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 14343,
+          "probability": 0.05,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 11176,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 16202,
+          "probability": 0.22,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 14343,
+          "probability": 0.03,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "quality": 2,
+      "min_level": 56,
+      "max_level": 60,
+      "table_id": 10,
+      "local": [
+        {
+          "item_id": 16204,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 16203,
+          "probability": 0.2,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.05,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 16204,
+          "probability": 0.75,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 16203,
+          "probability": 0.22,
+          "min_quantity": 1,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.03,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "quality": 2,
+      "min_level": 61,
+      "max_level": 99,
+      "table_id": 11,
+      "local": [
+        {
+          "item_id": 16204,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 16203,
+          "probability": 0.2,
+          "min_quantity": 2,
+          "max_quantity": 2
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.05,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ],
+      "comparison": [
+        {
+          "item_id": 16204,
+          "probability": 0.75,
+          "min_quantity": 2,
+          "max_quantity": 5
+        },
+        {
+          "item_id": 16203,
+          "probability": 0.22,
+          "min_quantity": 2,
+          "max_quantity": 3
+        },
+        {
+          "item_id": 14344,
+          "probability": 0.03,
+          "min_quantity": 1,
+          "max_quantity": 1
+        }
+      ]
+    }
+  ],
+  "non_unit_probability_sums": {
+    "50": 0.005
+  },
+  "wowhead_15930": {
+    "item": {
+      "id": 15930,
+      "name_fr": "Sceptre impérial rouge",
+      "name_en": "Imperial Red Scepter",
+      "wowhead_url": "https://www.wowhead.com/forever/fr/item=15930",
+      "source_id": 1,
+      "class_id": 4,
+      "subclass_id": 0,
+      "inventory_type": 23,
+      "quality": 2,
+      "item_level": 56,
+      "profile_id": "30"
+    },
+    "local_outcomes": [
+      {
+        "item_id": 16203,
+        "probability": 0.75,
+        "min_quantity": 1,
+        "max_quantity": 2
+      },
+      {
+        "item_id": 16204,
+        "probability": 0.22,
+        "min_quantity": 1,
+        "max_quantity": 2
+      },
+      {
+        "item_id": 14344,
+        "probability": 0.03,
+        "min_quantity": 1,
+        "max_quantity": 1
+      }
+    ],
+    "status": "Tableau interactif Wowhead inaccessible ; comparaison en attente."
+  }
+}
