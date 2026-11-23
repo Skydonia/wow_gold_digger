@@ -317,28 +317,28 @@
       "inventory_type": 23,
       "quality": 2,
       "item_level": 56,
-      "profile_id": "30"
+      "profile_id": "10"
     },
     "local_outcomes": [
       {
-        "item_id": 16203,
+        "item_id": 16204,
         "probability": 0.75,
         "min_quantity": 1,
         "max_quantity": 2
       },
       {
-        "item_id": 16204,
-        "probability": 0.22,
+        "item_id": 16203,
+        "probability": 0.2,
         "min_quantity": 1,
         "max_quantity": 2
       },
       {
         "item_id": 14344,
-        "probability": 0.03,
+        "probability": 0.05,
         "min_quantity": 1,
         "max_quantity": 1
       }
     ],
-    "status": "Tableau interactif Wowhead inaccessible ; comparaison en attente."
+    "status": "Tableau Wowhead non vérifié. Règle locale : les objets verts tenus en main gauche utilisent la tranche armure, sans les exceptions Classic de type arme."
   }
 }

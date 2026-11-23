@@ -160,6 +160,17 @@ def test_source_reference_item_level_boundaries_exceptions_and_exclusions():
     assert item_profile(21473, armor, data)[0] is None  # incomplete reference table
 
 
+def test_held_offhand_uses_armor_band_without_reclassifying_weapons():
+    data = reference()
+    held = dict(class_id=4, inventory_type=23, quality=2, item_level=56)
+    assert item_profile(15930, held, data) == ('10', '')
+    assert item_profile(1131, {**held, 'item_level': 25}, data) == ('3', '')
+    # A weapon equipped in the off-hand is still a weapon.
+    assert item_profile(15930, {**held, 'class_id': 2, 'inventory_type': 22}, data) == ('30', '')
+    assert item_profile(2944, {**held, 'item_level': 31}, data)[0] is None
+    assert item_profile(1992, {**held, 'quality': 3, 'item_level': 38}, data) == ('44', '')
+
+
 def test_reference_rejects_invalid_probabilities_and_overlapping_bands():
     data = reference()
     data['tables']['1'][0]['probability'] = .95

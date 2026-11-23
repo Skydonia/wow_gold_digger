@@ -9,6 +9,7 @@
   "provenance": "Tranches : ItemDisenchantLoot wowf 1.60.1.70938. Butins, exceptions et exclusions : cmangos/classic-db c33f90b8eeb3f8bacb53d5cbfee45075c80b416c (GPL-3.0), via Professions_Forever. Données factuelles extraites sans exécuter le Lua.",
   "cast_time_ms": 3000,
   "timing_source": "https://www.wowhead.com/forever/spell=13262/disenchant",
+  "local_policy": "Objets verts de classe armure (4), tenus en main gauche (23) : ignorer les exceptions Classic vers les tables armes 21–31, appliquer la tranche armure. Règle demandée par l’utilisateur, non vérifiée en jeu sur Forever. Les exclusions restent prioritaires.",
   "tables": {
     "1": [
       {

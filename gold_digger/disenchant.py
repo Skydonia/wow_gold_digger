@@ -44,6 +44,12 @@ def item_profile(item_id, item, data):
     if item_id in data['never']:
         return None, 'Exclu par la référence Classic ; désenchantabilité Forever à vérifier'
     table = data['overrides'].get(str(item_id))
+    # Held-in-off-hand armor is not an off-hand weapon. Local policy for
+    # Forever: ignore legacy green weapon-table overrides for this slot only.
+    # Keep exclusions and other item-specific (e.g. rare) outcomes intact.
+    if (item.get('class_id') == 4 and item.get('inventory_type') == 23
+            and item['quality'] == 2 and table is not None and 21 <= int(table) <= 31):
+        table = None
     if table is None:
         table = next((b['table_id'] for b in data['brackets']
                       if b['class_id'] == item['class_id'] and b['quality'] == item['quality']

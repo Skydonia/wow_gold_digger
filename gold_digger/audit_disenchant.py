@@ -83,7 +83,7 @@ def audit(root, upstream):
         'non_unit_probability_sums': {k: sum(o['probability'] for o in v) for k, v in tables.items()
                                       if abs(sum(o['probability'] for o in v)-1) > 1e-8},
         'wowhead_15930': {'item': example, 'local_outcomes': tables[example['profile_id']],
-                          'status': 'Tableau interactif Wowhead inaccessible ; comparaison en attente.'},
+                          'status': 'Tableau Wowhead non vérifié. Règle locale : les objets verts tenus en main gauche utilisent la tranche armure, sans les exceptions Classic de type arme.'},
     }
 
 

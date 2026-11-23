@@ -383,6 +383,8 @@ with coverage:
     if de_info:
         st.write(f"**{sum(bool(p['outcomes']) for p in catalog['disenchant'].values())} objets avec une table de désenchantement estimée** (pas uniquement les objets fabriqués).")
         st.markdown(f"[Source des tables de désenchantement]({de_info['source']}) · tranches client {de_info['build']} · {de_info['evidence']}.")
+        if de_info.get('local_policy'):
+            st.caption(de_info['local_policy'])
         st.markdown(f"[Durée de base du désenchantement]({de_info['timing_source']}) : {de_info['cast_time_ms']/1000:g} s par objet, modifiable dans les filtres.")
     if catalog.get('last_audit'):
         audit=catalog['last_audit']
